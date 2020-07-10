@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## Welcome to Auto-DL
 
 You can use the [editor on GitHub](https://github.com/Auto-DL/Auto-DL.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
 
