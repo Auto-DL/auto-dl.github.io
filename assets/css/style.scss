@@ -2,11 +2,12 @@
 ---
 
 @import "{{ site.theme }}";
-$font-size-body-px: 70;
-$line-height-px: 21;
+// $font-size-body-px: 70;
+// $line-height-px: 21;
 
 #auto-dl{
   text-align: center;
+  font-size: 200;
 }
 
 #develop-deep-learning--models-without-a-single-line-of-code{
