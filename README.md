@@ -10,7 +10,7 @@
 ### Introduction
 Auto-DL helps you make Deep Learning models without writing a single line of code and giving as little input as possible.
 
-<img src="https://github.com/Auto-DL/auto-dl.github.io/blob/shintan777-patch-1/static/auto-dl-block.gif" width=50%>
+<p align="center"><img src="https://github.com/Auto-DL/auto-dl.github.io/blob/shintan777-patch-1/static/auto-dl-block.gif" width=70%></p>
 
 - Using the GUI, you can specify the model components and [DLMML](https://github.com/Auto-DL/DLMML) will convert it to code, in the language and framework of your choice.
 
@@ -20,24 +20,24 @@ Auto-DL helps you make Deep Learning models without writing a single line of cod
 
 1. Clone the repo
 
-`git clone https://github.com/Auto-DL/Generator.git`
-
-`git submodule init`
-
-`git submodule update`
+```
+git clone https://github.com/Auto-DL/Generator.git
+git submodule init
+git submodule update
+```
 
 2. Install the requirements
 
-`pip install requirements.txt`
-
-`cd FrontEndApp`
-
-`npm install`
+```bash
+pip install requirements.txt
+cd FrontEndApp
+npm install
+```
 
 3. Run the application
 
-`python BackEndApp/manage.py runserver`
-
-`cd FrontEndApp`
-
-`npm start`
+```
+python BackEndApp/manage.py runserver
+cd FrontEndApp
+npm start
+```
