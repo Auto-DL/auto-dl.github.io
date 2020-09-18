@@ -1,1 +1,1 @@
-## Store all website static content here
+## Store all website static content here :camera:
