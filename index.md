@@ -40,9 +40,7 @@ it will truly be a one-click DL model development.
 
 Complete System Dataflow:
 
-![datflow](static/dataflow.jpg)
-
-
+<img src="static/auto-dl-block.gif" width="800" height="600">
 
 
 
