@@ -1,8 +1,7 @@
 
 <p align="center"><img width=30% src="https://github.com/Auto-DL/auto-dl.github.io/blob/shintan777-patch-1/static/AutoDL-Logo.jpg"></p>
 
-
-![Python](https://img.shields.io/badge/python-v3.6+-blue.svg)
+[![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
 ![Contributions welcome](https://img.shields.io/badge/contributions-welcome-orange.svg)
 
 # Auto-DL Documentation and Demo
