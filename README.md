@@ -5,6 +5,8 @@
 
 [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
 ![Contributions welcome](https://img.shields.io/badge/contributions-welcome-orange.svg)
+[![Gitter](https://badges.gitter.im/Auto_DL/community.svg)](https://gitter.im/Auto_DL/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+
 
 # Auto-DL 
 
