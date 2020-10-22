@@ -1,6 +1,28 @@
-theme: jekyll-theme-hacker
-name: AutoDL
-title: null
+title: Auto-DL
+email: info.autold@gmail.com
+description: >-
+  Build deep learning models wihtout writing a single line of code.
+baseurl: ""
+url: "https://auto-dl.github.io"
+twitter_username: auto-dl
+github_username:  Auto-DL
+
+# Build settings
+theme: minima
+plugins:
+  - jekyll-feed
+
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
 github:
   is_project_page: false
-  
