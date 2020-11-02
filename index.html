@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121199486-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-121199486-2');
+  </script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Auto-DL | AutoDL</title>
+
+    <!-- Bootstrap & Snippet plugin core CSS -->
+    <link href="style/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="style/auto-dl.css" rel="stylesheet">    
+  </head>
+  
+  <body>
+<!-- START THE NAVBAR -->
+    <div class="navbar-wrapper">
+      <div class="container">
+       <div class="navwrapper">
+         <div class="navbar navbar-inverse navbar-static-top">
+             <div class="navbar-header">
+               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">Auto-DL</a>
+            </div>
+            <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li class="menuItem active"><a href="#theProblem">The Problem</a></li>
+                <li class="menuItem"><a href="#Solution">Solution</a></li>
+                <li class="menuItem"><a href="#whyUs">Why Us</a></li>
+                <li class="menuItem"><a href="#aboutUs">About Us</a></li>
+                <li class="menuItem"><a href="#contact">Contact</a></li>    
+              </ul>
+            </div>
+          </div>
+      </div><!-- End Navbar -->
+      
+      </div>
+    </div> <!-- END NAVBAR -->
+
+     <!-- Bootstrap & Plugins core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="style/jquery.js"></script>
+    <script src="style/bootstrap.min.js"></script>
+
+    <!-- ### IMPORTANT ### stickUp javascript file -->
+    <!-- ######################################### --> 
+    <script src="style/auto-dl.js"></script>
+    <!-- ######################################### -->
+
+    <!-- ### IMPORTANT ### stickUp options in use -->
+    <!-- ######################################## -->
+    <script type="text/javascript">
+      jQuery(function($) {
+        $(document).ready( function() {
+          $('.navbar-wrapper').stickUp({
+                        parts: {
+                          0:'theProblem',
+                          1:'Solution',
+                          2: 'whyUs',
+                          3: 'aboutUs',
+                          4: 'contact',
+                        },
+                        itemClass: 'menuItem',
+                        itemHover: 'active',
+                        topMargin: 'auto'
+                      });
+        });
+      });
+    </script>
+    <!-- ######################################## -->
+</body>
+</html>
