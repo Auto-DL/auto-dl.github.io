@@ -6,9 +6,16 @@
 xmp { counter-increment: listing; }
 .code xmp:before { content: counter(listing) ". "; color: lightgray; }
 
+div {
+  margin:0;
+  padding:0;
+}
+
 body {
   padding-bottom: 40px;
-  color: #5a5a5a;
+  color: #474343;
+  font-family: 'Bree Serif';
+  font-size: 18px;
 }
 
 #features {
@@ -16,19 +23,22 @@ body {
 }
 
 .row.featurette {
-  padding: 0 80px;
+  padding: 0px 80px;
   margin-right:0px;
   margin-left:0px;
+  margin-bottom: 100px;
+
 }
 
-.row.featurette:nth-child(odd and even){
-  background:#e6f1fa;
-  padding-bottom:50px;
+.row.featurette:nth-child(odd){
+  background:#e5e9ec;
+  padding-top:0;
+  padding-bottom:120px;
 }
 
 .subheading{
    color: black;
-   text-decoration: underline;
+  font-family: sans-serif;
    font-weight:400 ;
 }
 
@@ -48,9 +58,11 @@ body {
 
 /* Special class on .container surrounding .navbar, used for positioning it into place. */
 .navbar-wrapper {
+  
   margin-top:20px;
   position: relative;
   z-index: 15;
+  
 
 }
 
@@ -95,7 +107,7 @@ body {
 /* Declare heights because of positioning of img element */
 .carousel .item {
   height: 450px;
-  background-color:#85adc8;
+  background-color:#b8c9d4;
 }
 .carousel-inner > .item > img {
   position: absolute;
@@ -139,10 +151,10 @@ body {
 /* Thin out the marketing headings */
 .featurette-heading {
   font-weight: 500;
-  line-height: 1;
+  line-height: 1.5;
   letter-spacing: -1px;
   font-family: "Comic Sans MS", cursive, sans-serif;
-  color:#f5428a;
+  color:#0f1a3d;
   font-weight: bold;
 }
 
