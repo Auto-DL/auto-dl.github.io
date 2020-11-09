@@ -47,6 +47,7 @@ body {
   width: 400px;
   left: 10px;
   top: 25px;
+  max-width: 100%;
 }
 
 .isStuck{
@@ -156,6 +157,11 @@ body {
   font-family: "Comic Sans MS", cursive, sans-serif;
   color:#0f1a3d;
   font-weight: bold;
+}
+
+/* contact footer */
+#contact > .row {
+	margin: 0;
 }
 
 
