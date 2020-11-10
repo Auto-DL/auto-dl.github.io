@@ -159,6 +159,11 @@ body {
   font-weight: bold;
 }
 
+/* contact footer */
+#contact > .row {
+	margin: 0;
+}
+
 
 
 /* RESPONSIVE CSS
