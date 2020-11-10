@@ -47,6 +47,7 @@ body {
   width: 400px;
   left: 10px;
   top: 25px;
+  max-width: 100%;
 }
 
 .isStuck{
