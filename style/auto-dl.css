@@ -75,10 +75,10 @@ body {
   color:#fff;
 }
 .navbar.navbar-inverse.navbar-static-top a:hover{
-  color:#c4cdcd ;
+  color:#1e71ac ;
 }
 .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus{
-  background:#c4cdcd ;
+  background:#1e71ac ;
   font-weight:700;
 }
 .navbar-inverse .navbar-nav>.active>a:hover {
