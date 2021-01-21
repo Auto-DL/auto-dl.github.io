@@ -148,6 +148,12 @@ body {
     line-height: 36px;
 }
 
+.responsive-container {
+}
+
+.responsive-iframe {
+}
+
 #preload {
     display: none;
 }
