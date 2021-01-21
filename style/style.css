@@ -145,6 +145,7 @@ body {
 
 .big-text {
     font-size: xx-large;
+    line-height: 36px;
 }
 
 #preload {
