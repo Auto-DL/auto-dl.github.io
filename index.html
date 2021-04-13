@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no" />
+
+    <!-- HOSTED -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,600italic,300italic,400italic,300,700italic,800italic,800" rel="stylesheet" type="text/css" />
+    <link href="fonts/mdi/css/materialdesignicons.min.css" media="all" rel="stylesheet" />
+
+    <!-- LOCAL -->
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel='shortcut icon' href='favicon.ico' type='image/x-icon' />
+
+    <!-- HOSTED -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/2.1.11/jquery.mixitup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
+
+    <!-- LOCAL -->
+    <script src="scripts/pt.min.js"></script>
+    <script src="scripts/index.js"></script>
+    <script src="scripts/modal.js"></script>
+</head>
+
+<body>
+    <div class="overflow-wrap">
+
+        <section id="home" class="flex height-fix">
+            <div id="pt" class="canvas"></div>
+            <div class="flex">
+                <div class="text">
+                    <img src="static/logo.png" />
+                </div>
+
+                <div class="text">
+                    The <span class="highlight">futuristic</span> way of building deep learning models
+                </div>
+                <br />
+                <div class="button page-link" dest="about">
+                    What we do? <i class="mdi mdi-arrow-right"></i>
+                </div>
+
+                <nav class="flex">
+                    <div class="link-wrap">
+                        <div class="active page-link" dest="home">home</div>
+                        <div class="page-link" dest="about">about</div>
+                        <div class="page-link" dest="demo">demo</div>
+                        <div class="page-link" dest="contact">contact</div>
+                    </div>
+                    <i class="mdi mdi-menu"></i>
+                </nav>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section id="about">
+            <div class="container flex">
+                <div class="header waypoint" data-animation="slide-in-left">
+                    ABOUT
+                </div>
+                <div class="header-bar waypoint" data-animation="slide-in-left" data-delay=".3s"></div>
+
+                <div class="text big-text">
+                    Build Deep learning models more than 10X faster with Auto-DL.
+                </div>
+                <h3>
+                    Building Deep Learning models takes a lot of time. We automate your "meta-work" so that you can focus of building your models without worrying about writing code.
+                </h3>
+   
+                <div class="flex row label-wrap">
+                    <div class="flex row-gt-sm">
+                        <div class="flex bullet-wrap ">
+                            <div class="hex-wrap waypoint" data-animation="flip-in-x">
+                                <div class="hexagon">
+                                    <i class="mdi mdi-scale"></i>
+                                </div>
+                            </div>
+                            <div class="waypoint" data-animation="fade-in">
+                                <div class="label bold">Scalable</div>
+                                <div>
+                                    Highly scalable as it can be deployed on a single compute system or a cluster.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex bullet-wrap ">
+                            <div class="hex-wrap waypoint" data-animation="flip-in-x" data-delay=".2s">
+                                <div class="hexagon">
+                                    <i class="mdi mdi-security"></i>
+                                </div>
+                            </div>
+                            <div class="waypoint" data-animation="fade-in" data-delay=".2s">
+                                <div class="label bold">Secure</div>
+                                <div>Your data and models' security is our highest priority.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex row-gt-sm">
+                        <div class="flex bullet-wrap ">
+                            <div class="hex-wrap waypoint" data-animation="flip-in-x" data-delay=".4s">
+                                <div class="hexagon">
+                                    <i class="mdi mdi-lightbulb-outline"></i>
+                                </div>
+                            </div>
+                            <div class="waypoint" data-animation="fade-in" data-delay=".4s">
+                                <div class="label bold">Intuitive</div>
+                                <div>Strong preference for easy to use, intuitive UX/UI.</div>
+                            </div>
+                        </div>
+                        <div class="flex bullet-wrap ">
+                            <div class="hex-wrap waypoint" data-animation="flip-in-x" data-delay=".6s">
+                                <div class="hexagon">
+                                    <i class="mdi mdi-responsive"></i>
+                                </div>
+                            </div>
+                            <div class="waypoint" data-animation="fade-in" data-delay=".6s">
+                                <div class="label bold">Flexible</div>
+                                <div>
+                                    Develop DL models in any framework and any programming language.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex bullet-wrap ">
+                            <div class="hex-wrap waypoint" data-animation="flip-in-x" data-delay=".8s">
+                                <div class="hexagon">
+                                    <i class="mdi mdi-function"></i>
+                                </div>
+                            </div>
+                            <div class="waypoint" data-animation="fade-in" data-delay=".8s">
+                                <div class="label bold">Explainable</div>
+                                <div>
+                                    No more black boxes, understand what the AI model is learning.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- DEMO -->
+        <section id="demo">
+            <div class="container flex">
+                <div class="header waypoint" data-animation="slide-in-right">
+                    DEMO
+                </div>
+                <div class="header-bar waypoint" data-animation="slide-in-right" data-delay=".3s"></div>
+                <iframe  width="560" height="315" src="https://www.youtube.com/embed/6uEt88vQxQU" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+
+        <section id="try-us">
+            <div class="container flex">
+                <div class="header waypoint" data-animation="slide-in-right">
+                    Try Us
+                </div>
+                <div class="header-bar waypoint" data-animation="slide-in-right" data-delay=".3s"></div>
+                <div class="text">
+                    <h1 class="big-text">
+                        COMING SOON...
+                    </h1>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact">
+            <svg preserveAspectRatio="none " viewBox="0 0 100 102 " height="75 " width="100% " version="1.1 " xmlns="http://www.w3.org/2000/svg " class="svgcolor-light ">
+          <path d="M0 0 L50 100 L100 0 Z " fill="white " stroke="white "></path>
+        </svg>
+            <div class="container flex ">
+                <div class="header waypoint " data-animation="slide-in-left ">
+                    CONTACT
+                </div>
+                <div class="header-bar waypoint " data-animation="slide-in-right " data-delay=".25s "></div>
+                <div class="highlight waypoint " data-animation="slide-in-right " data-delay=".5s ">
+                    Have a question or want to work together?
+                </div>
+                <div class="waypoint " data-animation="pop-in " data-delay=".5s " id="contact-data ">
+                    Feel free to join our community slack. You can also write to us via e-mail or ping on any social media.
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <i class="mdi mdi-chevron-double-up page-link " dest="home "></i>
+            <div class="icon-wrap flex row ">
+                <a href="mailto:info.autold@gmail.com?subject=Auto-DL%20Contact%20from%20Website ">
+                    <div class="flex icon " id="icon-1 ">
+                        <i class="mdi mdi-email "></i>
+                    </div>
+                </a>
+                <a href="https://www.linkedin.com/company/autodl/ ">
+                    <div class="flex icon " id="icon-2 ">
+                        <i class="mdi mdi-linkedin "></i>
+                    </div>
+                </a>
+                <a href="https://twitter.com/auto_dl/ ">
+                    <div class="flex icon " id="icon-4 ">
+                        <i class="mdi mdi-twitter "></i>
+                    </div>
+                </a>
+                <a href="https://github.com/Auto-DL/ ">
+                    <div class="flex icon " id="icon-5 ">
+                        <i class="mdi mdi-github-circle "></i>
+                    </div>
+                </a>
+                <a href="https://join.slack.com/t/autodl/shared_invite/zt-m6dxvsow-~dW4FTy3QDLAK~WYeg_3Ig">
+                    <div class="flex icon " id="icon-6 ">
+                        <i class="mdi mdi-slack "></i>
+                    </div>
+                </a>
+            </div>
+            <div class="info-box ">
+                <div class="footnote ">
+                    Auto-DL <span class="highlight ">&copy;2021</span>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
+
+<script src="scripts/canvas.js "></script>

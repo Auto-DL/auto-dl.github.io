@@ -1,6 +1,6 @@
 
 <p align="center">
-  <img width=30% src="static/AutoDL-Logo.jpg">
+  <img width=30% src="static/logo.png">
 </p>
 
 [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
@@ -30,7 +30,7 @@ git submodule update
 
 ```bash
 pip install requirements.txt
-cd FrontEndApp
+cd FrontEndApp/v1-react
 npm install
 ```
 
@@ -38,6 +38,6 @@ npm install
 
 ```
 python BackEndApp/manage.py runserver
-cd FrontEndApp
+cd FrontEndApp/v1-react
 npm start
 ```
