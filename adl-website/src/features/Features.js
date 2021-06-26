@@ -1,11 +1,14 @@
 import React from 'react'
-import TickAnimation from './Ticking'
+import TickAnimation from '../animations/Ticking'
 import FeatureList from '../featuresList'
 
+import HeadBG from '../navbar/headBG';
+import './Features.css'
+
 class Features extends React.Component {
-    constructor() {
-        super()
-    }
+    // constructor() {
+    //     super()
+    // }
 
     addClass(n) {
         let classes = 'txt card';
@@ -38,11 +41,14 @@ class Features extends React.Component {
         );
 
         return (
-            <div>
-                <h1>Features</h1>
-                <br/>
-                {feature}
-            </div>
+            <main>
+                <div>
+                    <HeadBG/>
+                    <h1>Features</h1>
+                    <br/>
+                    {feature}
+                </div>
+            </main>
         );
     }
 }

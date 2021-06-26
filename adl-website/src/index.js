@@ -3,8 +3,6 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-// import '@lottiefiles/lottie-player';
-// import { create } from '@lottiefiles/lottie-interactivity';
 
 
 ReactDOM.render(

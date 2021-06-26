@@ -1,0 +1,71 @@
+/* .base-header {
+    display: flex !important;
+} */
+
+.feat {
+	display: inline-flex;
+	width: 100%;
+	justify-content: space-around;
+	margin-bottom: 5em;
+}
+
+/* .feat div.col-6, */
+.feat div.col-4 {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.feat lottie-player {
+	align-self: center;
+}
+
+/* .feat:nth-child(even) {
+	background-color: #0077b6;	
+} */
+.feat:nth-child(even) .tick  {
+	position: relative;
+	float: left;
+}
+.feat:nth-child(even) .txt {
+	position: relative;
+	float: right;
+	/* background-color: black; */
+}
+
+.txt.card {
+	/* height: 60%; */
+	width: 80vw;
+	padding: 3em;
+	align-self: center;
+	background-color: transparent;
+    box-shadow: -1px 3px 16px 0px #888888;
+    border-radius: 1em;
+}
+
+.txt.card .card-body {
+	display: flex;
+    flex-direction: row;
+	justify-content: space-between;
+	font-size: 1.2em;
+}
+
+.txt.card .card-body i {
+	font-size: 4em;
+}
+.feat-txt {	
+    align-self: center;
+}
+
+.card-text {
+	padding: 0 25%;
+}
+
+.blue-card {
+	color: #fff;
+	background-color: #0077b6 !important;
+}
+.blue-card .card-body {
+	float: right;
+	flex-direction: row-reverse !important;
+}

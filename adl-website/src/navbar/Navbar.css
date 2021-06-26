@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap');
+/* font-family: 'Nothing You Could Do', cursive; */
+.header-content .brand {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+	text-decoration: none;
+	font-size: 2.5em;
+	font-family: 'El Messiri', sans-serif;
+}
+
+#future {
+	font-family: 'Nothing You Could Do', cursive;
+	font-weight: bold;
+	color: #f72585;
+}
+
+.navbar {
+	/* display: none; */
+	position: absolute;
+    top: 0;
+    width: 100%;
+    left: 0;
+    background-color: transparent !important;
+	font-family: 'Rubik', sans-serif;
+	font-weight: 300;
+}
+
+.navbar .navbar-brand {
+	display: none;
+}
+
+.navbar.fixed-top {
+	/* display: block; */
+	position: fixed !important;
+	background-color: #012a4ae0 !important;
+	transition: 0.8s;
+	box-shadow: 0px 4px 8px 6px #012a4a3d !important;
+	padding: 0 5em;
+}
+
+.navbar.fixed-top .navbar-brand {
+	display: block;
+}
+
+@media (max-width: 992px) {
+	.navbar.fixed-top {
+		padding: inherit;
+	}
+}
+
+.navbar-collapse {
+	justify-content: center;
+}
+
+.navbar.fixed-top .navbar-collapse {
+	justify-content: flex-end;
+}
+
+.nav-link {
+	font-size: 0.75em;
+	text-transform: uppercase;
+}
+.nav-link:hover {
+	color: #fff !important;
+}
+
+.path {
+	stroke-dasharray: 1000;
+	stroke-dashoffset: 1000;
+	animation: dash 5s linear forwards;
+  }
+  
+  @keyframes dash {
+	to {
+	  stroke-dashoffset: 0;
+	}
+  }
