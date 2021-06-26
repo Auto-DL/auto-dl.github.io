@@ -1,0 +1,185 @@
+body {
+	overflow: overlay;
+}
+
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #0a09034b;
+	border-radius: 2em;
+}
+
+::-webkit-scrollbar-track {
+	background: transparent;
+	/* margin: 10px 0; */
+}
+
+.App {
+	text-align: center;
+}
+
+.App-logo {
+	height: 10vmin;
+	pointer-events: none;
+}
+
+/* @media (prefers-reduced-motion: no-preference) {
+	.App-logo {
+		animation: App-logo-spin infinite 20s linear;
+	}
+} */
+
+.App-header {
+	/* background-color: #2B82D5; */
+	/* background-color: #023e8a; */
+	/* background: url('https://images.unsplash.com/photo-1527474305487-b87b222841cc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1934&q=80'); */
+	/* background: url('https://images.unsplash.com/photo-1504639725590-34d0984388bd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80'); */
+	/* background: url('https://images.unsplash.com/photo-1531215244697-089c35892b94?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1173&q=80'); */
+
+	background-position: center center;
+    background-size: cover;
+
+	height: 100vh;
+	font-size: calc(10px + 2vmin);
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.App-header .head-bg {
+	position: absolute;
+	align-self: center;
+	opacity: 0.2;
+	height: 100%;
+	width: 100%;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+	background-color: #0076b6;
+}
+
+.App-header .brand {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+	text-decoration: none;
+	font-size: 2em;
+}
+
+.App-link {
+	color: #61dafb;
+}
+
+.App-header nav {
+	z-index: 10;
+	align-self: center;
+}
+
+.react-parallax, .react-parallax-content {
+	width: 100vw;
+    height: 100vh;
+	display: flex;
+    justify-content: center;
+}
+
+.react-parallax-bgimage {
+	filter: blur(0px) !important;
+}
+/* .App-header .brand img{
+	filter: invert(100%) sepia(0%) saturate(7498%) hue-rotate(260deg) brightness(101%) contrast(101%);
+} */
+
+/* @keyframes App-logo-spin {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+} */
+
+.feat {
+	display: inline-flex;
+	width: 100%;
+	justify-content: space-around;
+	margin-bottom: 5em;
+}
+
+/* .feat div.col-6, */
+.feat div.col-4 {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.feat lottie-player {
+	align-self: center;
+}
+
+/* .feat:nth-child(even) {
+	background-color: #0077b6;	
+} */
+.feat:nth-child(even) .tick  {
+	position: relative;
+	float: left;
+}
+.feat:nth-child(even) .txt {
+	position: relative;
+	float: right;
+	/* background-color: black; */
+}
+
+.txt.card {
+	/* height: 60%; */
+	width: 80vw;
+	padding: 3em;
+	align-self: center;
+	background-color: transparent;
+    box-shadow: -1px 3px 16px 0px #888888;
+    border-radius: 1em;
+}
+
+.txt.card .card-body {
+	display: flex;
+    flex-direction: row;
+	justify-content: space-between;
+	font-size: 1.2em;
+}
+
+.txt.card .card-body i {
+	font-size: 4em;
+}
+.feat-txt {	
+    align-self: center;
+}
+
+.card-text {
+	padding: 0 25%;
+}
+
+.blue-card {
+	color: #fff;
+	background-color: #0077b6 !important;
+}
+.blue-card .card-body {
+	float: right;
+	flex-direction: row-reverse !important;
+}
+.hex-design {
+	position: absolute;
+}
+
+.hex-design#hex-top-left {
+	top: 0%;
+	left: 0;
+}
+
+.hex-design#hex-bottom-right {
+	bottom: 0;
+	right: 0;
+}
