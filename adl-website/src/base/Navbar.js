@@ -1,6 +1,6 @@
 import React from 'react'
 
-import {BrowserRouter as Router, Link} from "react-router-dom";
+import {Link} from "react-router-dom";
 
 import logo from '../icon.png';
 import './Navbar.css'
@@ -8,15 +8,12 @@ import './Navbar.css'
 
 
 class MyNavbar extends React.Component {
-    constructor(props) {
-        super(props)
-    }
 
     componentDidMount() {
         document.addEventListener("scroll", function () {
             if (document.querySelector(".home-head") != null) {
                 const navbar = document.querySelector(".home-head").querySelector('.navbar');
-                const headheight = document.getElementsByClassName('App-header').clientHeight;
+                // const headheight = document.getElementsByClassName('App-header').clientHeight;
                 const navbarHeight = window.screen.height - 70;
             
                 const distanceFromTop = Math.abs(

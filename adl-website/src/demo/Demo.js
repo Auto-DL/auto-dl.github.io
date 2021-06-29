@@ -1,5 +1,5 @@
 import React from 'react'
-import HeadBG from '../navbar/headBG';
+import HeadBG from '../base/headBG';
 
 
 class Demo extends React.Component {
@@ -7,7 +7,7 @@ class Demo extends React.Component {
         return(
             <main>
                 <div>
-                    <HeadBG/>
+                    <HeadBG title='HOW IT WORKS'/>
                     <h1>Demo</h1>
                     <p>demo vid</p>
                 </div>

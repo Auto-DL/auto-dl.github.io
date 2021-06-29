@@ -78,3 +78,32 @@
 	  stroke-dashoffset: 0;
 	}
   }
+
+footer {
+	padding: 1em 2em;
+	background-color: #012A4A;
+	/* color: #fff; */
+	color: #ffffffaf;
+}
+
+footer h4 {
+	color: #fff;
+	font-weight: 400;
+}
+
+footer .quote {
+	font-family: 'Nothing You Could Do', cursive;
+}
+
+footer #follow li{
+	font-size: 1.2em;
+	display: inline-block;
+    margin: 0 0.5em;
+}
+footer #follow a {
+	color: #ffffffaf;
+	text-decoration: none;
+}
+footer #follow a:hover {
+	color: #fff;
+}

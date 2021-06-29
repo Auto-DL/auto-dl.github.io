@@ -2,7 +2,7 @@ import React from 'react'
 import TickAnimation from '../animations/Ticking'
 import FeatureList from '../featuresList'
 
-import HeadBG from '../navbar/headBG';
+import HeadBG from '../base/headBG';
 import './Features.css'
 
 class Features extends React.Component {
@@ -21,8 +21,8 @@ class Features extends React.Component {
     render() {
         let i = 1;
         
-        const feature = FeatureList.map(ft => 
-            <div className='feat'>
+        const feature = FeatureList.map((ft, index) => 
+            <div key={index} className='feat'>
                 <div className={this.addClass(i)}>
                     <div className='card-body'>
                         <div className='col-6 feat-txt'>
@@ -42,12 +42,12 @@ class Features extends React.Component {
 
         return (
             <main>
-                <div>
-                    <HeadBG/>
+                <>
+                    <HeadBG title='FEATURES'/>
                     <h1>Features</h1>
                     <br/>
                     {feature}
-                </div>
+                </>
             </main>
         );
     }

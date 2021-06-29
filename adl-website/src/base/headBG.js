@@ -16,7 +16,7 @@ class HeadBG extends React.Component {
         }
         return (
             <div style={style}>
-                content
+                <h1>{this.props.title}</h1>
             </div>
         )
     }

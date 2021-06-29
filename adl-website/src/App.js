@@ -2,25 +2,25 @@ import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import './App.css';
-import MyNavbar from './navbar/Navbar';
+import MyNavbar from './base/Navbar';
 import Home from './home/Home';
 import Features from './features/Features';
 import About from './about/About';
 import Demo from './demo/Demo';
 import Contact from "./contact/Contact";
+import Footer from "./base/Footer";
 
 
 class App extends React.Component {
+	
 	header() {
 		return (
-			// <div>
-				<header className="App-header base-header">
-						<MyNavbar component='base'/>
-						{/* <div style={{height: '89.75px'}}></div> */}
-					{/* </div> */}
-				</header>
+			<header className="App-header base-header">
+				<MyNavbar component='base'/>
+			</header>
 		)
 	}
+
 	render() {
 		return (
 			<div className="App">
@@ -53,6 +53,8 @@ class App extends React.Component {
 						} />
 					</Switch>
 				</Router>
+
+				<Footer/>
 			</div>
 		);
 	}

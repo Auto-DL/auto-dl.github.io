@@ -1,6 +1,6 @@
 import React from 'react'
 import { Parallax } from 'react-parallax';
-import MyNavbar from '../navbar/Navbar';
+import MyNavbar from '../base/Navbar';
 
 import './Home.css'
 
@@ -28,7 +28,7 @@ class Home extends React.Component {
     }
     render() {
         return (
-            <div>
+            <>
 				<header className="home-head">
 					{this.Container()}
                 </header>
@@ -41,7 +41,7 @@ class Home extends React.Component {
                     <div className='home-content' style={{ height: '400px' }}></div>
                     <div className='home-content' style={{ height: '400px' }}></div>
                 </main>
-            </div>
+            </>
         );
     }
 }
