@@ -1,5 +1,5 @@
 import React from 'react';
-import bg from '../headWall.svg'
+import bg from './headWall.svg'
 
 class HeadBG extends React.Component {
     render() {

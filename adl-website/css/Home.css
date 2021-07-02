@@ -1,0 +1,146 @@
+.home-head .brand {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+	text-decoration: none;
+	font-size: 2.5em;
+	font-family: 'El Messiri', sans-serif;
+	z-index: 102;
+	position: relative;
+}
+
+.autoDL {
+	font-family: 'El Messiri', sans-serif;
+}
+
+.home-head #future {
+	font-family: 'Nothing You Could Do', cursive;
+	font-weight: bold;
+	color: #f72585;
+}
+
+.home-head {
+	display: flex;
+	position: relative;
+	
+	/* background-color: #2B82D5; */
+	/* background-color: #023e8a; */
+	/* background: url('https://images.unsplash.com/photo-1527474305487-b87b222841cc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1934&q=80'); */
+	/* background: url('https://images.unsplash.com/photo-1504639725590-34d0984388bd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80'); */
+	/* background: url('https://images.unsplash.com/photo-1531215244697-089c35892b94?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1173&q=80'); */
+
+	background-position: center center;
+	background-size: cover;
+	background-color: #252934;
+	height: 100vh;
+	font-size: calc(10px + 2vmin);
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/* .home-head .head-bg {
+	position: absolute;
+	align-self: center;
+	opacity: 0.2;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #0076b6;
+} */
+
+.App-link {
+	color: #61dafb;
+}
+
+/* .home-head .header-content {
+	z-index: 10;
+	align-self: center;
+} */
+
+/* canvas */
+.canvas {
+    /* background: url('https://auto-dl.github.io/style/../img/filler.png') center center/cover; */
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+}
+
+canvas {
+	z-index: -1;
+}
+
+.home-content {
+	/* background-color: #e9ecef; */
+	position: relative;
+	min-height: 400px;
+	padding: 5em;
+}
+.home-content:nth-child(odd) {
+	background-color: #fff;
+	color: #252934;
+}
+
+.feat i {
+	font-size: 3.5em;
+}
+
+
+/* carosel */
+.carousel-inner,
+.carousel-item {
+	height: 100%;
+}
+
+.carousel-caption {
+	top: 4rem;
+	color: black !important;
+}
+
+.carousel-caption .card {
+	padding: 3em;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+	/* color: rgba(0, 0, 0, 0.74) !important; */
+	font-size: 2.5em;
+}
+
+/* .carousel-control-next:focus,
+.carousel-control-next:hover,
+.carousel-control-prev:focus,
+.carousel-control-prev:hover {
+	color: black !important;
+}
+
+.carousel-indicators [data-bs-target] {
+	background-color: black !important;
+} */
+
+.carousel-inner .testimonial:before {
+	content: "\201C";
+	position: absolute;
+	font-family: 'El Messiri';
+	font-size: 122pt;
+	top: -19px;
+	left: 10px;
+	z-index: 0;
+	opacity: .1;
+}
+
+/* .qot {
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+} */
+
+footer {
+	position: absolute;
+	width: 100%;
+}

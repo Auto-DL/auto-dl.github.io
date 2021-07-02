@@ -3,14 +3,15 @@
 } */
 
 .home-head {
-    display: flex;
+	display: flex;
 }
 
-.react-parallax, .react-parallax-content {
+.react-parallax,
+.react-parallax-content {
 	width: 100vw;
-    height: 100vh;
+	height: 100vh;
 	display: flex;
-    justify-content: center;
+	justify-content: center;
 }
 
 .react-parallax-bgimage {
@@ -25,8 +26,8 @@
 	/* background: url('https://images.unsplash.com/photo-1531215244697-089c35892b94?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1173&q=80'); */
 
 	background-position: center center;
-    background-size: cover;
-
+	background-size: cover;
+	background-color: #252934;
 	height: 100vh;
 	font-size: calc(10px + 2vmin);
 	color: white;
@@ -42,8 +43,8 @@
 	height: 100%;
 	width: 100%;
 	display: flex;
-    align-items: center;
-    justify-content: center;
+	align-items: center;
+	justify-content: center;
 	background-color: #0076b6;
 }
 
@@ -58,4 +59,42 @@
 
 .home-content:nth-child(odd) {
 	background-color: #e9ecef;
+}
+
+/* carosel */
+.carousel-inner,
+.carousel-item {
+	height: 100%;
+}
+
+.carousel-caption {
+	top: 4rem;
+	color: black;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+	color: rgba(0, 0, 0, 0.74);
+}
+
+.carousel-control-next:focus,
+.carousel-control-next:hover,
+.carousel-control-prev:focus,
+.carousel-control-prev:hover {
+	color: black !important;
+}
+
+.carousel-indicators [data-bs-target] {
+	background-color: black;
+}
+
+.carousel-inner .testimonial:before {
+	content: "\201C";
+	position: absolute;
+	font-family: 'El Messiri';
+	font-size: 122pt;
+	top: -55px;
+	left: -20px;
+	z-index: 0;
+	opacity: .1;
 }

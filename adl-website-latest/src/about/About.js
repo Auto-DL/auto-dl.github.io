@@ -12,7 +12,7 @@ class About extends React.Component {
 
                 <h1>About Us</h1>
                 <p>
-                    Some Content bout what we do
+                    {/* Some Content bout what we do */}
                 </p>
             </>
         );

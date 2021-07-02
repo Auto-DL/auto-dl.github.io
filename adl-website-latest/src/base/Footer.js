@@ -55,23 +55,23 @@ class Footer extends React.Component {
                         <div className='col-12' style={styles.footerBottom}>
                             <h4>Follow us On</h4>
                             <ul id='follow' style={styles.list}>
-                                <li><a href="mailto:info.autold@gmail.com?subject=Auto-DL%20Contact%20from%20Website ">
-                                        <i class="far fa-envelope"></i></a></li>
+                                {/* <li><a href="mailto:info.autold@gmail.com?subject=Auto-DL%20Contact%20from%20Website ">
+                                        <i className="far fa-envelope"></i></a></li> */}
                                 <li>
                                     <a href="https://www.linkedin.com/company/autodl/ ">
-                                    <i class="fab fa-linkedin-in"></i></a>
+                                    <i className="fab fa-linkedin-in"></i></a>
                                 </li>
                                 <li>
                                     <a href="https://twitter.com/auto_dl/ ">
-                                    <i class="fab fa-twitter"></i></a>
+                                    <i className="fab fa-twitter"></i></a>
                                 </li>
                                 <li>
                                     <a href="https://github.com/Auto-DL/ ">
-                                    <i class="fab fa-github"></i></a>
+                                    <i className="fab fa-github"></i></a>
                                 </li>
                                 <li>
                                     <a href="https://autodl.slack.com/join/shared_invite/zt-qagxiwub-ywRM_oBvvF~F7YNtlBqy_Q#/shared-invite/email">
-                                    <i class="fab fa-slack"></i></a>
+                                    <i className="fab fa-slack"></i></a>
                                 </li>
                             </ul>
                         </div>
