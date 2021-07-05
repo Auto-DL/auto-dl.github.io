@@ -90,7 +90,7 @@ canvas {
 
 .home-content:nth-child(even) {
 	color: white;
-	background-color: transparent;
+	background-color: #252934;
 }
 
 .home-content .interface-tooltip {
