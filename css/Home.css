@@ -88,6 +88,43 @@ canvas {
 	color: #252934;
 }
 
+.home-content:nth-child(even) {
+	color: white;
+}
+
+.home-content .interface-tooltip {
+	position: absolute;
+}
+
+.interface-tooltip#top-right {
+	top: 10px;
+	right: 10px;
+}
+.interface-tooltip#bottom-right {
+	bottom: 10px;
+	right: 10px;
+}
+.interface-tooltip#top-left {
+	top: 10px;
+	left: 10px;
+}
+.interface-tooltip#bottom-left {
+	bottom: 10px;
+	left: 10px;
+}
+
+.tooltip-inner {
+	background-color: white !important;
+	color: black !important;
+	padding: 1em 1.5em !important;
+}
+
+.tooltip-arrow::before,
+.tooltip-arrow::before
+{
+	border-bottom-color: white !important;
+}
+
 .feat i {
 	font-size: 3.5em;
 }

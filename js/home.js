@@ -12,4 +12,12 @@ document.addEventListener("scroll", function () {
     }
 });
 
+$(window).on('load', function () {
+    var head = document.querySelector('.home-head');
+
+    // if (head != null && head.querySelector('.navbar') != null) {
+        head.querySelector('.navbar').classList.remove('fixed-top');
+    // }
+});
+
 // document.querySelector('header').classList.add("home-head");

@@ -10,12 +10,6 @@
 		integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
 		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-	<!-- <script>
-		$(function () {
-			$('header').load('header.html #reuse-head');
-		});
-	</script> -->
-
 	<script type="text/javascript" src="../js/base.js"></script>
 
 	<link rel="stylesheet" type="text/css" href="../css/Home.css">
@@ -43,19 +37,30 @@
 
 	<main>
 
-		<section class='d-flex home-content' style="min-height: 400px; width: 100%;">
-			<div class='align-self-center container'>
-				<h2>Build Deep learning models more than 10X faster with <span class="autoDL">Auto-DL</span>.</h2>
+		<!-- Intro line -->
+		<section class='flex home-content' style="min-height: 400px; width: 100%;">
+			<div class='container'>
+				<h2>Build Deep learning models <span style="color: #f72585;">more than 10X faster</span> with <span class="autoDL">Auto-DL</span>.</h2>
 				<p>Building Deep Learning models takes a lot of time. We automate your "meta-work" so that you can focus
 					of building your models without worrying about writing code.</p>
 			</div>
-			<div>
+		</section>
 
+		<!-- The Interface -->
+		<section class='home-content'>
+			<div class="container">
+				<h3>Our Interface</h3>
+				<div class="flex position-relative" style="width: fit-content; margin: 0 auto;">
+					<img src='https://blogs.forbes.com/jasonevangelho/files/2019/02/glzrkk83f4621.png' alt="Interface" width="800px">
+					<span id="top-right" class="interface-tooltip" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-html="true" title="<b>TITLE</b><br/>content"><i class="fas fa-info-circle"></i></span>
+					<span id="bottom-right" class="interface-tooltip" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-html="true" title="<b>TITLE</b><br/>content"><i class="fas fa-info-circle"></i></span>
+					<span id="top-left" class="interface-tooltip" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-html="true" title="<b>TITLE</b><br/>content"><i class="fas fa-info-circle"></i></span>
+					<span id="bottom-left" class="interface-tooltip" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-html="true" title="<b>TITLE</b><br/>content"><i class="fas fa-info-circle"></i></span>
+				</div>
 			</div>
 		</section>
 
-		<section class='home-content'></section>
-
+		<!-- features -->
 		<section class='home-content'>
 			<h3 class="mb-5">What sets <span class="autoDL">Auto-DL</span> apart</h3>
 			<div>
@@ -98,12 +103,16 @@
 			</div>
 		</section>
 
-		<section class='home-content'></section>
+		<!-- github section -->
+		<section class='home-content'>
+			
+		</section>
 
 		<section class='home-content'></section>
 
 		<!-- Testinomy Carousel -->
-		<div class='home-content'>
+		<section class='home-content'>
+			<h3>What Our Users say</h3>
 			<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" style="height: 400px">
 				<div class="carousel-indicators">
 					<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
@@ -125,6 +134,7 @@
 									explicabo, distinctio dolores. Officiis mollitia, error excepturi modi cumque unde
 									nobis aut iste odit distinctio, inventore voluptatibus obcaecati corrupti
 									praesentium id eos, qui cum laboriosam rem dicta est.
+									<br/><br/>-Lorem ipsum dolor.
 								</p>
 							</div>
 						</div>
@@ -140,6 +150,7 @@
 									explicabo, distinctio dolores. Officiis mollitia, error excepturi modi cumque unde
 									nobis aut iste odit distinctio, inventore voluptatibus obcaecati corrupti
 									praesentium id eos, qui cum laboriosam rem dicta est.
+									<br/><br/>-Lorem ipsum dolor.
 								</p>
 							</div>
 						</div>
@@ -155,6 +166,7 @@
 									explicabo, distinctio dolores. Officiis mollitia, error excepturi modi cumque unde
 									nobis aut iste odit distinctio, inventore voluptatibus obcaecati corrupti
 									praesentium id eos, qui cum laboriosam rem dicta est.
+									<br/><br/>-Lorem ipsum dolor.
 								</p>
 							</div>
 						</div>
@@ -173,7 +185,7 @@
 					<span class="visually-hidden">Next</span>
 				</button>
 			</div>
-		</div>
+		</section>
 
 	</main>
 

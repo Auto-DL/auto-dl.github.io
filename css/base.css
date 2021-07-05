@@ -212,8 +212,9 @@ main .head-bg {
 }
 
 .dark-btn {
+	font-family: 'Raleway', sans-serif;
 	color: #252934;
-	background-color: transparent;
+	/* background-color: transparent; */
 	transition: 0.4s;
 	border: 1px solid #252934;
 }
@@ -222,6 +223,17 @@ main .head-bg {
 	color: white;
 }
 
+.light-btn {
+	font-family: 'Raleway', sans-serif;
+	/* background-color: #252934; */
+	color: white;
+	transition: 0.4s;
+	border: 1px solid #fff;
+}
+.light-btn:hover {
+	background-color: white;
+	color: #252934;
+}
 
 /* footer styles */
 footer {

@@ -1,10 +1,26 @@
+$(function () {
+    $('header').load('header.html #reuse-head');
+    baseScripts();
+    Footer();
+});
+
+$(window).on('load', function () {
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl, {
+            template: `<div class="tooltip" role="tooltip">
+                <div class="tooltip-arrow"></div>
+                <div class="tooltip-inner"></div>
+            </div>`})
+    })
+});
 
 function active(id) {
     document.getElementById(id).className = 'active';
 }
 
 function baseScripts() {
-	$('head').append(`
+    $('head').append(`
 		<link rel="icon" href="../media/favicon.ico" />
 		<!-- <meta name="google-site-verification" content="p3viVcODf5JRawEQyv8vij_vtCmqGnIVAcgdJlMHdZ8" />
 		<meta name="google-site-verification" content="xee37Efxw7z9-O5cjvQ02ERSoAA3jwKI9Bu5v5yClbw" /> -->
@@ -19,7 +35,7 @@ function baseScripts() {
 		<link rel="stylesheet" type="text/css" href="../css/base.css">
 	`);
 
-	$('body').append(`
+    $('body').append(`
 		<script src="https://kit.fontawesome.com/553c78d64a.js" crossorigin="anonymous"></script>
 
 		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
@@ -31,10 +47,9 @@ function baseScripts() {
 		</script>
     `);
 
-	$(window).on('load', function () {
-		(document.querySelector('.base-header').querySelector('.navbar') != null) ? document.querySelector('.base-header').querySelector('.navbar').classList.add('fixed-top') : null;
-	});
 }
+
+
 
 const footerData = [{
         title: 'Get Started',
@@ -59,7 +74,7 @@ function Footer() {
     <div class='container'>
     <div class='row mt-4'>
         `;
-    
+
     footerData.forEach(item => {
         // console.log("items", item.info)
         foot += `
@@ -67,13 +82,13 @@ function Footer() {
             <h4>` + item.title + `</h4>
             <ul class='foot-list'>
             ` +
-                item.info.map(x => `<li>` + x + `</li>`).join('')
-            + `
+            item.info.map(x => `<li>` + x + `</li>`).join('') +
+            `
             </ul>
         </div>`;
     });
 
-        
+
     foot += `
         <div class='col-12 quote mt-4'>
             “Deep learning will revolutionize supply chain automation.” <br />-Dave Waters
