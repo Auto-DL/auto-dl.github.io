@@ -39,7 +39,7 @@
 	<main>
 
 		<!-- Intro line -->
-		<section class='flex home-content' style="min-height: 400px; width: 100%;">
+		<section class='flex home-content light-bg' style="min-height: 400px; width: 100%;">
 			<div class='container'>
 				<h2>Build Deep learning models <span style="color: #f72585;">more than 10X faster</span> with <span
 						class="autoDL">Auto-DL</span>.</h2>
@@ -48,8 +48,21 @@
 			</div>
 		</section>
 
+		<!-- demo video -->
+		<section class="home-content dark-bg-content">
+			<div class="container">
+				<h3 class="mb-5">Watch Demo</h3>
+				<div>
+					<span class="flex">
+						<img class="img-fluid" src="../media/layoutSS.png">
+						<a class="pe-auto btn rounded-circle" id="yt-btn" data-bs-toggle="modal" data-bs-target="#youtubeModal"><i class="fas fa-play"></i></a>
+					</span>
+				</div>
+			</div>
+		</section>
+
 		<!-- version details -->
-		<div class="flex p-5" style="background-color: #e8edf1; min-height: 400px; position: relative;">
+		<section class="flex p-5 home-content tinted-bg">
 			<div class="container">
 				<h3 class='mb-5'>*latest version details maybe*</h3>
 				<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit tenetur quod mollitia id asperiores
@@ -61,17 +74,14 @@
 					ut, magni nisi eligendi modi adipisci laboriosam commodi vitae eaque consectetur alias rerum nemo
 					soluta voluptatum. Saepe aspernatur, vel veritatis ratione esse ea quisquam?</p>
 			</div>
-		</div>
-
-		<div></div>
+		</section>
 
 		<!-- The Interface -->
-		<section class='home-content' style="background-color: #e8edf1; color: #252934;">
+		<section class='home-content tinted-bg'>
 			<div class="container">
 				<h3 class='mb-5'>Our Interface</h3>
 				<div class="flex position-relative" style="width: fit-content; margin: 0 auto; color: white;">
-					<img src='https://blogs.forbes.com/jasonevangelho/files/2019/02/glzrkk83f4621.png' alt="Interface"
-						width="800px">
+					<img src="../media/interface.png" alt="Interface" width="800px">
 					<span id="top-right" class="interface-tooltip" data-bs-toggle="tooltip" data-bs-placement="bottom"
 						data-bs-html="true" title="<b>TITLE</b><br/>content"><i class="fas fa-info-circle"></i></span>
 					<span id="bottom-right" class="interface-tooltip" data-bs-toggle="tooltip"
@@ -86,7 +96,7 @@
 		</section>
 
 		<!-- features -->
-		<section class='home-content'>
+		<section class='home-content light-bg'>
 			<div class="container">
 				<h3 class='mb-5'>What sets <span class="autoDL">Auto-DL</span> apart</h3>
 				<div>
@@ -126,7 +136,7 @@
 		</section>
 
 		<!-- github section -->
-		<section class='home-content'>
+		<section class='home-content dark-bg-content'>
 			<div class="container">
 				<h3 class='mb-5'>*github related*</h3>
 				<div>
@@ -149,21 +159,31 @@
 								aliquam fugit ea quam eius, iure quod cum tempore! Consectetur expedita molestias
 								tempore!</p>
 						</div>
-						<div class="col-12"><h4>repo stars........</h4></div>
+						<div class="col-12">
+							<h4>repo stars........</h4>
+						</div>
 					</div>
 				</div>
 			</div>
 		</section>
 
-		<section class='home-content'>
+		<section class='home-content light-bg'>
 			<div>
 				<h3 class='mb-5'>Something</h3>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam illo nesciunt eos corporis cumque. Maiores non libero corrupti minima voluptate aliquid, consectetur asperiores provident modi eligendi perspiciatis, nam accusantium commodi distinctio. Repellendus necessitatibus, possimus illo neque ex fugiat numquam consequuntur expedita harum dolorum incidunt beatae ratione aliquid aspernatur molestiae perferendis exercitationem rem dicta eos autem, architecto delectus vel. Dolor, quidem. Suscipit, inventore soluta aliquid autem iusto laborum optio! Qui, sunt cumque, blanditiis earum nulla corrupti eius dignissimos vero voluptate praesentium aut dolor minima modi voluptates. Voluptate, qui! Sequi quidem explicabo facilis iste quod! Officia obcaecati impedit explicabo exercitationem, dolorum doloremque?</p>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam illo nesciunt eos corporis cumque.
+					Maiores non libero corrupti minima voluptate aliquid, consectetur asperiores provident modi eligendi
+					perspiciatis, nam accusantium commodi distinctio. Repellendus necessitatibus, possimus illo neque ex
+					fugiat numquam consequuntur expedita harum dolorum incidunt beatae ratione aliquid aspernatur
+					molestiae perferendis exercitationem rem dicta eos autem, architecto delectus vel. Dolor, quidem.
+					Suscipit, inventore soluta aliquid autem iusto laborum optio! Qui, sunt cumque, blanditiis earum
+					nulla corrupti eius dignissimos vero voluptate praesentium aut dolor minima modi voluptates.
+					Voluptate, qui! Sequi quidem explicabo facilis iste quod! Officia obcaecati impedit explicabo
+					exercitationem, dolorum doloremque?</p>
 			</div>
 		</section>
 
 		<!-- Testinomy Carousel -->
-		<section class='home-content' style="background-color: transparent !important;">
+		<section class='home-content dark-bg-content' style="background-color: transparent !important;">
 			<span></span>
 			<h3 class='mb-5'>What Our Users say</h3>
 			<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" style="height: 400px">
@@ -241,6 +261,28 @@
 		</section>
 
 	</main>
+
+	<!-- youtube demo modal -->
+	<div class="modal fade" id="youtubeModal" tabindex="-1" aria-labelledby="youtubeModalLabel" aria-hidden="true">
+		<div class="flex modal-dialog" style="height: 100%;">
+			<div class="modal-content" style="width: fit-content;">
+				<!-- <div class="modal-header">
+                    <h5 class="modal-title" id="youtubeModalLabel">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div> -->
+				<div class="modal-body">
+					<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/6uEt88vQxQU"
+						title="Auto-DL Demo" frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+						allowfullscreen></iframe>
+				</div>
+				<!-- <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div> -->
+			</div>
+		</div>
+	</div>
 
 	<footer></footer>
 

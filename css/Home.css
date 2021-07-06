@@ -24,7 +24,7 @@
 .home-head {
 	display: flex;
 	position: relative;
-	
+
 	/* background-color: #2B82D5; */
 	/* background-color: #023e8a; */
 	/* background: url('https://images.unsplash.com/photo-1527474305487-b87b222841cc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1934&q=80'); */
@@ -65,12 +65,12 @@
 
 /* canvas */
 .canvas {
-    /* background: url('https://auto-dl.github.io/style/../img/filler.png') center center/cover; */
-    height: 100%;
-    left: 0;
-    position: fixed;
-    top: 0;
-    width: 100vw;
+	/* background: url('https://auto-dl.github.io/style/../img/filler.png') center center/cover; */
+	height: 100%;
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 100vw;
 }
 
 canvas {
@@ -81,14 +81,20 @@ canvas {
 	/* background-color: #e9ecef; */
 	position: relative;
 	min-height: 400px;
-	padding: 5em;
+	padding: 6em 5em;
 }
-.home-content:nth-child(odd) {
+
+.home-content.light-bg {
 	background-color: #fff;
 	color: #252934;
 }
 
-.home-content:nth-child(even) {
+.home-content.tinted-bg {
+	background-color: #e8edf1;
+	color: #252934;
+}
+
+.home-content.dark-bg-content {
 	color: white;
 	background-color: #252934;
 }
@@ -101,14 +107,17 @@ canvas {
 	top: 10px;
 	right: 10px;
 }
+
 .interface-tooltip#bottom-right {
 	bottom: 10px;
 	right: 10px;
 }
+
 .interface-tooltip#top-left {
 	top: 10px;
 	left: 10px;
 }
+
 .interface-tooltip#bottom-left {
 	bottom: 10px;
 	left: 10px;
@@ -121,8 +130,7 @@ canvas {
 }
 
 .tooltip-arrow::before,
-.tooltip-arrow::before
-{
+.tooltip-arrow::before {
 	border-bottom-color: white !important;
 }
 
@@ -130,6 +138,23 @@ canvas {
 	font-size: 3.5em;
 }
 
+#yt-btn {
+	background-color: #252934;
+	color: white;
+	font-size: 3em;
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	text-decoration: none;
+	cursor: pointer;
+	box-shadow: 2px 6px 7px rgb(0 0 0 / 46%);
+	opacity: 0.8;
+}
+
+#yt-btn:hover {
+	background-color: #f72585;
+	opacity: 1;
+}
 
 /* carosel */
 .carousel-inner,
@@ -144,6 +169,8 @@ canvas {
 
 .carousel-caption .card {
 	padding: 3em;
+	background-color: #3f4556a3;
+	color: white;
 }
 
 .carousel-control-prev,

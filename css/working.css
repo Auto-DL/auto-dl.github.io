@@ -1,0 +1,37 @@
+.step-details {
+	margin: 5em 3em;
+}
+.step-details .card {
+	min-height: 80vh;
+	border-radius: 4em;
+	padding: 2em 7em;
+	font-size: 1.3em;
+	box-shadow: -1px 3px 16px 0px #888888;
+
+}
+
+.step-details:nth-child(odd) .card h2 {
+	/* color: #f72585; */
+	-webkit-text-fill-color: transparent;
+	/* background: linear-gradient(220deg, #04c2c9 43.2%, #f72585 56%); */
+	background: linear-gradient(125deg, #f72585 42%, #04c2c9 61.2%);
+	-webkit-background-clip: text;
+	background-clip: text;
+}
+
+.step-details:nth-child(even) .card h2 {
+	-webkit-text-fill-color: transparent;
+	background: linear-gradient(87.54deg, #9867f0 39.2%, #ed4e50 57.14%);
+	-webkit-background-clip: text;
+	background-clip: text;
+}
+
+.step-details:nth-child(odd) .card {
+	background-color: #252934;
+	color: white;
+	background-image: linear-gradient(320deg, #271f7d -36%, #252934 36%);
+}
+
+.step-details:nth-child(even) .card {
+	background: linear-gradient(143deg, #ffffff 55%, #a400ff3d 90%);
+}
