@@ -129,9 +129,20 @@ canvas {
 	padding: 1em 1.5em !important;
 }
 
-.tooltip-arrow::before,
-.tooltip-arrow::before {
+/* .tooltip-arrow::before {
 	border-bottom-color: white !important;
+}
+
+.tooltip-arrow {
+	border-right: 1px solid #252934;
+	border-left: 1px solid #252934;
+	transform: rotateX(90deg);
+} */
+
+.fa-info-circle:before {
+    background: #252934;
+    border-radius: 50%;
+	box-shadow: 4px 4px 10px rgb(0 0 0 / 16%);
 }
 
 .feat i {
@@ -150,10 +161,14 @@ canvas {
 	box-shadow: 2px 6px 7px rgb(0 0 0 / 46%);
 	opacity: 0.8;
 }
-
-#yt-btn:hover {
+.demo-vid {
+	cursor: pointer;
+}
+.demo-vid:hover #yt-btn {
 	background-color: #f72585;
 	opacity: 1;
+	transform: scale(1.2);
+	transition: 0.4s;
 }
 
 /* carosel */
@@ -204,6 +219,13 @@ canvas {
 /* .qot {
 	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 } */
+
+#newsletter .form-control:focus {
+    border-color: #252934;
+    outline: 0;
+    box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%), 0 0 8px #25293466;
+	transition: 0.4s;
+}
 
 footer {
 	position: absolute;

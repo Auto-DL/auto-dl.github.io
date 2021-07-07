@@ -21,3 +21,6 @@ $(window).on('load', function () {
 });
 
 // document.querySelector('header').classList.add("home-head");
+$(window).on('load', function () {
+    floatySpace();
+});

@@ -53,9 +53,9 @@
 			<div class="container">
 				<h3 class="mb-5">Watch Demo</h3>
 				<div>
-					<span class="flex">
+					<span class="flex demo-vid" data-bs-toggle="modal" data-bs-target="#youtubeModal">
 						<img class="img-fluid" src="../media/layoutSS.png">
-						<a class="pe-auto btn rounded-circle" id="yt-btn" data-bs-toggle="modal" data-bs-target="#youtubeModal"><i class="fas fa-play"></i></a>
+						<a class="pe-auto btn rounded-circle flex" id="yt-btn"><i class="fas fa-play"></i></a>
 					</span>
 				</div>
 			</div>
@@ -81,7 +81,7 @@
 			<div class="container">
 				<h3 class='mb-5'>Our Interface</h3>
 				<div class="flex position-relative" style="width: fit-content; margin: 0 auto; color: white;">
-					<img src="../media/interface.png" alt="Interface" width="800px">
+					<img class="img-fluid" src="../media/interface.png" alt="Interface" width="800px">
 					<span id="top-right" class="interface-tooltip" data-bs-toggle="tooltip" data-bs-placement="bottom"
 						data-bs-html="true" title="<b>TITLE</b><br/>content"><i class="fas fa-info-circle"></i></span>
 					<span id="bottom-right" class="interface-tooltip" data-bs-toggle="tooltip"
@@ -260,6 +260,19 @@
 			</div>
 		</section>
 
+		<!-- newsletter -->
+		<section class="flex home-content light-bg" id="newsletter">
+			<div class="container">
+				<h3>** Newsletter **</h3>
+				<div>
+					<p class="mb-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius ea, sapiente minus officia porro assumenda quia laboriosam asperiores molestias nihil.</p>
+					<div class="input-group mt-5 align-self-center" style="padding: 0 25%;">
+						<input type="text" class="form-control" placeholder="Enter Your Email" aria-label="Enter Your Email" aria-describedby="button-addon2" required>
+						<a class="btn btn-outline-secondary" type="button" id="button-addon2">Subscribe</a>
+					</div>
+				</div>
+			</div>
+		</section>
 	</main>
 
 	<!-- youtube demo modal -->
@@ -289,19 +302,6 @@
 	<script type="text/javascript" src="../js/home.js"></script>
 	<script type="text/javascript" src="../js/pt.min.js"></script>
 	<script type="text/javascript" src="../js/canvas.js"></script>
-
-	<script>
-		$(function () {
-			$('header').load('header.html #reuse-head');
-		});
-		$(window).on('load', function () {
-
-			floatySpace();
-		});
-		baseScripts();
-		Footer();
-	</script>
-
 
 </body>
 

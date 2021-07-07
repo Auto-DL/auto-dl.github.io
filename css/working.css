@@ -1,8 +1,12 @@
 .step-details {
 	margin: 5em 3em;
+	position: relative;
+	display: flex;
+	align-items: center;
 }
+
 .step-details .card {
-	min-height: 80vh;
+	min-height: 50vh;
 	border-radius: 4em;
 	padding: 2em 7em;
 	font-size: 1.3em;
@@ -34,4 +38,21 @@
 
 .step-details:nth-child(even) .card {
 	background: linear-gradient(143deg, #ffffff 55%, #a400ff3d 90%);
+}
+
+.line-bg {
+	position: absolute;
+	height: 142.2%;
+	width: 50px;
+	background-image: url('../media/line.svg');
+	background-repeat: no-repeat;
+	z-index: 1;
+	opacity: 0.2;
+	top: -15%;
+	background-size: 100% 100%;
+}
+
+.step-line {
+	margin: 0 3em;
+	z-index: 3;
 }

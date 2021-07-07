@@ -9,8 +9,8 @@ $(window).on('load', function () {
     var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
         return new bootstrap.Tooltip(tooltipTriggerEl, {
             template: `<div class="tooltip" role="tooltip">
-                <div class="tooltip-arrow"></div>
-                <div class="tooltip-inner"></div>
+                <div class="tooltip-arrow border-right border-left border-secondary"></div>
+                <div class="tooltip-inner border border-secondary"></div>
             </div>`})
     })
 });
@@ -22,6 +22,7 @@ function active(id) {
 function baseScripts() {
     $('head').append(`
 		<link rel="icon" href="../media/favicon.ico" />
+        
 		<!-- <meta name="google-site-verification" content="p3viVcODf5JRawEQyv8vij_vtCmqGnIVAcgdJlMHdZ8" />
 		<meta name="google-site-verification" content="xee37Efxw7z9-O5cjvQ02ERSoAA3jwKI9Bu5v5yClbw" /> -->
 
