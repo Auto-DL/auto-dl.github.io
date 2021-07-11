@@ -177,16 +177,53 @@ h6 {
 .nav-link {
 	font-size: 0.75em;
 	text-transform: uppercase;
+	color: #fff;
 }
 
 .nav-link:hover {
 	color: #fff !important;
+	/* color: #f72585 !important; */
 }
 
 .path {
 	stroke-dasharray: 1000;
 	stroke-dashoffset: 1000;
 	animation: dash 5s linear forwards;
+}
+
+.anim-icon-menu-004 {
+	height: 50px;
+	width: 50px;
+	/* display: flex;
+	align-items: flex-start;
+	justify-content: center; */
+	position: relative;
+}
+.anim-icon-menu-004 svg {
+	transform: scale(1.5) !important;
+	height: auto !important;
+	width: auto !important;
+	position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.nav-toggler {
+	text-decoration: none !important;
+	color: inherit !important;
+	border: none;
+	padding: 0%;
+}
+
+.nav-toggler:hover {
+	color: #fff !important;
+}
+/* .anim-icon-menu-004 svg g {
+	transform: scale(1.5);
+} */
+
+.anim-icon-menu-004 path {
+	stroke: currentColor !important;
 }
 
 @keyframes dash {

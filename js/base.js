@@ -1,26 +1,55 @@
 $(function () {
-    $('header').load('header.html #reuse-head');
-    baseScripts();
-    Footer();
+	$('header').load('header.html #reuse-head');
+	baseScripts();
+	Footer();
 });
 
 $(window).on('load', function () {
-    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-        return new bootstrap.Tooltip(tooltipTriggerEl, {
-            template: `<div class="tooltip" role="tooltip">
+	var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+	var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+		return new bootstrap.Tooltip(tooltipTriggerEl, {
+			template: `<div class="tooltip" role="tooltip">
                 <div class="tooltip-arrow border-right border-left border-secondary"></div>
                 <div class="tooltip-inner border border-secondary"></div>
-            </div>`})
-    })
+            </div>`
+		})
+	});
+	// var exampleEl = document.getElementById('top-right')
+	// var popover = new bootstrap.Popover(exampleEl, {})
+
+	var popoverTriggerList = [].slice.call(document.querySelectorAll('.interface-tooltip'))
+	var popoverList = popoverTriggerList.map(function (ele) {
+		return new bootstrap.Popover(ele, {})
+	});
+
+
+	/* Play animation on click - second click play animation forward */
+	var icon8 = document.querySelector('.anim-icon-menu-004');
+
+	var animation8 = bodymovin.loadAnimation({
+		container: icon8,
+		renderer: 'svg',
+		loop: false,
+		autoplay: false,
+		path: "../media/menuV4.json"
+	});
+	animation8.setSpeed(1.4);
+
+
+	var direction8 = 1;
+	icon8.addEventListener('click', (e) => {
+		animation8.setDirection(direction8);
+		animation8.play();
+		direction8 = -direction8;
+	});
 });
 
 function active(id) {
-    document.getElementById(id).className = 'active';
+	document.getElementById(id).className = 'active';
 }
 
 function baseScripts() {
-    $('head').append(`
+	$('head').append(`
 		<link rel="icon" href="../media/favicon.ico" />
         
 		<!-- <meta name="google-site-verification" content="p3viVcODf5JRawEQyv8vij_vtCmqGnIVAcgdJlMHdZ8" />
@@ -36,7 +65,7 @@ function baseScripts() {
 		<link rel="stylesheet" type="text/css" href="../css/base.css">
 	`);
 
-    $('body').append(`
+	$('body').append(`
 		<script src="https://kit.fontawesome.com/553c78d64a.js" crossorigin="anonymous"></script>
 
 		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
@@ -46,6 +75,9 @@ function baseScripts() {
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
 			integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
 		</script>
+
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.6.4/lottie_svg.min.js'>
+		</script>
     `);
 
 }
@@ -53,44 +85,44 @@ function baseScripts() {
 
 
 const footerData = [{
-        title: 'Get Started',
-        info: ['Why Auto-DL', 'Install', 'Pricing'],
-    }, {
-        title: 'Support',
-        info: ['Docs', 'FAQ', 'Feedback'],
-    }, {
-        title: 'Company',
-        info: ['About', 'Jobs', 'Contact'],
-    },
-    {
-        title: 'Development',
-        info: ['Contribute', 'Status', 'Work with Us'],
-    }
+		title: 'Get Started',
+		info: ['Why Auto-DL', 'Install', 'Pricing'],
+	}, {
+		title: 'Support',
+		info: ['Docs', 'FAQ', 'Feedback'],
+	}, {
+		title: 'Company',
+		info: ['About', 'Jobs', 'Contact'],
+	},
+	{
+		title: 'Development',
+		info: ['Contribute', 'Status', 'Work with Us'],
+	}
 ];
 
 function Footer() {
-    let foot = ``;
+	let foot = ``;
 
-    foot = `
+	foot = `
     <div class='container'>
     <div class='row mt-4'>
         `;
 
-    footerData.forEach(item => {
-        // console.log("items", item.info)
-        foot += `
+	footerData.forEach(item => {
+		// console.log("items", item.info)
+		foot += `
         <div class='col'>
             <h4>` + item.title + `</h4>
             <ul class='foot-list'>
             ` +
-            item.info.map(x => `<li>` + x + `</li>`).join('') +
-            `
+			item.info.map(x => `<li>` + x + `</li>`).join('') +
+			`
             </ul>
         </div>`;
-    });
+	});
 
 
-    foot += `
+	foot += `
         <div class='col-12 quote mt-4'>
             “Deep learning will revolutionize supply chain automation.” <br />-Dave Waters
         </div>
@@ -121,5 +153,5 @@ function Footer() {
 </div>
     `;
 
-    document.querySelector('footer').innerHTML = foot;
+	document.querySelector('footer').innerHTML = foot;
 }

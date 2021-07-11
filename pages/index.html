@@ -48,19 +48,6 @@
 			</div>
 		</section>
 
-		<!-- demo video -->
-		<section class="home-content dark-bg-content">
-			<div class="container">
-				<h3 class="mb-5">Watch Demo</h3>
-				<div>
-					<span class="flex demo-vid" data-bs-toggle="modal" data-bs-target="#youtubeModal">
-						<img class="img-fluid" src="../media/layoutSS.png">
-						<a class="pe-auto btn rounded-circle flex" id="yt-btn"><i class="fas fa-play"></i></a>
-					</span>
-				</div>
-			</div>
-		</section>
-
 		<!-- version details -->
 		<section class="flex p-5 home-content tinted-bg">
 			<div class="container">
@@ -76,13 +63,46 @@
 			</div>
 		</section>
 
+		<!-- demo video -->
+		<section class="home-content dark-bg-content">
+			<div class="container">
+				<h3 class="mb-5">Watch Demo</h3>
+				<div>
+					<span class="flex demo-vid" data-bs-toggle="modal" data-bs-target="#youtubeModal">
+						<img class="img-fluid" src="../media/layoutSS.png">
+						<a class="pe-auto btn rounded-circle flex" id="yt-btn"><i class="fas fa-play"></i></a>
+					</span>
+				</div>
+			</div>
+		</section>
+
 		<!-- The Interface -->
 		<section class='home-content tinted-bg'>
 			<div class="container">
 				<h3 class='mb-5'>Our Interface</h3>
-				<div class="flex position-relative" style="width: fit-content; margin: 0 auto; color: white;">
+				<div class="flex position-relative" id="interface"
+					style="width: fit-content; margin: 0 auto; color: white;">
 					<img class="img-fluid" src="../media/interface.png" alt="Interface" width="800px">
-					<span id="top-right" class="interface-tooltip" data-bs-toggle="tooltip" data-bs-placement="bottom"
+					<!-- popovers -->
+					<a id="top-right" class="interface-tooltip" tabindex="0" class="btn btn-lg btn-danger" role="button" data-bs-toggle="popover" data-bs-placement="top"
+						data-bs-trigger="focus" title="Title" data-bs-content="And here's some amazing content. It's very engaging. Right?">
+						<i class="fas fa-info-circle"></i>
+					</a>
+					<a id="bottom-right" class="interface-tooltip" tabindex="0" class="btn btn-lg btn-danger" role="button" data-bs-toggle="popover" data-bs-placement="top"
+						data-bs-trigger="focus" title="Title" data-bs-content="And here's some amazing content. It's very engaging. Right?">
+						<i class="fas fa-info-circle"></i>
+					</a>
+					<a id="top-left" class="interface-tooltip" tabindex="0" class="btn btn-lg btn-danger" role="button" data-bs-toggle="popover" data-bs-placement="top"
+						data-bs-trigger="focus" title="Title" data-bs-content="And here's some amazing content. It's very engaging. Right?">
+						<i class="fas fa-info-circle"></i>
+					</a>
+					<a id="bottom-left" class="interface-tooltip" tabindex="0" class="btn btn-lg btn-danger" role="button" data-bs-toggle="popover" data-bs-placement="top"
+						data-bs-trigger="focus" title="Title" data-bs-content="And here's some amazing content. It's very engaging. Right?">
+						<i class="fas fa-info-circle"></i>
+					</a>
+
+					<!-- toolitips -->
+					<!-- <span id="top-right" class="interface-tooltip" data-bs-toggle="tooltip" data-bs-placement="bottom"
 						data-bs-html="true" title="<b>TITLE</b><br/>content"><i class="fas fa-info-circle"></i></span>
 					<span id="bottom-right" class="interface-tooltip" data-bs-toggle="tooltip"
 						data-bs-placement="bottom" data-bs-html="true" title="<b>TITLE</b><br/>content"><i
@@ -90,7 +110,7 @@
 					<span id="top-left" class="interface-tooltip" data-bs-toggle="tooltip" data-bs-placement="bottom"
 						data-bs-html="true" title="<b>TITLE</b><br/>content"><i class="fas fa-info-circle"></i></span>
 					<span id="bottom-left" class="interface-tooltip" data-bs-toggle="tooltip" data-bs-placement="bottom"
-						data-bs-html="true" title="<b>TITLE</b><br/>content"><i class="fas fa-info-circle"></i></span>
+						data-bs-html="true" title="<b>TITLE</b><br/>content"><i class="fas fa-info-circle"></i></span> -->
 				</div>
 			</div>
 		</section>
@@ -128,7 +148,7 @@
 							</p>
 						</div>
 						<div class="col-12">
-							<a class="dark-btn btn " href="features.html">Learn More</a>
+							<a class="dark-btn btn rounded-pill" href="features.html">Learn More</a>
 						</div>
 					</div>
 				</div>
@@ -265,9 +285,11 @@
 			<div class="container">
 				<h3>** Newsletter **</h3>
 				<div>
-					<p class="mb-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius ea, sapiente minus officia porro assumenda quia laboriosam asperiores molestias nihil.</p>
+					<p class="mb-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius ea, sapiente minus
+						officia porro assumenda quia laboriosam asperiores molestias nihil.</p>
 					<div class="input-group mt-5 align-self-center" style="padding: 0 25%;">
-						<input type="text" class="form-control" placeholder="Enter Your Email" aria-label="Enter Your Email" aria-describedby="button-addon2" required>
+						<input type="text" class="form-control" placeholder="Enter Your Email"
+							aria-label="Enter Your Email" aria-describedby="button-addon2" required>
 						<a class="btn btn-outline-secondary" type="button" id="button-addon2">Subscribe</a>
 					</div>
 				</div>
