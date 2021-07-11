@@ -14,8 +14,6 @@ $(window).on('load', function () {
             </div>`
 		})
 	});
-	// var exampleEl = document.getElementById('top-right')
-	// var popover = new bootstrap.Popover(exampleEl, {})
 
 	var popoverTriggerList = [].slice.call(document.querySelectorAll('.interface-tooltip'))
 	var popoverList = popoverTriggerList.map(function (ele) {
@@ -76,8 +74,7 @@ function baseScripts() {
 			integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
 		</script>
 
-		<script src='https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.6.4/lottie_svg.min.js'>
-		</script>
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.6.4/lottie_svg.min.js'></script>
     `);
 
 }

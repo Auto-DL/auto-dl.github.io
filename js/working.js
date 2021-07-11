@@ -12,7 +12,7 @@ function check_if_in_view() {
 	check_if___($('.inner-content'), 'text-anim', false);
 
 	// lottie animation
-	check_if___($('#completed'), '_', true);
+	// check_if___($('#completed'), '_', true);
 }
 
 function check_if___($animation_elements, clas, lottie) {
@@ -20,7 +20,7 @@ function check_if___($animation_elements, clas, lottie) {
 	var window_top_position = $window.scrollTop();
 	var window_bottom_position = (window_top_position + window_height);
 
-	if (lottie === false) {
+	// if (lottie === false) {
 		$.each($animation_elements, function () {
 			var $element = $(this);
 			var element_height = $element.outerHeight();
@@ -38,10 +38,10 @@ function check_if___($animation_elements, clas, lottie) {
 				$element.removeClass(clas);
 			}
 		});
-	}
+	// }
 
 	// for lottie animation
-	else {
+/*	else {
 		var $element = $animation_elements;
 		var element_height = $element.outerHeight();
 		var element_top_position = $element.offset().top + 100;
@@ -56,10 +56,8 @@ function check_if___($animation_elements, clas, lottie) {
 		} else if (classList.includes(clas)) {
 			$element.removeClass(clas);
 		}
-	}
+	}*/
 }
 
-// $window.on('load', () => {
 $window.on('scroll resize', check_if_in_view);
 $window.trigger('scroll');
-// });
