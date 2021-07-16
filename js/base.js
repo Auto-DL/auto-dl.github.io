@@ -1,5 +1,16 @@
 $(function () {
 	$('header').load('header.html #reuse-head');
+		
+	var fo = document.createElement('DIV')
+	// fo.appendChild(data); 
+	document.querySelector('footer').appendChild(fo);
+
+	$(fo).load('header.html #reuse-footer');
+	// $.get( "header.html", function( data ) {
+	// 	// the contents is now in the variable data
+	// 	console.log( data );
+	// });
+
 	baseScripts();
 	Footer();
 });
@@ -80,7 +91,6 @@ function baseScripts() {
 }
 
 
-
 const footerData = [{
 		title: 'Get Started',
 		info: ['Why Auto-DL', 'Install', 'Pricing'],
@@ -101,7 +111,7 @@ function Footer() {
 	let foot = ``;
 
 	foot = `
-    <div class='container'>
+    <div class='footer'>
     <div class='row mt-4'>
         `;
 
@@ -150,5 +160,7 @@ function Footer() {
 </div>
     `;
 
-	document.querySelector('footer').innerHTML = foot;
+	// document.querySelector('footer').innerHTML = foot;
+	$('footer').append(foot);
+	console.log("hi footer js");
 }

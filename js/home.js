@@ -16,7 +16,7 @@ document.addEventListener("scroll", function () {
     // newsletter-modal
     if (firstTime === true && document.querySelector("#newsletter-modal") != null) {
         var newsModal = document.getElementById('newsletter-modal');
-        const minHeight = 800;
+        const minHeight = 1200;
 
         const distFromTop = Math.abs(
             document.body.getBoundingClientRect().top

@@ -281,7 +281,7 @@ main .head-bg {
 }
 
 /* footer styles */
-footer {
+.footer {
 	padding: 1em 2em;
 	/* background-color: #012A4A; */
 	background-color: #252934;
@@ -289,6 +289,34 @@ footer {
 	color: #ffffffaf;
 	text-align: center;
 }
+
+footer #newsletter {
+	width: 100%;
+	padding: 5em 0;
+	/* margin-bottom: 5rem; */
+	background-color: #e8edf1;
+	color: #252934;
+}
+
+#newsletter-modal .form-control:focus,
+#newsletter .form-control:focus {
+	border-color: #252934;
+	outline: 0;
+	box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%), 0 0 8px #25293466;
+	transition: 0.4s;
+}
+
+#newsletter-modal #news-image {
+	background-image: url('https://images.unsplash.com/photo-1604231251350-a1a768e95033?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80');
+    height: 100%;
+    background-position: center;
+    width: 100%;
+}
+
+#newsletter-modal .modal-content {
+	background-color: silver;
+}
+
 
 footer h4 {
 	color: #fff;
