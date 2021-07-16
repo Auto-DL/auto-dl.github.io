@@ -40,7 +40,7 @@ $(window).on('load', function () {
 		renderer: 'svg',
 		loop: false,
 		autoplay: false,
-		path: "../media/menuV4.json"
+		path: "media/menuV4.json"
 	});
 	animation8.setSpeed(1.4);
 
