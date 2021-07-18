@@ -168,7 +168,8 @@
 }
 
 /* slide animations */
-.left-slide, .right-slide {
+.left-slide,
+.right-slide {
 	visibility: hidden;
 }
 
@@ -210,17 +211,17 @@
 }
 
 .go-right {
-	animation: slideFromLeft 1.2s cubic-bezier(.16,1,.3,1) forwards;
+	animation: slideFromLeft 1.2s cubic-bezier(.16, 1, .3, 1) forwards;
 	visibility: visible;
 }
 
 .go-left {
-	animation: slideFromRight 1.2s cubic-bezier(.16,1,.3,1) forwards;
+	animation: slideFromRight 1.2s cubic-bezier(.16, 1, .3, 1) forwards;
 	visibility: visible;
 }
 
 .from-down {
-	animation: slideFromBottom 1.2s cubic-bezier(.16,1,.3,1) forwards;
+	animation: slideFromBottom 1.2s cubic-bezier(.16, 1, .3, 1) forwards;
 	visibility: visible;
 }
 
@@ -239,4 +240,38 @@
 	transition: opacity 1.2s cubic-bezier(.16, 1, .3, 1), transform 1.2s cubic-bezier(.16, 1, .3, 1);
 	transform: translateX(0px);
 	opacity: 1;
+}
+
+
+
+/* responsive */
+@media (max-width: 767px) {
+	.step-details .card {
+		padding: 3em 0;
+	}
+	
+	.step-details .inner-content {
+		z-index: 3;
+		position: relative;
+	}
+
+	.step-details .light-bg .inner-content {
+		background-color: #fff;
+		z-index: 2;
+	}
+
+	.step-details .dark-bg .inner-content {
+		background-color: #252934f1;
+	}
+}
+
+@media (max-width: 992px) {
+	.main-section {
+		padding: 5em 0;
+	}
+	.step-details .card {
+		width: 100%;
+	}
+
+	
 }

@@ -126,9 +126,11 @@ h6 {
 	top: 0;
 	width: 100%;
 	left: 0;
-	background-color: transparent !important;
 	font-family: 'Rubik', sans-serif;
 	font-weight: 300;
+	/* background-color: transparent !important; */
+	background-color: #252934f1;
+	z-index: 103;
 }
 
 /* .navbar-collapse.show {
