@@ -14,10 +14,17 @@ body {
 	text-align: center;
 }
 
-/* ::selection {
-	background-color: #001c55;
+main ::selection {
+	background-color: #252934;
 	color: #fff;
-} */
+}
+
+footer ::selection,
+header ::selection, 
+.home-content.dark-bg-content ::selection {
+	color: #252934;
+	background-color: rgba(255, 255, 255, 0.753);
+}
 
 ::-webkit-scrollbar {
 	width: 10px;
@@ -201,13 +208,14 @@ h6 {
 	justify-content: center; */
 	position: relative;
 }
+
 .anim-icon-menu-004 svg {
 	transform: scale(1.5) !important;
 	height: auto !important;
 	width: auto !important;
 	position: absolute;
-    bottom: 0;
-    right: 0;
+	bottom: 0;
+	right: 0;
 }
 
 .nav-toggler {
@@ -220,6 +228,7 @@ h6 {
 .nav-toggler:hover {
 	color: #fff !important;
 }
+
 /* .anim-icon-menu-004 svg g {
 	transform: scale(1.5);
 } */
@@ -238,14 +247,14 @@ h6 {
 /* head bg for all pages */
 main .head-bg {
 	background-image: url('../media/headWall.svg');
-    width: 100vw;
-    min-height: 43vh;
-    background-position: center;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: "Rubik", sans-serif;
+	width: 100vw;
+	min-height: 43vh;
+	background-position: center;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: "Rubik", sans-serif;
 }
 
 .flex {
@@ -261,6 +270,7 @@ main .head-bg {
 	transition: 0.4s;
 	border: 1px solid #252934;
 }
+
 .dark-btn:hover {
 	background-color: #252934;
 	color: white;
@@ -273,6 +283,7 @@ main .head-bg {
 	transition: 0.4s;
 	border: 1px solid #fff;
 }
+
 .light-btn:hover {
 	background-color: white;
 	color: #252934;
@@ -310,13 +321,19 @@ footer #newsletter {
 
 #newsletter-modal #news-image {
 	background-image: url('https://images.unsplash.com/photo-1604231251350-a1a768e95033?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80');
-    height: 100%;
-    background-position: center;
-    width: 100%;
+	height: 100%;
+	background-position: center;
+	width: 100%;
 }
 
-#newsletter-modal .modal-content {
+/* #newsletter-modal .modal-content {
 	background-color: silver;
+} */
+
+@media (max-width: 576px) {
+	#news-image {
+		height: 20vh !important;
+	}
 }
 
 
@@ -339,17 +356,19 @@ footer #follow li {
 	margin: 0 0.5em;
 }
 
-footer #follow a {
-	color: #ffffffaf;
-	text-decoration: none;
-}
-
-footer #follow a:hover {
-	color: #fff;
-}
-
 footer .foot-list {
 	list-style: none;
 	padding: 0;
 	font-weight: 300;
+}
+
+footer #follow a,
+footer .foot-list a {
+	color: #ffffffaf;
+	text-decoration: none;
+}
+
+footer #follow a:hover,
+footer .foot-list a:hover {
+	color: #fff;
 }

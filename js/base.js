@@ -1,21 +1,23 @@
 $(function () {
 	$('header').load('header.html #reuse-head');
-		
-	var fo = document.createElement('DIV')
-	// fo.appendChild(data); 
-	document.querySelector('footer').appendChild(fo);
 
-	$(fo).load('header.html #reuse-footer');
+	// var fo = document.createElement('DIV')
+	// // fo.appendChild(data); 
+	// document.querySelector('footer').appendChild(fo);
+
+	$('footer').load('header.html #footer');
 	// $.get( "header.html", function( data ) {
 	// 	// the contents is now in the variable data
 	// 	console.log( data );
 	// });
 
 	baseScripts();
-	Footer();
 });
 
 $(window).on('load', function () {
+	
+	Footer();
+
 	var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
 	var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
 		return new bootstrap.Tooltip(tooltipTriggerEl, {
@@ -53,10 +55,6 @@ $(window).on('load', function () {
 	});
 });
 
-function active(id) {
-	document.getElementById(id).className = 'active';
-}
-
 function baseScripts() {
 	$('head').append(`
 		<link rel="icon" href="media/favicon.ico" />
@@ -92,28 +90,57 @@ function baseScripts() {
 
 
 const footerData = [{
-		title: 'Get Started',
-		info: ['Why Auto-DL', 'Install', 'Pricing'],
+	title: 'Get Started',
+	info: [{
+		name: 'Why Auto-DL',
+		link: "#"
 	}, {
-		title: 'Support',
-		info: ['Docs', 'FAQ', 'Feedback'],
+		name: 'Install',
+		link: "#"
 	}, {
-		title: 'Company',
-		info: ['About', 'Jobs', 'Contact'],
-	},
-	{
-		title: 'Development',
-		info: ['Contribute', 'Status', 'Work with Us'],
-	}
-];
+		name: 'Pricing',
+		link: "#"
+	}]
+}, {
+	title: 'Support',
+	info: [{
+		name: 'Docs',
+		link: "#"
+	}, {
+		name: 'FAQ',
+		link: "#",
+	}, {
+		name: 'Feedback',
+		link: "#",
+	}]
+}, {
+	title: 'Company',
+	info: [{
+		name: 'About',
+		link: "#",
+	}, {
+		name: 'Jobs',
+		link: "#",
+	}, {
+		name: 'Contact',
+		link: "#",
+	}]
+}, {
+	title: 'Development',
+	info: [{
+		name: 'Contribute',
+		link: "#"
+	}, {
+		name: 'Status',
+		link: "#"
+	}, {
+		name: 'Work with Us',
+		link: "#"
+	}]
+}];
 
 function Footer() {
 	let foot = ``;
-
-	foot = `
-    <div class='footer'>
-    <div class='row mt-4'>
-        `;
 
 	footerData.forEach(item => {
 		// console.log("items", item.info)
@@ -122,12 +149,13 @@ function Footer() {
             <h4>` + item.title + `</h4>
             <ul class='foot-list'>
             ` +
-			item.info.map(x => `<li>` + x + `</li>`).join('') +
+			item.info.map(x => `<li><a href='${x.link}'>${x.name}</a></li>`).join('') +
 			`
             </ul>
         </div>`;
 	});
 
+	document.getElementById('footer-nav').innerHTML = (foot);
 
 	foot += `
         <div class='col-12 quote mt-4'>
@@ -161,6 +189,6 @@ function Footer() {
     `;
 
 	// document.querySelector('footer').innerHTML = foot;
-	$('footer').append(foot);
-	console.log("hi footer js");
+	// $('footer').append(foot);
+	// console.log("hi footer js");
 }
