@@ -288,23 +288,27 @@
 			<div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable">
 				<div class="modal-content">
 					<div class="row">
-						<div class="col-12 col-sm-6">
+						<div class="col-12 col-sm-6" style="min-height: 30vh;">
 							<div id="news-image"></div>
 						</div>
 						<div class="col-12 col-sm-6">
 							<div class="modal-header text-centergit border-0">
-								<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+								<button type="button" class="btn-close" data-bs-dismiss="modal"
+									aria-label="Close"></button>
 							</div>
 							<div class="modal-body">
 								<h5 class="modal-title mb-3">** Newsletter **</h5>
-								<p class="mb-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius ea, sapiente
+								<p class="mb-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius ea,
+									sapiente
 									minus officia porro assumenda quia laboriosam asperiores molestias nihil.</p>
 							</div>
 							<div class="modal-footer border-0">
 								<div class="input-group align-self-center row">
-									<input type="text" class="col-12 col-lg-8 form-control" placeholder="Enter Your Email"
-										aria-label="Enter Your Email" aria-describedby="button-addon2" required>
-									<a class="col-12 col-lg-4 btn btn-outline-secondary" type="button" id="button-addon2">Subscribe</a>
+									<input type="text" class="col-12 col-lg-8 form-control"
+										placeholder="Enter Your Email" aria-label="Enter Your Email"
+										aria-describedby="button-addon2" required>
+									<a class="col-12 col-lg-4 btn btn-outline-secondary" type="button"
+										id="button-addon2">Subscribe</a>
 								</div>
 								<!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
 								<button type="button" class="btn btn-primary">Save changes</button> -->
@@ -317,20 +321,21 @@
 
 		<!-- youtube demo modal -->
 		<div class="modal fade" id="youtubeModal" tabindex="-1" aria-labelledby="youtubeModalLabel" aria-hidden="true">
-			<div class="flex modal-dialog" style="height: 100%;">
+			<div class="flex modal-dialog modal-fullscreen-md-down" style="height: 100%;">
 				<div class="modal-content" style="width: fit-content;">
 					<!-- <div class="modal-header">
 						<h5 class="modal-title" id="youtubeModalLabel">Modal title</h5>
 						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 					</div> -->
+					<button type="button" class="btn btn-dark rounded-circle position-absolute" data-bs-dismiss="modal"
+						style="right: 0; z-index: 1;">
+						<i class="fas fa-times"></i></button>
 					<div class="modal-body">
-						<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/6uEt88vQxQU"
-							title="Auto-DL Demo" frameborder="0"
+						<iframe id="youtubeDemo" width="560" height="315" src="" title="Auto-DL Demo" frameborder="0"
 							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 							allowfullscreen></iframe>
 					</div>
 					<!-- <div class="modal-footer">
-						<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
 						<button type="button" class="btn btn-primary">Save changes</button>
 					</div> -->
 				</div>
