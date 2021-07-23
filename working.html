@@ -25,7 +25,6 @@
 
 	<main>
 		<div class="head-bg bg-dark">
-			<!-- <img src="media/headWall.svg" class="head-bg" alt="shapes-background" width="1024px" height="300px"> -->
 			<h1>How It Works</h1>
 		</div>
 
@@ -231,25 +230,14 @@
 
 			<!-- last section: completetion -->
 			<section class="main-section flex pb-0 mb-5">
-				<!-- <div id="ft-scalable" class="step-details"> -->
 				<div class="card completion-bg shadow-lg rounded-pill border-0" style="width: fit-content;">
 					<div class="flex">
-						<!-- <div class="row justify-content-center">
-							<div class="col-12 flex"> -->
-								<lottie-player id="completed" style="width: 300px; height: 300px;" loop autoplay
-									background="transparent" speed="1"
-									src="https://assets5.lottiefiles.com/packages/lf20_iher6zrq.json">
-								</lottie-player>
-							<!-- </div> -->
-							<!-- <div class="col-12" style="width: 60%;">
-								<h3>done</h3> 
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere qui optio voluptatem in! Aliquid veritatis esse non iure obcaecati eaque.</p>
-								<br>completed <br><b>you're good to go</b>
-							</div> -->
-						<!-- </div> -->
+						<lottie-player id="completed" style="width: 300px; height: 300px;" loop autoplay
+							background="transparent"
+							src="https://assets5.lottiefiles.com/packages/lf20_iher6zrq.json">
+						</lottie-player>
 					</div>
 				</div>
-				<!-- </div> -->
 			</section>
 
 	</main>
@@ -260,17 +248,28 @@
 	<script src="https://cdn.jsdelivr.net/npm/@lottiefiles/lottie-player@1.1.0/dist/lottie-player.js"
 		integrity="sha256-vhxAphbo8+NL+ulXbcCZQoydUyuoj8DjIcW7PIOQXks=" crossorigin="anonymous"></script>
 
-	<script src="https://cdn.jsdelivr.net/npm/@lottiefiles/lottie-interactivity@0.1.5/dist/lottie-interactivity.min.js"
-		integrity="sha256-4lf0i+q35WViY2z784LIhh9wazX2X0zYSPUQZstnZxQ=" crossorigin="anonymous"></script>
+	<!-- <script src="https://cdn.jsdelivr.net/npm/@lottiefiles/lottie-interactivity@0.1.5/dist/lottie-interactivity.min.js"
+		integrity="sha256-4lf0i+q35WViY2z784LIhh9wazX2X0zYSPUQZstnZxQ=" crossorigin="anonymous"></script> -->
+
+	<script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script>
 
 	<script type="text/javascript" src="js/working.js"></script>
 
 	<script>
-		$(window).on('load', function () {
-			loadAnim();
-		});
+		// $(window).on('load', function () {
+			// loadAnim();
+			LottieInteractivity.create({
+				mode: 'scroll',
+				player: '#completed',
+				actions: [{
+					visibility: [0, 1],
+					type: "seek",
+					frames: [0, 120],
+				}, ]
+			});
+		// });
 
-		function loadAnim() {
+		/*function loadAnim() {
 
 			let ele = document.getElementById("completed");
 			console.log("hello", ele.id);
@@ -284,9 +283,8 @@
 					frames: [0, 120],
 				}, ]
 			});
-		}
+		}*/
 	</script>
 
 </body>
-
 </html>

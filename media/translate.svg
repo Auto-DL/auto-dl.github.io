@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48" viewBox="0 0 172 172"
+    style=" fill:#000000;">
+    <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter"
+        stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none"
+        font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+        <path d="M0,172v-172h172v172z" fill="none"></path>
+        <g>
+            <path d="M28.66667,131.16433v40.83567l54.67808,-53.08708z" fill="#3dd9eb"></path>
+            <rect x="4" y="8" transform="scale(3.58333,3.58333)" width="40" height="30" fill="#3dd9eb"></rect>
+            <path
+                d="M60.55117,57.33333h-11.36992l-13.05408,31.91675v14.66658h10.75v-10.75h17.62283v10.75h10.75v-14.792zM60.30392,82.41667h-9.76458l4.58308,-11.20867z"
+                fill="#6c19ff"></path>
+            <path d="M92.26367,83.60633l-8.944,-5.96267l9.847,-14.7705v-5.53983h-14.33333v-10.75h25.08333v19.5435z"
+                fill="#6c19ff"></path>
+            <path d="M131.85233,64.5h-10.019v-10.75h-10.75v50.16667h10.75v-28.66667h10.019z" fill="#6c19ff"></path>
+            <rect x="31" y="18" transform="scale(3.58333,3.58333)" width="3" height="3" fill="#2100c4"></rect>
+            <rect x="26" y="13" transform="scale(3.58333,3.58333)" width="3" height="3" fill="#2100c4"></rect>
+        </g>
+    </g>
+</svg>
