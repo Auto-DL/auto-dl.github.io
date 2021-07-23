@@ -5,11 +5,8 @@ $(function () {
 	// // fo.appendChild(data); 
 	// document.querySelector('footer').appendChild(fo);
 
+	// console.log("header in js")
 	$('footer').load('header.html #footer');
-	// $.get( "header.html", function( data ) {
-	// 	// the contents is now in the variable data
-	// 	console.log( data );
-	// });
 
 	baseScripts();
 });
@@ -155,6 +152,8 @@ function Footer() {
         </div>`;
 	});
 
+	// console.log("footer js")
+
 	document.getElementById('footer-nav').innerHTML = (foot);
 
 	foot += `
@@ -164,8 +163,8 @@ function Footer() {
         <div class='col-12 mt-4'>
             <h4>Follow us On</h4>
             <ul id='follow' class='foot-list'>
-                <!-- {/* <li><a href="mailto:info.autold@gmail.com?subject=Auto-DL%20Contact%20from%20Website ">
-                        <i class="far fa-envelope"></i></a></li> */} -->
+                <!-- <li><a href="mailto:info.autold@gmail.com?subject=Auto-DL%20Contact%20from%20Website ">
+                        <i class="far fa-envelope"></i></a></li> -->
                 <li><a href="https://www.linkedin.com/company/autodl/ ">
                         <i class="fab fa-linkedin-in"></i></a>
                 </li>
@@ -185,10 +184,11 @@ function Footer() {
             Auto-DL 2021
         </div>
     </div>
-</div>
+	</div>
     `;
 
 	// document.querySelector('footer').innerHTML = foot;
 	// $('footer').append(foot);
 	// console.log("hi footer js");
+
 }
