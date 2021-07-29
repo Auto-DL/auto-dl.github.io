@@ -14,18 +14,18 @@ body {
 	text-align: center;
 }
 
-main ::selection {
-	background-color: #252934;
+body ::selection {
+	background-color: #5e60ce;
 	color: #fff;
 }
 
-footer ::selection,
+/* footer ::selection,
 header ::selection,
 .dark-bg-content ::selection,
 .dark-bg ::selection {
 	color: #252934;
 	background-color: rgba(255, 255, 255, 0.753);
-}
+} */
 
 ::-webkit-scrollbar {
 	width: 10px;
@@ -366,5 +366,15 @@ footer .foot-list a:hover {
 	}
 	.head-bg {
 		height: 30vh !important;
+	}
+	footer h4 {
+		font-size: 1.5em;
+	}
+	body {
+		/* font-size: 0.9em; */
+		font-size: 14px;
+	}
+	footer .input-group a {
+		font-size: 14px !important;
 	}
 }

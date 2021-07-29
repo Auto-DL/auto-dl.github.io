@@ -29,9 +29,159 @@
 			<h1>Pricing</h1>
 		</div>
 
+		<div class="heading my-5 mx-3 py-4">
+			<h1>The Power of Sharing</h1>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum nobis, maiores veritatis tempore autem modi.
+			</p>
+		</div>
+
+		<!-- PLAN CARDS -->
+		<section class="main-section">
+			<div
+				class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 justify-content-center gy-5 mx-2 mx-md-5 px-1 px-md-5 mb-5">
+				<div class="card-container col">
+					<div class="card free-card">
+						<div class="card-header">
+							<img class="head-img" src="./media/sparkle.svg" height="30">
+						</div>
+						<div class="card-body">
+							<div class="card-title">FREE</div>
+							<div class="card-text">
+								<p class="invisible">Starting At</p>
+								<div class='plan-price'>
+									<span class='symbol'>&#8377;</span>
+									<span class='value'>0</span>
+									<span class='period'>/month</span>
+								</div>
+								<ul class="list-group list-group-flush">
+									<li class="list-group-item d-flex justify-content-between">
+										<span>Users</span>
+										<strong>3</strong>
+									</li>
+									<li class="list-group-item d-flex justify-content-between">
+										<span>Test Results</span>
+										<strong>500</strong>
+									</li>
+								</ul>
+								<a class="btn plan-btn my-4 rounded-pill">Sign Up Free</a>
+								<ul class="list-unstyled text-start">
+									<li class="list-group-item border-0"><strong>Everything you get with Free:</strong>
+									</li>
+									<li class="list-group-item border-0"><i class="fas fa-check"></i>&nbsp;
+										Parallelization</li>
+									<li class="list-group-item border-0"><i class="fas fa-check"></i>&nbsp; Load
+										Balancing</li>
+									<li class="list-group-item border-0"><i class="fas fa-check"></i>&nbsp; Integrations
+									</li>
+									<li class="list-group-item border-0"><i class="fas fa-check"></i>&nbsp; Community
+										Support</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="card-container col">
+					<div class="card premium-card">
+						<div class="card-header">
+							<img class="head-img" src="./media/bestseller.svg" height="30">
+						</div>
+						<div class="card-body">
+							<div class="card-title">PREMIUM</div>
+							<div class="card-text">
+								<p>Starting At</p>
+								<div class='plan-price'>
+									<span class='symbol'>&#8377;</span>
+									<span class='value'>101</span>
+									<span class='period'>/month</span>
+								</div>
+								<ul class="list-group list-group-flush">
+									<li class="list-group-item d-flex justify-content-between">
+										<span>Users</span>
+										<strong>3</strong>
+									</li>
+									<li class="list-group-item d-flex justify-content-between">
+										<span>Test Results</span>
+										<strong>500</strong>
+									</li>
+								</ul>
+								<a class="btn plan-btn my-4 rounded-pill">Get Started</a>
+								<ul class="list-unstyled text-start">
+									<li class="list-group-item border-0"><strong>Everything in Free, plus:</strong></li>
+									<li class="list-group-item border-0"><i class="fas fa-check"></i>&nbsp;
+										Parallelization</li>
+									<li class="list-group-item border-0"><i class="fas fa-check"></i>&nbsp; Load
+										Balancing</li>
+									<li class="list-group-item border-0"><i class="fas fa-check"></i>&nbsp; Analytics
+									</li>
+									<li class="list-group-item border-0"><i class="fas fa-check"></i>&nbsp; Integrations
+									</li>
+									<li class="list-group-item border-0"><i class="fas fa-check"></i>&nbsp; Community
+										Support</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="card-container col">
+					<div class="card enterprise-card">
+						<div class="card-header">
+							<img class="head-img" src="./media/business.svg" height="30">
+						</div>
+						<div class="card-body">
+							<div class="card-title">ENTERPRISE</div>
+							<div class="card-text">
+								<p class="invisible">Starting At</p>
+								<div class='plan-price invisible'>
+									<span class='symbol'>&#8377;</span>
+									<span class='value'>0</span>
+									<span class='period'>/month</span>
+								</div>
+								<ul class="list-group list-group-flush">
+									<li class="list-group-item d-flex justify-content-between">
+										<span>Users</span>
+										<strong>3</strong>
+									</li>
+									<li class="list-group-item d-flex justify-content-between">
+										<span>Test Results</span>
+										<strong>500</strong>
+									</li>
+								</ul>
+								<a class="btn plan-btn my-4 rounded-pill">Contact Us</a>
+								<ul class="list-unstyled text-start">
+									<li class="list-group-item border-0"><strong>Everything in Team, plus:</strong></li>
+									<li class="list-group-item border-0"><i class="fas fa-check"></i>&nbsp;
+										Parallelization</li>
+									<li class="list-group-item border-0"><i class="fas fa-check"></i>&nbsp; Load
+										Balancing</li>
+									<li class="list-group-item border-0"><i class="fas fa-check"></i>&nbsp; Debugging
+									</li>
+									<li class="list-group-item border-0"><i class="fas fa-check"></i>&nbsp; Analytics
+									</li>
+									<li class="list-group-item border-0"><i class="fas fa-check"></i>&nbsp; Integrations
+									</li>
+									<li class="list-group-item border-0"><i class="fas fa-check"></i>&nbsp; Community
+										Support</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- PLAN TABLE -->
+		<section class="main-section my-5 py-5">
+			<div class="container">
+				<div class="table-responsive shadow rounded overflow-hidden">
+					<table class="table table-borderless table-hover" id='price-table'></table>
+				</div>
+			</div>
+		</section>
 	</main>
 
 	<footer></footer>
+
+	<script type="text/javascript" src="js/pricing.js"></script>
 
 </body>
 
