@@ -67,9 +67,11 @@ function baseScripts() {
 		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 		
 		<link rel="stylesheet" type="text/css" href="css/base.css">
-	`);
-
-	$('body').append(`
+		`);
+		
+		$('body').append(`
+		<script src="https://cdn.jsdelivr.net/npm/yaml@1.10.2/index.js" integrity="sha256-FF26vKvKR7sTC7LTKoH8qdYubZ/L1diUS/eT4obpJdo=" crossorigin="anonymous"></script>		
+		
 		<script src="https://kit.fontawesome.com/553c78d64a.js" crossorigin="anonymous"></script>
 
 		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"

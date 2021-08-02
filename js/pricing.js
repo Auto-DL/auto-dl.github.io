@@ -1,16 +1,20 @@
+// import YAML from 'https://cdn.jsdelivr.net/npm/yaml@1.10.2/index.js'
+const YAML = require('js-ya/ml');
+const fs   = require('fs');
+
+
 const features = [{
     title: '&nbsp;',
     details: [{
-            name: 'Test Results included',
-            available: [false, true, true],
-        },{
-            name: 'Additional Test Results',
-            available: [false, true, true],
-        },{
-            name: 'Users',
-            available: [false, true, true],
-        },
-    ],
+        name: 'Test Results included',
+        available: [false, true, true],
+    }, {
+        name: 'Additional Test Results',
+        available: [false, true, true],
+    }, {
+        name: 'Users',
+        available: [false, true, true],
+    }, ],
 }, {
     title: '&nbsp;',
     details: [{
@@ -20,95 +24,90 @@ const features = [{
 }, {
     title: 'Smart Orchestration',
     details: [{
-            name: 'Parallelization',
-            available: [false, true, true],
-        },{
-            name: 'Load Balancing',
-            available: [false, true, true],
-        },{
-            name: 'Run failed specs first',
-            available: [false, true, true],
-        },{
-            name: 'Cancel run on failure',
-            available: [false, true, true],
-        },
-    ],
+        name: 'Parallelization',
+        available: [false, true, true],
+    }, {
+        name: 'Load Balancing',
+        available: [false, true, true],
+    }, {
+        name: 'Run failed specs first',
+        available: [false, true, true],
+    }, {
+        name: 'Cancel run on failure',
+        available: [false, true, true],
+    }, ],
 }, {
     title: 'Debugging',
     details: [{
-            name: 'Test Code History',
-            available: [false, true, true],
-        }, {
-            name: 'CI logs',
-            available: [false, true, true],
-        }, {
-            name: 'Screenshots',
-            available: [false, true, true],
-        }, {
-            name: 'Video Playback',
-            available: [false, true, true],
-        },
-    ],
+        name: 'Test Code History',
+        available: [false, true, true],
+    }, {
+        name: 'CI logs',
+        available: [false, true, true],
+    }, {
+        name: 'Screenshots',
+        available: [false, true, true],
+    }, {
+        name: 'Video Playback',
+        available: [false, true, true],
+    }, ],
 }, {
     title: 'Analytics',
     details: [{
-            name: 'Run Status',
-            available: [false, true, true],
-        }, {
-            name: 'Run Duration',
-            available: [false, true, true],
-        }, {
-            name: 'Test Suite Size',
-            available: [false, true, true],
-        }, {
-            name: 'Top Failures',
-            available: [false, true, true],
-        }, {
-            name: 'Common Errors',
-            available: [false, true, true],
-        }, {
-            name: 'Slowest Tests',
-            available: [false, true, true],
-        },
-    ],
+        name: 'Run Status',
+        available: [false, true, true],
+    }, {
+        name: 'Run Duration',
+        available: [false, true, true],
+    }, {
+        name: 'Test Suite Size',
+        available: [false, true, true],
+    }, {
+        name: 'Top Failures',
+        available: [false, true, true],
+    }, {
+        name: 'Common Errors',
+        available: [false, true, true],
+    }, {
+        name: 'Slowest Tests',
+        available: [false, true, true],
+    }, ],
 }, {
     title: 'Integrations',
     details: [{
-            name: 'GitHub',
-            available: [false, true, true],
-        }, {
-            name: 'Slack',
-            available: [false, true, true],
-        }, {
-            name: 'GitLab',
-            available: [false, true, true],
-        }, {
-            name: 'Bitbucket',
-            available: [false, true, true],
-        }, {
-            name: 'JIRA',
-            available: [false, true, true],
-        }, {
-            name: 'GitHub Enterprise',
-            available: [false, true, true],
-        },
-    ],
+        name: 'GitHub',
+        available: [false, true, true],
+    }, {
+        name: 'Slack',
+        available: [false, true, true],
+    }, {
+        name: 'GitLab',
+        available: [false, true, true],
+    }, {
+        name: 'Bitbucket',
+        available: [false, true, true],
+    }, {
+        name: 'JIRA',
+        available: [false, true, true],
+    }, {
+        name: 'GitHub Enterprise',
+        available: [false, true, true],
+    }, ],
 }, {
     title: 'Flake Management',
     details: [{
-            name: 'Test Flake Detection',
-            available: [false, true, true],
-        }, {
-            name: 'Test Flake Analytics',
-            available: [false, true, true],
-        }, {
-            name: 'Test Muting',
-            available: [false, true, true],
-        }, {
-            name: 'Test Burn-in',
-            available: [false, true, true],
-        },
-    ],
+        name: 'Test Flake Detection',
+        available: [false, true, true],
+    }, {
+        name: 'Test Flake Analytics',
+        available: [false, true, true],
+    }, {
+        name: 'Test Muting',
+        available: [false, true, true],
+    }, {
+        name: 'Test Burn-in',
+        available: [false, true, true],
+    }, ],
 }, {
     title: 'Team Management',
     details: [{
@@ -183,4 +182,7 @@ function priceTable() {
 
 $(window).on('load', function () {
     priceTable();
+
+    const file = fs.readFileSync('content/pricing.yml', 'utf8')
+    YAML.parse(file)
 });
