@@ -1,5 +1,25 @@
 --- 
-# pricing content
+# pricing table
+
+# table headings
+headings:
+  - title: 'Free'
+    price: '0'
+    link: "javascript:void(0)"
+    linktxt: 'Sign Up Free'
+
+  - title: 'Premium'
+    price: '101'
+    link: "javascript:void(0)"
+    linktxt: 'Get Started'
+  
+  - title: 'Enterprise'
+    price: 'Custom'
+    link: "javascript:void(0)"
+    linktxt: 'Contact Us'
+
+
+# table details and availability
 tableContent:
   - title: "&nbsp;"
     details: 
@@ -103,4 +123,3 @@ tableContent:
     details:
       - name: "Single Sign-on (SSO)"
         available: [false, true, true]
----

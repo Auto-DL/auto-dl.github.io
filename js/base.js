@@ -12,8 +12,19 @@ $(function () {
 });
 
 $(window).on('load', function () {
-	
-	Footer();
+
+	$.get("../content/base.yml", (text, status) => {
+		console.log("Data Status: " + status);
+		
+		// Get document, or throw exception on error
+		try {
+			const data = jsyaml.load(text);
+			console.log(data);
+			Footer(data.footerData);
+		} catch (e) {
+			console.log(e);
+		}
+	});
 
 	var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
 	var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
@@ -67,10 +78,11 @@ function baseScripts() {
 		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 		
 		<link rel="stylesheet" type="text/css" href="css/base.css">
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js" integrity="sha512-CSBhVREyzHAjAFfBlIBakjoRUKp5h7VSweP0InR/pAJyptH7peuhCsqAI/snV+TwZmXZqoUklpXp6R6wMnYf5Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 		`);
-		
-		$('body').append(`
-		<script src="https://cdn.jsdelivr.net/npm/yaml@1.10.2/index.js" integrity="sha256-FF26vKvKR7sTC7LTKoH8qdYubZ/L1diUS/eT4obpJdo=" crossorigin="anonymous"></script>		
+
+	$('body').append(`
 		
 		<script src="https://kit.fontawesome.com/553c78d64a.js" crossorigin="anonymous"></script>
 
@@ -88,57 +100,7 @@ function baseScripts() {
 }
 
 
-const footerData = [{
-	title: 'Get Started',
-	info: [{
-		name: 'Why Auto-DL',
-		link: "#"
-	}, {
-		name: 'Install',
-		link: "#"
-	}, {
-		name: 'Pricing',
-		link: "#"
-	}]
-}, {
-	title: 'Support',
-	info: [{
-		name: 'Docs',
-		link: "#"
-	}, {
-		name: 'FAQ',
-		link: "#",
-	}, {
-		name: 'Feedback',
-		link: "#",
-	}]
-}, {
-	title: 'Company',
-	info: [{
-		name: 'About',
-		link: "#",
-	}, {
-		name: 'Jobs',
-		link: "#",
-	}, {
-		name: 'Contact',
-		link: "#",
-	}]
-}, {
-	title: 'Development',
-	info: [{
-		name: 'Contribute',
-		link: "#"
-	}, {
-		name: 'Status',
-		link: "#"
-	}, {
-		name: 'Work with Us',
-		link: "#"
-	}]
-}];
-
-function Footer() {
+function Footer(footerData) {
 	let foot = ``;
 
 	footerData.forEach(item => {
@@ -154,43 +116,5 @@ function Footer() {
         </div>`;
 	});
 
-	// console.log("footer js")
-
 	document.getElementById('footer-nav').innerHTML = (foot);
-
-	foot += `
-        <div class='col-12 quote mt-4'>
-            “Deep learning will revolutionize supply chain automation.” <br />-Dave Waters
-        </div>
-        <div class='col-12 mt-4'>
-            <h4>Follow us On</h4>
-            <ul id='follow' class='foot-list'>
-                <!-- <li><a href="mailto:info.autold@gmail.com?subject=Auto-DL%20Contact%20from%20Website ">
-                        <i class="far fa-envelope"></i></a></li> -->
-                <li><a href="https://www.linkedin.com/company/autodl/ ">
-                        <i class="fab fa-linkedin-in"></i></a>
-                </li>
-                <li><a href="https://twitter.com/auto_dl/ ">
-                        <i class="fab fa-twitter"></i></a>
-                </li>
-                <li><a href="https://github.com/Auto-DL/ ">
-                        <i class="fab fa-github"></i></a>
-                </li>
-                <li><a
-                        href="https://autodl.slack.com/join/shared_invite/zt-qagxiwub-ywRM_oBvvF~F7YNtlBqy_Q#/shared-invite/email">
-                        <i class="fab fa-slack"></i></a>
-                </li>
-            </ul>
-        </div>
-        <div class='col-12 mt-4'>
-            Auto-DL 2021
-        </div>
-    </div>
-	</div>
-    `;
-
-	// document.querySelector('footer').innerHTML = foot;
-	// $('footer').append(foot);
-	// console.log("hi footer js");
-
 }

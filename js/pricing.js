@@ -7,142 +7,22 @@
 //     fs = f
 // });
 // import { tableContent } from '../content/pricing.yml';
+// import tableContent from '../content/pricing.json';
+// console.log("file", tableContent)
 
 // import fs from 'fs'
 // const fs = require ('fs');
 
+// import { YAML } from './yamlparser';
 
-const features = [{
-    title: '&nbsp;',
-    details: [{
-        name: 'Test Results included',
-        available: [false, true, true],
-    }, {
-        name: 'Additional Test Results',
-        available: [false, true, true],
-    }, {
-        name: 'Users',
-        available: [false, true, true],
-    }, ],
-}, {
-    title: '&nbsp;',
-    details: [{
-        name: 'Cypress Test Runner (open source)',
-        available: [false, true, true],
-    }],
-}, {
-    title: 'Smart Orchestration',
-    details: [{
-        name: 'Parallelization',
-        available: [false, true, true],
-    }, {
-        name: 'Load Balancing',
-        available: [false, true, true],
-    }, {
-        name: 'Run failed specs first',
-        available: [false, true, true],
-    }, {
-        name: 'Cancel run on failure',
-        available: [false, true, true],
-    }, ],
-}, {
-    title: 'Debugging',
-    details: [{
-        name: 'Test Code History',
-        available: [false, true, true],
-    }, {
-        name: 'CI logs',
-        available: [false, true, true],
-    }, {
-        name: 'Screenshots',
-        available: [false, true, true],
-    }, {
-        name: 'Video Playback',
-        available: [false, true, true],
-    }, ],
-}, {
-    title: 'Analytics',
-    details: [{
-        name: 'Run Status',
-        available: [false, true, true],
-    }, {
-        name: 'Run Duration',
-        available: [false, true, true],
-    }, {
-        name: 'Test Suite Size',
-        available: [false, true, true],
-    }, {
-        name: 'Top Failures',
-        available: [false, true, true],
-    }, {
-        name: 'Common Errors',
-        available: [false, true, true],
-    }, {
-        name: 'Slowest Tests',
-        available: [false, true, true],
-    }, ],
-}, {
-    title: 'Integrations',
-    details: [{
-        name: 'GitHub',
-        available: [false, true, true],
-    }, {
-        name: 'Slack',
-        available: [false, true, true],
-    }, {
-        name: 'GitLab',
-        available: [false, true, true],
-    }, {
-        name: 'Bitbucket',
-        available: [false, true, true],
-    }, {
-        name: 'JIRA',
-        available: [false, true, true],
-    }, {
-        name: 'GitHub Enterprise',
-        available: [false, true, true],
-    }, ],
-}, {
-    title: 'Flake Management',
-    details: [{
-        name: 'Test Flake Detection',
-        available: [false, true, true],
-    }, {
-        name: 'Test Flake Analytics',
-        available: [false, true, true],
-    }, {
-        name: 'Test Muting',
-        available: [false, true, true],
-    }, {
-        name: 'Test Burn-in',
-        available: [false, true, true],
-    }, ],
-}, {
-    title: 'Team Management',
-    details: [{
-        name: 'Single Sign-on (SSO)',
-        available: [false, true, true],
-    }]
-}, ]
+// var YAML;
+// require(['https://cdn.jsdelivr.net/npm/yaml@1.10.2/browser/dist/index.js'], (yaml) => YAML = yaml);
 
-const headings = [{
-    title: 'Free',
-    price: '0',
-    link: "javascript:void(0)",
-    linktxt: 'Sign Up Free'
-}, {
-    title: 'Premium',
-    price: '101',
-    link: "javascript:void(0)",
-    linktxt: 'Get Started'
-}, {
-    title: 'Enterprise',
-    price: 'Custom',
-    link: "javascript:void(0)",
-    linktxt: 'Contact Us'
-}];
 
-function priceTable() {
+// var features = []
+// var headings = []
+
+function priceTable(headings, features) {
     let ele = document.getElementById('price-table');
     let data = `
     <thead>
@@ -189,10 +69,26 @@ function priceTable() {
     ele.innerHTML = data;
 }
 
-$(window).on('load', function () {
-    priceTable();
+$(window).on('load', () => {
 
-    // console.log("file", tableContent)
+    $.get("../content/pricing.yml", (text, status) => {
+        console.log("Data Status: " + status);
+
+        // Get document, or throw exception on error
+        try {
+            const data = jsyaml.load(text);
+            console.log(data);
+            // headings = data.headings;
+            // features = data.tableContent;
+
+            // console.log(headings, features);
+
+            // priceTable();
+            priceTable(data.headings, data.tableContent);
+        } catch (e) {
+            console.log(e);
+        }
+    });
 
 
     // var fi = new File([Text], '../content/pricing.yml', {type: "text/yaml"});
@@ -209,26 +105,18 @@ $(window).on('load', function () {
     // // start reading a loaded file
     // reader.readAsText(fi);
 
-/*
-    fs.open('../content/pricing.yml', 'r', (err, fd) => {
-        if (err) {
-            if (err.code === 'ENOENT') {
-                console.error('myfile does not exist');
-                return;
+    /*
+        fs.open('../content/pricing.yml', 'r', (err, fd) => {
+            if (err) {
+                if (err.code === 'ENOENT') {
+                    console.error('myfile does not exist');
+                    return;
+                }
+
+                throw err;
             }
 
-            throw err;
-        }
-
-        console.log(fd);
-    });
-*/
-
-// Get document, or throw exception on error
-// try {
-//     const doc = yaml.load(readFileSync('../content/pricing.yml', 'utf8'));
-//     console.log(doc);
-//   } catch (e) {
-//     console.log(e);
-//   }
+            console.log(fd);
+        });
+    */
 });

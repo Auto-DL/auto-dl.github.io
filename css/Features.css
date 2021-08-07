@@ -10,21 +10,21 @@
 	padding: 3em 1em;
 }
 
-.feature-details .card.light-bg {
+.light-bg {
 	/* background-color: #fff; */
 	color: #252934;
 	/* background: linear-gradient(143deg, #ffffff 55%, #a400ff3d 90%); */
 }
 
-.feature-details .card.tinted-bg {
+.tinted-bg {
 	background-color: #e8edf1;
 	color: #252934;
 }
 
-.feature-details .card.dark-bg {
+.dark-bg {
 	background-color: #252934;
 	color: white;
-	background-image: linear-gradient(320deg, #271f7d -36%, #252934 36%);
+	/* background-image: linear-gradient(320deg, #271f7d -36%, #252934 36%); */
 }
 
 
@@ -36,6 +36,7 @@
 	/* box-shadow: -1px 3px 16px 0px #888888; */
 	border-width: 0px;
 	text-align: left;
+	background-color: inherit;
 }
 
 .feature-title {
@@ -57,7 +58,7 @@
 	justify-content: space-between;
 }
 
-.feature-details .light-bg .main-row {
+.main-section:nth-child(odd) .main-row {
 	flex-direction: row-reverse;
 }
 
