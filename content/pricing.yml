@@ -1,104 +1,106 @@
---- # pricing content
+--- 
+# pricing content
 tableContent:
-    - title: "&nbsp;"
-      details: 
-        - name: "Test Results included"
-          available: [false, true, true]
+  - title: "&nbsp;"
+    details: 
+      - name: "Test Results included"
+        available: [false, true, true]
 
-        - name: "Additional Test Results"
-          available: [false, true, true]
+      - name: "Additional Test Results"
+        available: [false, true, true]
 
-        - name: "Users"
-          available: [false, true, true]
+      - name: "Users"
+        available: [false, true, true]
 
-    - title: "&nbsp;"
-      details:
-        - name: "Cypress Test Runner (open source)"
-          available: [false, true, true]
+  - title: "&nbsp;"
+    details:
+      - name: "Cypress Test Runner (open source)"
+        available: [false, true, true]
     
-    - title: "Smart Orchestration"
-      details:
-        - name: "Parallelization"
-          available: [false, true, true]
+  - title: "Smart Orchestration"
+    details:
+      - name: "Parallelization"
+        available: [false, true, true]
     
-        - name: "Load Balancing"
-          available: [false, true, true]
+      - name: "Load Balancing"
+        available: [false, true, true]
     
-        - name: "Run failed specs first"
-          available: [false, true, true]
+      - name: "Run failed specs first"
+        available: [false, true, true]
     
-        - name: "Cancel run on failure"
-          available: [false, true, true]
+      - name: "Cancel run on failure"
+        available: [false, true, true]
 
-    - title: "Debugging"
-      details:
-        - name: "Test Code History"
-          available: [false, true, true]
+  - title: "Debugging"
+    details:
+      - name: "Test Code History"
+        available: [false, true, true]
     
-        - name: "CI logs"
-          available: [false, true, true]
+      - name: "CI logs"
+        available: [false, true, true]
     
-        - name: "Screenshots"
-          available: [false, true, true]
+      - name: "Screenshots"
+        available: [false, true, true]
     
-        - name: "Video Playback"
-          available: [false, true, true]
+      - name: "Video Playback"
+        available: [false, true, true]
 
-    - title: "Analytics"
-      details:
-        - name: "Run Status"
-          available: [false, true, true]
+  - title: "Analytics"
+    details:
+      - name: "Run Status"
+        available: [false, true, true]
     
-        - name: "Run Duration"
-          available: [false, true, true]
+      - name: "Run Duration"
+        available: [false, true, true]
     
-        - name: "Test Suite Size"
-          available: [false, true, true]
+      - name: "Test Suite Size"
+        available: [false, true, true]
     
-        - name: "Top Failures"
-          available: [false, true, true]
+      - name: "Top Failures"
+        available: [false, true, true]
     
-        - name: "Common Errors"
-          available: [false, true, true]
+      - name: "Common Errors"
+        available: [false, true, true]
     
-        - name: "Slowest Tests"
-          available: [false, true, true]
+      - name: "Slowest Tests"
+        available: [false, true, true]
 
-    - title: "Integrations"
-      details:
-        - name: "GitHub"
-          available: [false, true, true]
+  - title: "Integrations"
+    details:
+      - name: "GitHub"
+        available: [false, true, true]
     
-        - name: "Slack"
-          available: [false, true, true]
+      - name: "Slack"
+        available: [false, true, true]
     
-        - name: "GitLab"
-          available: [false, true, true]
+      - name: "GitLab"
+        available: [false, true, true]
     
-        - name: "Bitbucket"
-          available: [false, true, true]
+      - name: "Bitbucket"
+        available: [false, true, true]
     
-        - name: "JIRA"
-          available: [false, true, true]
+      - name: "JIRA"
+        available: [false, true, true]
     
-        - name: "GitHub Enterprise"
-          available: [false, true, true]
+      - name: "GitHub Enterprise"
+        available: [false, true, true]
 
-    - title: "Flake Management"
-      details:
-        - name: "Test Flake Detection"
-          available: [false, true, true]
+  - title: "Flake Management"
+    details:
+      - name: "Test Flake Detection"
+        available: [false, true, true]
     
-        - name: "Test Flake Analytics"
-          available: [false, true, true]
+      - name: "Test Flake Analytics"
+        available: [false, true, true]
     
-        - name: "Test Muting"
-          available: [false, true, true]
+      - name: "Test Muting"
+        available: [false, true, true]
     
-        - name: "Test Burn-in"
-          available: [false, true, true]
+      - name: "Test Burn-in"
+        available: [false, true, true]
 
-    - title: "Team Management"
-      details:
-        - name: "Single Sign-on (SSO)"
-          available: [false, true, true]
+  - title: "Team Management"
+    details:
+      - name: "Single Sign-on (SSO)"
+        available: [false, true, true]
+---

@@ -47,7 +47,7 @@ main .card {
     filter: brightness(0.9);
 }
 
-.plan-price .symbol{
+.plan-price .symbol {
     font-size: 16px;
     font-weight: 500;
     line-height: 16px;
@@ -66,6 +66,7 @@ main .card {
     line-height: 16px;
     vertical-align: bottom;
 }
+
 .plan-price {
     margin-bottom: 1.5em;
 }
@@ -74,6 +75,7 @@ main .card {
 .free-card {
     border-top: 5px solid var(--free) !important;
 }
+
 .Free-table .plan-btn,
 .free-card .plan-btn {
     background-color: var(--free) !important;
@@ -93,6 +95,7 @@ main .card {
 .premium-card {
     border-top: 5px solid var(--premium) !important;
 }
+
 .Premium-table .plan-btn,
 .premium-card .plan-btn {
     background-color: var(--premium) !important;
@@ -112,6 +115,7 @@ main .card {
 .enterprise-card {
     border-top: 5px solid var(--enterprise) !important;
 }
+
 .Enterprise-table .plan-btn,
 .enterprise-card .plan-btn {
     background-color: var(--enterprise) !important;
@@ -128,20 +132,21 @@ main .card {
 }
 
 /* plan table */
-table td:not(:last-child), table th:not(:last-child) {
+table td:not(:last-child),
+table th:not(:last-child) {
     border-right: 1px solid rgb(225, 231, 236);
 }
+
 .Free-table .table-head {
     color: var(--free);
-
 }
+
 .Premium-table .table-head {
     color: var(--premium);
-
 }
+
 .Enterprise-table .table-head {
     color: var(--enterprise);
-
 }
 
 @media (min-width: 1200px) {

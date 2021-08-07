@@ -285,17 +285,18 @@
 
 		<!-- newsletter modal -->
 		<div class="modal" id="newsletter-modal" tabindex="-1">
-			<div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable">
-				<div class="modal-content">
+			<div class="modal-dialog modal-dialog-centered modal-lg">
+				<div class="modal-content position-relative">
+					<div class="position-absolute top-0 start-100 border-0 translate-middle" style="z-index: 1;">
+						<button type="button" class="btn btn-dark rounded-circle" data-bs-dismiss="modal"
+							aria-label="Close">
+							<i class="fas fa-times"></i></button>
+					</div>
 					<div class="row">
-						<div class="col-12 col-sm-6" style="min-height: 30vh;">
+						<div class="col-12 col-sm-6" style="min-height: 35vh;">
 							<div id="news-image"></div>
 						</div>
 						<div class="col-12 col-sm-6">
-							<div class="modal-header text-centergit border-0">
-								<button type="button" class="btn-close" data-bs-dismiss="modal"
-									aria-label="Close"></button>
-							</div>
 							<div class="modal-body">
 								<h5 class="modal-title mb-3">** Newsletter **</h5>
 								<p class="mb-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius ea,
@@ -321,23 +322,21 @@
 
 		<!-- youtube demo modal -->
 		<div class="modal fade" id="youtubeModal" tabindex="-1" aria-labelledby="youtubeModalLabel" aria-hidden="true">
-			<div class="flex modal-dialog modal-fullscreen-md-down" style="height: 100%;">
-				<div class="modal-content" style="width: fit-content;">
-					<!-- <div class="modal-header">
-						<h5 class="modal-title" id="youtubeModalLabel">Modal title</h5>
-						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-					</div> -->
-					<button type="button" class="btn btn-dark rounded-circle position-absolute" data-bs-dismiss="modal"
-						style="right: 0; z-index: 1;">
-						<i class="fas fa-times"></i></button>
-					<div class="modal-body">
-						<iframe id="youtubeDemo" width="560" height="315" src="" title="Auto-DL Demo" frameborder="0"
+			<div class="flex modal-dialog modal-dialog-centered modal-xl" style="height: 100%;">
+				<div class="modal-content">
+					<div class="position-absolute top-0 start-100 border-0 translate-middle" style="z-index: 1;">
+						<button type="button" class="btn btn-danger rounded-circle" data-bs-dismiss="modal"
+							aria-label="Close">
+							<i class="fas fa-times"></i></button>
+					</div>
+					<div class="modal-body p-0">
+						<div class="ratio ratio-16x9">
+						<iframe class="ratio ratio-16x9" id="youtubeDemo" height="315" src="" title="Auto-DL Demo"
+							frameborder="0"
 							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 							allowfullscreen></iframe>
+						</div>
 					</div>
-					<!-- <div class="modal-footer">
-						<button type="button" class="btn btn-primary">Save changes</button>
-					</div> -->
 				</div>
 			</div>
 		</div>

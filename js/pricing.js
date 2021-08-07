@@ -1,6 +1,15 @@
 // import YAML from 'https://cdn.jsdelivr.net/npm/yaml@1.10.2/index.js'
-const YAML = require('js-ya/ml');
-const fs   = require('fs');
+// import YAML from 'js-yaml';
+// let fs;// = require('fs')
+
+// require(['fs'], function (f) {
+//     //fs is now loaded.
+//     fs = f
+// });
+// import { tableContent } from '../content/pricing.yml';
+
+// import fs from 'fs'
+// const fs = require ('fs');
 
 
 const features = [{
@@ -183,6 +192,43 @@ function priceTable() {
 $(window).on('load', function () {
     priceTable();
 
-    const file = fs.readFileSync('content/pricing.yml', 'utf8')
-    YAML.parse(file)
+    // console.log("file", tableContent)
+
+
+    // var fi = new File([Text], '../content/pricing.yml', {type: "text/yaml"});
+    // var reader = new FileReader();
+    // var fileToRead = '../content/pricing.yml';
+
+    // // attach event, that will be fired, when read is end
+    // reader.onload = function (event) {
+    //     // reader.result contains the contents of blob as a typed array
+    //     // we insert content of file in DOM here
+    //     console.log("file", event.target.result)
+    // }
+
+    // // start reading a loaded file
+    // reader.readAsText(fi);
+
+/*
+    fs.open('../content/pricing.yml', 'r', (err, fd) => {
+        if (err) {
+            if (err.code === 'ENOENT') {
+                console.error('myfile does not exist');
+                return;
+            }
+
+            throw err;
+        }
+
+        console.log(fd);
+    });
+*/
+
+// Get document, or throw exception on error
+// try {
+//     const doc = yaml.load(readFileSync('../content/pricing.yml', 'utf8'));
+//     console.log(doc);
+//   } catch (e) {
+//     console.log(e);
+//   }
 });
