@@ -11,9 +11,11 @@ $(function () {
 	baseScripts();
 });
 
-$(window).on('load', function () {
+$(window).on('load', async () => {
 
-	$.get("../content/base.yml", (text, status) => {
+	console.log("b4 call")
+	await $.get("https://vedant080102.github.io/auto-dl.github.io/content/base.yml", (text, status) => {
+	// $.get("../content/base.yml", (text, status) => {
 		console.log("Data Status: " + status);
 		
 		// Get document, or throw exception on error
@@ -25,6 +27,8 @@ $(window).on('load', function () {
 			console.log(e);
 		}
 	});
+
+	console.log("after call")
 
 	var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
 	var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {

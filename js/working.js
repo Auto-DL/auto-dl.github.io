@@ -81,9 +81,11 @@ $window.on('load', () => {
 	}
 });
 */
-$(window).on('load', () => {
+$(window).on('load', async () => {
 
-    $.get("../content/working.yml", (text, status) => {
+    // await $.get("../content/working.yml", (text, status) => {
+	await $.get("https://vedant080102.github.io/auto-dl.github.io/content/working.yml", (text, status) => {
+
         console.log("Data Status: " + status);
 
         // Get document, or throw exception on error
@@ -105,7 +107,7 @@ function printDetails(doc) {
     let data = ``;
 
 	doc.forEach((item, i) => {
-		console.log(item.title)
+		// console.log(item.title)
 		data += `
 		<!-- ${i}. ${item.title} -->
 		<section class="main-section">

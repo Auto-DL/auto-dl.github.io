@@ -69,9 +69,12 @@ function priceTable(headings, features) {
     ele.innerHTML = data;
 }
 
-$(window).on('load', () => {
+$(window).on('load', async () => {
 
-    $.get("../content/pricing.yml", (text, status) => {
+    console.log("b4 call");
+
+    await $.get("https://vedant080102.github.io/auto-dl.github.io/content/pricing.yml", (text, status) => {
+    // $.get("../content/pricing.yml", (text, status) => {
         console.log("Data Status: " + status);
 
         // Get document, or throw exception on error
@@ -89,6 +92,8 @@ $(window).on('load', () => {
             console.log(e);
         }
     });
+
+    console.log("after call");
 
 
     // var fi = new File([Text], '../content/pricing.yml', {type: "text/yaml"});
