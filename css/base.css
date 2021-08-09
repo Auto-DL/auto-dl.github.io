@@ -281,16 +281,16 @@ main .head-bg {
 	text-align: center;
 }
 
-footer #newsletter {
+/* footer #newsletter {
 	width: 100%;
 	padding: 5em 0;
-	/* margin-bottom: 5rem; */
+	margin-bottom: 5rem;
 	background-color: #e8edf1;
 	color: #252934;
-}
+} */
 
 #newsletter-modal .form-control:focus,
-#newsletter .form-control:focus {
+#newsletter > #newsletter .form-control:focus {
 	border-color: #252934;
 	outline: 0;
 	box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%), 0 0 8px #25293466;
