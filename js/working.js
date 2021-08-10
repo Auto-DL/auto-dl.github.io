@@ -2,61 +2,62 @@
 var $window = $(window);
 var $animation_elementsR, $animation_elementsL;
 
+var animation;
+
 function check_if_in_view() {
 	$animation_elementsR = $('.right-slide');
-	check_if___($animation_elementsR, 'go-right', false);
+	check_if___($animation_elementsR, 'go-right', null);
 
 	$animation_elementsL = $('.left-slide');
-	check_if___($animation_elementsL, 'go-left'), false;
+	check_if___($animation_elementsL, 'go-left'), null;
 
-	check_if___($('.inner-content'), 'text-anim', false);
+	check_if___($('.inner-content'), 'text-anim', null);
 
 	// lottie animation
-	// check_if___($('#completed'), '_', true);
+	check_if___($('#completed'), '', true);
 }
 
-function check_if___($animation_elements, clas, lottie) {
+function check_if___($animation_elements, clas, anim) {
 	var window_height = $window.height();
 	var window_top_position = $window.scrollTop();
 	var window_bottom_position = (window_top_position + window_height);
 
-	// if (lottie === false) {
-	$.each($animation_elements, function () {
-		var $element = $(this);
-		var element_height = $element.outerHeight();
-		var element_top_position = $element.offset().top + 100;
-		var element_bottom_position = (element_top_position + element_height) - 100;
-
-		var classList = $element.attr('class').split(/\s+/);
-
-		// console.log("ele:", classList);
-
-		//check to see if this current container is within viewport
-		if ((element_bottom_position >= window_top_position) && (element_top_position <= window_bottom_position)) {
-			$element.addClass(clas);
-		} else if (classList.includes(clas)) {
-			$element.removeClass(clas);
-		}
-	});
-	// }
-
-	// for lottie animation
-	/*	else {
-			var $element = $animation_elements;
+	if (!anim) {
+		$.each($animation_elements, function () {
+			var $element = $(this);
 			var element_height = $element.outerHeight();
 			var element_top_position = $element.offset().top + 100;
 			var element_bottom_position = (element_top_position + element_height) - 100;
 
+			var classList = $element.attr('class').split(/\s+/);
+
 			// console.log("ele:", classList);
-			var obj = getLottie();
 
 			//check to see if this current container is within viewport
 			if ((element_bottom_position >= window_top_position) && (element_top_position <= window_bottom_position)) {
-				load()
+				$element.addClass(clas);
 			} else if (classList.includes(clas)) {
 				$element.removeClass(clas);
 			}
-		}*/
+		});
+	}
+
+	// for lottie animation
+	else {
+		var $element = $animation_elements;
+		var element_height = $element.outerHeight();
+		var element_top_position = $element.offset().top;
+		var element_bottom_position = (element_top_position + element_height);
+
+		try {
+			//check to see if this current container is within viewport
+			if ((element_bottom_position >= window_top_position) && (element_top_position <= window_bottom_position)) {
+				animation.play();
+			}
+		} catch (e) {
+			console.log(e)
+		}
+	}
 }
 
 $window.on('scroll resize', check_if_in_view);
@@ -83,28 +84,46 @@ $window.on('load', () => {
 */
 $(window).on('load', async () => {
 
-    // await $.get("../content/working.yml", (text, status) => {
+	// console.log("b4 call")
+
+	// await $.get("../content/working.yml", (text, status) => {
 	await $.get("https://vedant080102.github.io/auto-dl.github.io/content/working.yml", (text, status) => {
 
-        console.log("Data Status: " + status);
+		console.log("Data Status: " + status);
 
-        // Get document, or throw exception on error
-        try {
-            const data = jsyaml.load(text);
-            console.log(data.stepDetails);
+		// Get document, or throw exception on error
+		try {
+			const data = jsyaml.load(text);
+			console.log(data.stepDetails);
 
-            // priceTable(data.headings, data.tableContent);
 			printDetails(data.stepDetails)
-        } catch (e) {
-            console.log(e);
-        }
-    });
+		} catch (e) {
+			console.log(e);
+		}
+	});
+
+	// console.log("after call")
+
+	try {
+		// 	console.log("lottie animation")
+		animation = bodymovin.loadAnimation({
+			container: document.getElementById('completed'), // Required
+			path: 'https://assets5.lottiefiles.com/packages/lf20_iher6zrq.json', // Required
+			renderer: 'svg', // Required
+			loop: false, // Optional
+			autoplay: false, // Optional
+			name: "dunzo", // Name for future reference. Optional.
+		})
+		animation.pause();
+	} catch (e) {
+		console.log(e)
+	}
 });
 
 function printDetails(doc) {
 	let ele = document.getElementById('print-steps');
 	// console.log(ele)
-    let data = ``;
+	let data = ``;
 
 	doc.forEach((item, i) => {
 		// console.log(item.title)
@@ -123,7 +142,7 @@ function printDetails(doc) {
 						<div class="main-row row mt-5 gy-4">
 							<div class="col-12 col-md-7">
 								<!-- <video class="left-slide step-video" src="media/demo1.mp4" loop autoplay muted></video> -->
-								<video class="left-slide step-video" autoplay muted loop playsinline>
+								<video class="${item.theme === 'dark' ? 'left-slide' : 'right-slide'} step-video" autoplay muted loop playsinline>
 									<!-- <source src="media/demo1.webm" type="video/webm"> -->
 									<source src=${item.video} type="video/mp4">
 								</video>
@@ -144,6 +163,6 @@ function printDetails(doc) {
 		`
 	});
 
-    ele.innerHTML = data;
+	ele.innerHTML = data;
 	// console.log(data);
 }

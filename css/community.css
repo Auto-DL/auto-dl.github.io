@@ -14,7 +14,7 @@
 }
 
 .main-section.dark-bg {
-	background-color: #252934;
+	background-color: #252934;/* 212c47 */
 	color: white;
 	/* background-image: linear-gradient(320deg, #271f7d -36%, #252934 36%); */
 }
@@ -45,12 +45,11 @@
 
 }
 
-.main-section.light-bg .card,
-.main-section.tinted-bg .card {
+.main-section.dark-bg .card {
     border-top: 4px solid cyan;
-    background-color: #252934;
+    background-color: #0000002f;
     color: white;
-    /* box-shadow: #000000d4 0px 0.5rem 1rem !important; */
+    box-shadow: #000000d4 0px 0.5rem 1rem !important;
 }
 
 .main-section.dark-bg .card:hover {
@@ -62,7 +61,8 @@
     background-color: #e8edf1;
 } */
 
-.main-section.dark-bg .card {
+.main-section.light-bg .card,
+.main-section.tinted-bg .card {
     border-top: 4px solid #f72585;
     color: #252934;
 }

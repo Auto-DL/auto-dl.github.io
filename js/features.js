@@ -1,30 +1,61 @@
-document.querySelectorAll('.tick-animation').forEach(item => {
+$(window).on('load', async () => {
 
-	// console.log("item", item)
-	// item.addEventListener('load', () => {
+	console.log("b4 call")
+	await $.get("../content/features.yml", (text, status) => {
+	// await $.get("https://vedant080102.github.io/auto-dl.github.io/content/features.yml", (text, status) => {
+		console.log("Data Status: " + status);
+		
+		// Get document, or throw exception on error
+		try {
+			const data = jsyaml.load(text);
+			console.log(data.features);
+			displayFeatures(data.features);
+		} catch (e) {
+			console.log(e);
+		}
+		console.log("call done")
+	});
+});
 
-	console.log("scrolled")
+function displayFeatures(doc) {
+	let ele = document.getElementById('print-features');
 
-	LottieInteractivity.create({
-		mode: 'scroll',
-		player: item.id,
-		// actions: [
-		// {
-		//     visibility: [0,1],
-		//     type: 'seek',
-		//     frames: [0, 121],
-		// }, ],
-		actions: [{
-				visibility: [0, 0.2],
-				type: "stop",
-				frames: [0]
-			},
-			{
-				visibility: [0.2, 1],
-				type: "seek",
-				frames: [0, 121]
-			}
-		],
-	})
-	//     })
-})
+	let data = ``;
+
+	doc.forEach((item, index) => {
+		data += `
+		<!-- ${index}. ${item.title} -->
+			<section class="main-section ${item.theme}-bg">
+				<div class="feature-details">
+					<div class="card ">
+						<div class="container">
+							<div class="main-row row gx-5 gy-4">
+								<div class="feature-img col-12 col-md-6">
+									<img class="img-fluid" alt='feat' height="300" src="${item.media}"/>
+								</div>
+								<div class="col-12 col-md-6">
+									<h2 class='feature-title'>${item.title}</h2>
+									<div class="inner-content">
+									${
+									item.info.map((x, i) => 
+										`<div class="lists">
+											<div>
+												<span class="point-title">${x.title}</span>
+												<p>${x.details}</p>
+											</div>
+										</div>
+										`
+									).join("")
+									}
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		`
+	});
+
+	ele.innerHTML = data;
+}

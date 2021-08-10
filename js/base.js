@@ -1,14 +1,13 @@
 $(function () {
+	baseScripts();
+
 	$('header').load('header.html #reuse-head');
 
 	// var fo = document.createElement('DIV')
 	// // fo.appendChild(data); 
 	// document.querySelector('footer').appendChild(fo);
 
-	// console.log("header in js")
 	$('footer').load('header.html #footer');
-
-	baseScripts();
 });
 
 $(window).on('load', async () => {

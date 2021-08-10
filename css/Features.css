@@ -5,9 +5,25 @@
 	--pink: #f72585;
 }
 
+.heading {
+	font-size: 1.2em;
+	margin: 4em 0;
+}
+
+.heading h1 {
+	font-weight: 700;
+}
+
 .main-section {
 	position: relative;
 	padding: 3em 1em;
+}
+
+.main-section:nth-child(2) {
+	padding-bottom: 0 !important;
+}
+.main-section:nth-child(3) {
+	padding-top: 0 !important;
 }
 
 .light-bg {
@@ -40,7 +56,7 @@
 }
 
 .feature-title {
-	font-size: calc(1.25rem + 2.1vw);
+	font-size: calc(1.1rem + 2vw);
 	font-weight: 800;
 	line-height: 1.2;
 }
@@ -49,6 +65,7 @@
 	display: flex;
 	align-items: center;
 }
+
 .feature-img img {
 	border-radius: .25rem;
 }
@@ -56,6 +73,8 @@
 .feature-details .main-row {
 	align-items: center;
 	justify-content: space-between;
+	width: 100%;
+	margin: 0 !important;
 }
 
 .main-section:nth-child(odd) .main-row {
@@ -67,23 +86,31 @@
 	font-weight: lighter;
 }
 
-.point-title {
-	font-size: 1.25em;
-	font-weight: bold;
-}
-
-.inner-content .lists .bullet {
+.inner-content .lists::before {
+	content: url('https://vedant080102.github.io/auto-dl.github.io/media/bullet.svg');
 	margin-right: 1em;
 	margin-top: 0.7em;
 	height: 25px;
-	/* filter: invert(21%) sepia(88%) saturate(6289%) hue-rotate(260deg) brightness(99%) contrast(117%); */
-	/* user-drag: none;   */
+}
+
+.point-title {
+	/* font-size: 1.25em; */
+	font-size: calc(1rem + 1.25vw);
+	font-weight: bold;
+}
+
+/* .inner-content .lists .bullet {
+	margin-right: 1em;
+	margin-top: 0.7em;
+	height: 25px;
+	//filter: invert(21%) sepia(88%) saturate(6289%) hue-rotate(260deg) brightness(99%) contrast(117%);
+	user-drag: none;  
 	user-select: none;
 	-moz-user-select: none;
 	-webkit-user-drag: none;
 	-webkit-user-select: none;
 	-ms-user-select: none;
-}
+} */
 
 /* .light-bg .feature-title {
 	color: var(--pink);
@@ -92,14 +119,19 @@
 	color: var(--blue);
 } */
 
-.light-bg .lists .bullet {
+.light-bg .lists .bullet,
+.light-bg .lists::before {
 	filter: var(--pinkImg);
 }
 
-.dark-bg .lists .bullet {
+.dark-bg .lists .bullet,
+.dark-bg .lists::before {
 	filter: var(--blueImg);
 }
 
+.tail {
+	padding: 6em 0;
+}
 
 /* responsive */
 @media (max-width: 767px) {
@@ -124,7 +156,7 @@
 
 @media (max-width: 992px) {
 	.main-section {
-		padding: 5em 0;
+		padding: 1px;
 	}
 
 	.feature-details .card {
