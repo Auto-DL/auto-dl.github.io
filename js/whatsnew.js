@@ -4,7 +4,7 @@ var result;
 
 $(window).on('load', async () => {
 
-	await $.get("https://vedant080102.github.io/auto-dl.github.io/README.md", (text, status) => {
+	await $.get("https://vedant080102.github.io/auto-dl.github.io/content/CHANGELOG.md", (text, status) => {
 	// $.get("../content/CHANGELOG.md", (text, status) => {
 		console.log("Data Status: " + status);
 		
