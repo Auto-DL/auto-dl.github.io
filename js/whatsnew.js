@@ -4,8 +4,8 @@ var result;
 
 $(window).on('load', async () => {
 
-	// await $.get("https://auto-dl.tech/README.md", (text, status) => {
-	$.get("../content/CHANGELOG.md", (text, status) => {
+	await $.get("https://vedant080102.github.io/auto-dl.github.io/README.md", (text, status) => {
+	// $.get("../content/CHANGELOG.md", (text, status) => {
 		console.log("Data Status: " + status);
 		
 		// Get document, or throw exception on error
