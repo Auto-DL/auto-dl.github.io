@@ -11,7 +11,7 @@
 #change-log h3:first-of-type {
     margin-top: 0;
     -webkit-text-fill-color: transparent;
-    background: linear-gradient(89deg, #9867f0 42.2%, #f92393 60.14%);
+    background: linear-gradient(89deg, #aa00ff 42.2%, #f92393 60.14%);
     background-clip: text;
     -webkit-background-clip: text;
 }
