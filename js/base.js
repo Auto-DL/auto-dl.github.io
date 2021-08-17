@@ -12,9 +12,9 @@ $(function () {
 
 $(window).on('load', async () => {
 
-	console.log("b4 call")
 	await $.get("https://vedant080102.github.io/auto-dl.github.io/content/base.yml", (text, status) => {
-	// $.get("../content/base.yml", (text, status) => {
+		// $.get("../content/base.yml", (text, status) => {
+		console.log("b4 call")
 		console.log("Data Status: " + status);
 		
 		// Get document, or throw exception on error
@@ -25,45 +25,53 @@ $(window).on('load', async () => {
 		} catch (e) {
 			console.log(e);
 		}
-	});
-
-	console.log("after call")
-
-	var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-	var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-		return new bootstrap.Tooltip(tooltipTriggerEl, {
-			template: `<div class="tooltip" role="tooltip">
-                <div class="tooltip-arrow border-right border-left border-secondary"></div>
-                <div class="tooltip-inner border border-secondary"></div>
-            </div>`
-		})
-	});
-
-	var popoverTriggerList = [].slice.call(document.querySelectorAll('.interface-tooltip'))
-	var popoverList = popoverTriggerList.map(function (ele) {
-		return new bootstrap.Popover(ele, {})
+		console.log("after call")
 	});
 
 
-	/* Play animation on click - second click play animation forward */
-	var icon8 = document.querySelector('.anim-icon-menu-004');
+	try {
+		var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+		var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+			return new bootstrap.Tooltip(tooltipTriggerEl, {
+				template: `<div class="tooltip" role="tooltip">
+					<div class="tooltip-arrow border-right border-left border-secondary"></div>
+					<div class="tooltip-inner border border-secondary"></div>
+				</div>`
+			})
+		});
+	
+		var popoverTriggerList = [].slice.call(document.querySelectorAll('.interface-tooltip'))
+		var popoverList = popoverTriggerList.map(function (ele) {
+			return new bootstrap.Popover(ele, {})
+		});
+	} catch (error) {
+		console.log("Bootstrap Error:", error)
+	}
 
-	var animation8 = bodymovin.loadAnimation({
-		container: icon8,
-		renderer: 'svg',
-		loop: false,
-		autoplay: false,
-		path: "media/menuV4.json"
-	});
-	animation8.setSpeed(1.4);
+	try {
+		/* Play animation on click - second click play animation forward */
+		var icon8 = document.querySelector('.anim-icon-menu-004');
+	
+		var animation8 = bodymovin.loadAnimation({
+			container: icon8,
+			renderer: 'svg',
+			loop: false,
+			autoplay: false,
+			path: "media/menuV4.json"
+		});
+		animation8.setSpeed(1.4);
+	
+	
+		var direction8 = 1;
+		icon8.addEventListener('click', (e) => {
+			animation8.setDirection(direction8);
+			animation8.play();
+			direction8 = -direction8;
+		});
+	} catch (error) {
+		console.log("Bodymovin error:", error)
+	}
 
-
-	var direction8 = 1;
-	icon8.addEventListener('click', (e) => {
-		animation8.setDirection(direction8);
-		animation8.play();
-		direction8 = -direction8;
-	});
 });
 
 function baseScripts() {
