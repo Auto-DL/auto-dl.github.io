@@ -30,13 +30,50 @@ document.addEventListener("scroll", function () {
 	}
 });
 
-$(window).on('load', function () {
+$(window).on('load', () => {
 	var head = document.querySelector('.home-head');
 
 	// if (head != null && head.querySelector('.navbar') != null) {
 	head.querySelector('.navbar').classList.remove('fixed-top');
 	// }
 	floatySpace()
+})
+
+$(window).on('load', async () => {
+
+	// await $.get("https://vedant080102.github.io/auto-dl.github.io/content/home.yml", (text, status) => {
+	await $.get("../content/home.yml", (text, status) => {
+		console.log("Data Status: " + status);
+		
+		// Get document, or throw exception on error
+		try {
+			const data = jsyaml.load(text);
+			console.log(data);
+			homePage(data);
+		} catch (e) {
+			console.log(e);
+		}
+	});
+
+	try {
+		var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+		var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+			return new bootstrap.Tooltip(tooltipTriggerEl, {
+				template: `<div class="tooltip" role="tooltip">
+					<div class="tooltip-arrow border-right border-left border-secondary"></div>
+					<div class="tooltip-inner border border-secondary"></div>
+				</div>`
+			})
+		});
+	
+		var popoverTriggerList = [].slice.call(document.querySelectorAll('.interface-tooltip'))
+		var popoverList = popoverTriggerList.map(function (ele) {
+			return new bootstrap.Popover(ele, {})
+		});
+		console.log("Bootstrap popover loaded");
+	} catch (error) {
+		console.log("Bootstrap Error:", error)
+	}
 });
 
 // document.querySelector('header').classList.add("home-head");
@@ -70,3 +107,110 @@ $(document).ready(function () {
 
 	// document ready
 });
+
+function homePage(doc) {
+	// LATEST VERSION
+	var data;
+
+	data = `
+	<h3 class='mb-5'>${doc.latestDetails.title}</h3>
+	<p>${doc.latestDetails.desc}</p>
+	`
+	
+	document.getElementById("latest-version-details").innerHTML = data
+	
+
+	// DEMO VIDEO
+	var dem = `
+	<span class="flex demo-vid" data-bs-toggle="modal" data-bs-target="#youtubeModal">
+		<img class="img-fluid" src=${doc.demo.image} alt="DEMO VIDEO">
+		<a class="pe-auto btn rounded-circle flex" id="yt-btn"><i class="fas fa-play"></i></a>
+	</span>`
+
+	document.getElementById("demo-video").innerHTML = dem;
+	
+
+	// INTERFACE
+	var intr = `
+	<img class="img-fluid" src="${doc.interface.image}" alt="Interface" width="800px">
+
+	<!-- popovers -->
+	${
+		doc.interface.info.map(x => `
+			<a id="${x.pos}" class="interface-tooltip" tabindex="0" class="btn btn-lg btn-danger" role="button"
+				data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="focus" title="${x.title}"
+				data-bs-content="${x.desc}">
+				<i class="fas fa-info-circle"></i>
+			</a>
+		`).join("")
+	}`
+
+	document.getElementById("interface").innerHTML = intr;
+
+	// FEATURES
+	var feat = `
+	<div class="feat flex row row-cols-1 row-cols-sm-2 row-cols-md-3 gy-5 mt-2">
+		${
+			doc.features.map(item => `
+				<div class="col">
+					${item.icon}
+					<h4>${item.title}</h4>
+					<p>${item.desc}</p>
+				</div>
+			`).join("")
+		}
+	</div>`
+
+	document.getElementById("home-features").innerHTML = feat;
+	
+	// GITHUB
+	var git = `
+	<div class="row row-cols-1 row-cols-md-1 row-cols-lg-3">
+		${
+			doc.githubSection.map(item => `
+			<div class="col">
+				${item.icon}
+				<h4>${item.title}</h4>
+				<p>${item.content}</p>
+			</div>
+			`).join("")
+		}
+		<div class="col-12">
+			<h4>repo stars........</h4>
+		</div>
+	</div>`
+	document.getElementById("github-section").innerHTML = git;
+
+
+	// extra section
+	var xtra = `
+	<h3 class='mb-5'>${doc.undecidedSection.title}</h3>
+	<p>${doc.undecidedSection.content}</p>
+	`
+	document.getElementById("extra-section").innerHTML = xtra;
+
+	// TESTIMONIAL
+	var carousel = ``
+	var buttons = ``
+
+	doc.testimonials.forEach((item, index) => {
+		buttons += `
+		<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="${index}" class="${index === 0 ? "active" : ''}" ${index === 0 ? "aria-current='true'" : ''} aria-label="Slide ${index}"></button>
+		`
+		carousel += `
+			<div class="carousel-item ${index === 0 ? "active" : ''}">
+				<div class="carousel-caption">
+					<div class='card'>
+						<!-- <h5 class="qot">"</h5>  -->
+						<p class='testimonial'>${item.comment}
+							<br /><br />-${item.author}.
+						</p>
+					</div>
+				</div>
+			</div>
+		`
+		// console.log("hi", item)
+	})
+	document.getElementById("carousel-inner").innerHTML = carousel;
+	document.getElementById("carousel-buttons").innerHTML = buttons;
+}

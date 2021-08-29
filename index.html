@@ -49,7 +49,7 @@
 
 		<!-- version details -->
 		<section class="flex home-content tinted-bg">
-			<div class="container">
+			<div class="container" id="latest-version-details">
 				<h3 class='mb-5'>*latest version details maybe*</h3>
 				<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit tenetur quod mollitia id asperiores
 					quae porro ad, architecto officia quaerat reprehenderit in, maiores cupiditate quisquam dolorum
@@ -66,7 +66,7 @@
 		<section class="home-content dark-bg-content">
 			<div class="container">
 				<h3 class="mb-5">Watch Demo</h3>
-				<div>
+				<div id="demo-video">
 					<span class="flex demo-vid" data-bs-toggle="modal" data-bs-target="#youtubeModal">
 						<img class="img-fluid" src="media/layoutSS.png" alt="DEMO VIDEO">
 						<a class="pe-auto btn rounded-circle flex" id="yt-btn"><i class="fas fa-play"></i></a>
@@ -122,7 +122,7 @@
 		<section class='home-content light-bg'>
 			<div class="container">
 				<h3 class='mb-5'>What sets <span class="autoDL">Auto-DL</span> apart</h3>
-				<div>
+				<div id="home-features">
 					<div class="feat flex row row-cols-1 row-cols-sm-2 row-cols-md-3 gy-5 mt-2">
 						<div class="col">
 							<i class="fas fa-exclamation-circle"></i>
@@ -147,8 +147,7 @@
 						<div class="col">
 							<i class="fas fa-exclamation-circle"></i>
 							<h4>Explainable</h4>
-							<p>No more black boxes, understand what the AI model is learning.',
-							</p>
+							<p>No more black boxes, understand what the AI model is learning</p>
 						</div>
 						<div class="col-12">
 							<a class="dark-btn btn rounded-pill" href="features.html">Learn More</a>
@@ -162,7 +161,7 @@
 		<section class='home-content dark-bg-content'>
 			<div class="container">
 				<h3 class='mb-5'>*github related*</h3>
-				<div>
+				<div id="github-section">
 					<div class="row row-cols-1 row-cols-md-1 row-cols-lg-3">
 						<div class="col">
 							<i class="mb-5 fas fa-exclamation-circle" style="font-size: 4em;"></i>
@@ -182,26 +181,13 @@
 								aliquam fugit ea quam eius, iure quod cum tempore! Consectetur expedita molestias
 								tempore!</p>
 						</div>
-						<div class="col-12">
-							<h4>repo stars........</h4>
-						</div>
 					</div>
 				</div>
 			</div>
 		</section>
 
 		<section class='home-content light-bg'>
-			<div class="container">
-				<h3 class='mb-5'>Something</h3>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam illo nesciunt eos corporis cumque.
-					Maiores non libero corrupti minima voluptate aliquid, consectetur asperiores provident modi eligendi
-					perspiciatis, nam accusantium commodi distinctio. Repellendus necessitatibus, possimus illo neque ex
-					fugiat numquam consequuntur expedita harum dolorum incidunt beatae ratione aliquid aspernatur
-					molestiae perferendis exercitationem rem dicta eos autem, architecto delectus vel. Dolor, quidem.
-					Suscipit, inventore soluta aliquid autem iusto laborum optio! Qui, sunt cumque, blanditiis earum
-					nulla corrupti eius dignissimos vero voluptate praesentium aut dolor minima modi voluptates.
-					Voluptate, qui! Sequi quidem explicabo facilis iste quod! Officia obcaecati impedit explicabo
-					exercitationem, dolorum doloremque?</p>
+			<div class="container" id="extra-section">
 			</div>
 		</section>
 
@@ -210,7 +196,7 @@
 			<span></span>
 			<h3 class='mb-5'>What Our Users say</h3>
 			<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" style="height: 400px">
-				<div class="carousel-indicators">
+				<div class="carousel-indicators" id="carousel-buttons">
 					<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
 						aria-current="true" aria-label="Slide 1"></button>
 					<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
@@ -218,7 +204,7 @@
 					<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
 						aria-label="Slide 3"></button>
 				</div>
-				<div class="carousel-inner">
+				<div class="carousel-inner" id="carousel-inner">
 					<div class="carousel-item active">
 						<!-- <img src="." class="d-block w-100" alt="..." />  -->
 						<div class="carousel-caption">

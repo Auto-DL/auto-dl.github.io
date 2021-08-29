@@ -1,0 +1,118 @@
+# home page content
+---
+
+# latest version details 
+latestDetails: 
+  title: yet to be decided
+  desc: |
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit tenetur quod mollitia id asperiores quae porro ad, 
+    architecto officia quaerat reprehenderit in, maiores cupiditate quisquam dolorum dolor placeat quibusdam earum. 
+    Delectus, officia atque. Hic, fugit harum voluptate sed veniam adipisci maiores, ab temporibus molestiae quas 
+    eos cupiditate repellendus sunt quisquam deleniti iusto quos accusantium totam accusamus ipsa officia? 
+    Inventore excepturi in, amet dicta architecto temporibus neque ipsa qui quisquam perferendis. Similique 
+    veritatis nam tempore beatae reiciendis ut, magni nisi eligendi modi adipisci laboriosam commodi vitae eaque 
+    consectetur alias rerum nemo soluta voluptatum. Saepe aspernatur, vel veritatis ratione esse ea quisquam?
+
+
+# demo images/ videoes/ tutorials
+demo:
+  video: link
+  image: media/layoutSS.png
+
+# interface screenshots with tooltips providing info
+interface:
+  image: media/interface.png
+  
+  info:
+    - pos: top-right
+      title: Title
+      desc: | 
+        And here's some amazing content. It's very engaging. Right?
+
+    - pos: bottom-right
+      title: Title
+      desc: |
+        And here's some amazing content. It's very engaging. Right?
+
+    - pos: top-left
+      title: Title
+      desc: |
+        And here's some amazing content. It's very engaging. Right?
+
+    - pos: bottom-left
+      title: Title
+      desc: |
+        And here's some amazing content. It's very engaging. Right?
+
+
+# brief about some of the features
+features:
+  - title: Scalable
+    desc: Highly scalable as it can be deployed on a single compute system or a cluster
+    icon: <i class="fas fa-exclamation-circle"></i>
+
+  - title: Secure
+    desc: Your data and models' security is our highest priority
+    icon: <i class="fas fa-exclamation-circle"></i>
+
+  - title: Intuitive
+    desc: Strong preference for easy to use, intuitive UX/UI
+    icon: <i class="fas fa-exclamation-circle"></i>
+
+  - title: Flexible
+    desc: Develop DL models in any framework and any programming language
+    icon: <i class="fas fa-exclamation-circle"></i>
+
+  - title: Explainable
+    desc: No more black boxes, understand what the AI model is learning
+    icon: <i class="fas fa-exclamation-circle"></i>
+
+
+# github repo details/ contributors/ stars...
+githubSection:
+  - title: something
+    icon: '<i class="mb-5 fas fa-exclamation-circle" style="font-size: 4em;"></i>'
+    content: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium, animi quo. Magni aliquam fugit ea quam eius, iure quod cum tempore! Consectetur expedita molestias tempore!
+
+  - title: something
+    icon: '<i class="mb-5 fas fa-exclamation-circle" style="font-size: 4em;"></i>'
+    content: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium, animi quo. Magni aliquam fugit ea quam eius, iure quod cum tempore! Consectetur expedita molestias tempore!
+
+  - title: something
+    icon: '<i class="mb-5 fas fa-exclamation-circle" style="font-size: 4em;"></i>'
+    content: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium, animi quo. Magni aliquam fugit ea quam eius, iure quod cum tempore! Consectetur expedita molestias tempore!
+
+
+# undecided yet!
+undecidedSection:
+  title: Something
+  content: |
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam illo nesciunt eos corporis cumque.
+      Maiores non libero corrupti minima voluptate aliquid, consectetur asperiores provident modi eligendi
+      perspiciatis, nam accusantium commodi distinctio. Repellendus necessitatibus, possimus illo neque ex
+      fugiat numquam consequuntur expedita harum dolorum incidunt beatae ratione aliquid aspernatur
+      molestiae perferendis exercitationem rem dicta eos autem, architecto delectus vel. Dolor, quidem.
+      Suscipit, inventore soluta aliquid autem iusto laborum optio! Qui, sunt cumque, blanditiis earum
+      nulla corrupti eius dignissimos vero voluptate praesentium aut dolor minima modi voluptates.
+      Voluptate, qui! Sequi quidem explicabo facilis iste quod! Officia obcaecati impedit explicabo
+      exercitationem, dolorum doloremque?
+
+# user reviews/ comments
+testimonials:
+  - comment: |
+      A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my
+    author: Lorem ipsum dolor
+
+  - comment: |
+      The European languages are members of the same family. Their separate existence is a myth. For science, 
+      music, sport, etc, Europe uses the same vocabulary. The languages only differ in their grammar, their 
+      pronunciation and their most common words. Everyone realizes why a new common language would be 
+      desirable: one
+    author: Lorem ipsum dolor
+
+  - comment: |
+      The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced 
+      by fox whelps. Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph, for quick jigs vex! Fox nymphs 
+      grab quick-jived waltz. Brick quiz whangs jumpy veldt fox. Bright vixens
+    author: Lorem ipsum dolor
+

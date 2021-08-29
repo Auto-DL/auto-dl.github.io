@@ -28,26 +28,6 @@ $(window).on('load', async () => {
 		console.log("after call")
 	});
 
-
-	try {
-		var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-		var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-			return new bootstrap.Tooltip(tooltipTriggerEl, {
-				template: `<div class="tooltip" role="tooltip">
-					<div class="tooltip-arrow border-right border-left border-secondary"></div>
-					<div class="tooltip-inner border border-secondary"></div>
-				</div>`
-			})
-		});
-	
-		var popoverTriggerList = [].slice.call(document.querySelectorAll('.interface-tooltip'))
-		var popoverList = popoverTriggerList.map(function (ele) {
-			return new bootstrap.Popover(ele, {})
-		});
-	} catch (error) {
-		console.log("Bootstrap Error:", error)
-	}
-
 	try {
 		/* Play animation on click - second click play animation forward */
 		var icon8 = document.querySelector('.anim-icon-menu-004');
