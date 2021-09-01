@@ -44,7 +44,7 @@ $(window).on('load', async () => {
 	// await $.get("https://vedant080102.github.io/auto-dl.github.io/content/home.yml", (text, status) => {
 	await $.get("../content/home.yml", (text, status) => {
 		console.log("Data Status: " + status);
-		
+
 		// Get document, or throw exception on error
 		try {
 			const data = jsyaml.load(text);
@@ -65,7 +65,7 @@ $(window).on('load', async () => {
 				</div>`
 			})
 		});
-	
+
 		var popoverTriggerList = [].slice.call(document.querySelectorAll('.interface-tooltip'))
 		var popoverList = popoverTriggerList.map(function (ele) {
 			return new bootstrap.Popover(ele, {})
@@ -116,23 +116,25 @@ function homePage(doc) {
 	<h3 class='mb-5'>${doc.latestDetails.title}</h3>
 	<p>${doc.latestDetails.desc}</p>
 	`
-	
-	document.getElementById("latest-version-details").innerHTML = data
-	
+
+	// document.getElementById("latest-version-details").innerHTML = data
+
+	$("#latest-version-details").append(stringToHTML(data))
+
 
 	// DEMO VIDEO
 	var dem = `
 	<span class="flex demo-vid" data-bs-toggle="modal" data-bs-target="#youtubeModal">
-		<img class="img-fluid" src=${doc.demo.image} alt="DEMO VIDEO">
+		<img class="img-fluid" src=${doc.demo.image} alt="DEMO VIDEO" height="300" width="800">
 		<a class="pe-auto btn rounded-circle flex" id="yt-btn"><i class="fas fa-play"></i></a>
 	</span>`
 
-	document.getElementById("demo-video").innerHTML = dem;
-	
+	$("#demo-video").html("")
+	$("#demo-video").append(stringToHTML(dem));
 
 	// INTERFACE
 	var intr = `
-	<img class="img-fluid" src="${doc.interface.image}" alt="Interface" width="800px">
+	<img class="img-fluid" src="${doc.interface.image}" alt="Interface" height="300" width="800">
 
 	<!-- popovers -->
 	${
@@ -145,7 +147,7 @@ function homePage(doc) {
 		`).join("")
 	}`
 
-	document.getElementById("interface").innerHTML = intr;
+	$("#interface").append(stringToHTML(intr));
 
 	// FEATURES
 	var feat = `
@@ -161,8 +163,8 @@ function homePage(doc) {
 		}
 	</div>`
 
-	document.getElementById("home-features").innerHTML = feat;
-	
+	$("#home-features").append(stringToHTML(feat));
+
 	// GITHUB
 	var git = `
 	<div class="row row-cols-1 row-cols-md-1 row-cols-lg-3">
@@ -179,7 +181,7 @@ function homePage(doc) {
 			<h4>repo stars........</h4>
 		</div>
 	</div>`
-	document.getElementById("github-section").innerHTML = git;
+	$("#github-section").append(stringToHTML(git));
 
 
 	// extra section
@@ -187,7 +189,7 @@ function homePage(doc) {
 	<h3 class='mb-5'>${doc.undecidedSection.title}</h3>
 	<p>${doc.undecidedSection.content}</p>
 	`
-	document.getElementById("extra-section").innerHTML = xtra;
+	$("#extra-section").append(stringToHTML(xtra));
 
 	// TESTIMONIAL
 	var carousel = ``
@@ -211,6 +213,7 @@ function homePage(doc) {
 		`
 		// console.log("hi", item)
 	})
-	document.getElementById("carousel-inner").innerHTML = carousel;
-	document.getElementById("carousel-buttons").innerHTML = buttons;
+	
+	$("#carousel-inner").append(stringToHTML(carousel));
+	$("#carousel-buttons").append(stringToHTML(buttons));
 }

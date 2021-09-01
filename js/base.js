@@ -10,13 +10,40 @@ $(function () {
 	$('footer').load('header.html #footer');
 });
 
+var support = (()=> {
+	if (!window.DOMParser) return false;
+	var parser = new DOMParser();
+
+	try {
+		parser.parseFromString('x', 'text/html');
+	} catch (err) {
+		return false;
+	}
+	return true;
+})();
+
+var stringToHTML = function (str) {
+
+	// If DOMParser is supported, use it
+	if (support) {
+		var parser = new DOMParser();
+		var doc = parser.parseFromString(str, 'text/html');
+		return $(doc.body).children();
+	}
+
+	// Otherwise, fallback to old-school method
+	var dom = document.createElement('div');
+	dom.innerHTML = str;
+	return dom;
+};
+
 $(window).on('load', async () => {
 
 	await $.get("https://vedant080102.github.io/auto-dl.github.io/content/base.yml", (text, status) => {
 		// $.get("../content/base.yml", (text, status) => {
 		console.log("b4 call")
 		console.log("Data Status: " + status);
-		
+
 		// Get document, or throw exception on error
 		try {
 			const data = jsyaml.load(text);
@@ -31,7 +58,7 @@ $(window).on('load', async () => {
 	try {
 		/* Play animation on click - second click play animation forward */
 		var icon8 = document.querySelector('.anim-icon-menu-004');
-	
+
 		var animation8 = bodymovin.loadAnimation({
 			container: icon8,
 			renderer: 'svg',
@@ -40,8 +67,8 @@ $(window).on('load', async () => {
 			path: "media/menuV4.json"
 		});
 		animation8.setSpeed(1.4);
-	
-	
+
+
 		var direction8 = 1;
 		icon8.addEventListener('click', (e) => {
 			animation8.setDirection(direction8);

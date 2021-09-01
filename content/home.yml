@@ -17,11 +17,11 @@ latestDetails:
 # demo images/ videoes/ tutorials
 demo:
   video: link
-  image: media/layoutSS.png
+  image: media/layoutSS.webp
 
 # interface screenshots with tooltips providing info
 interface:
-  image: media/interface.png
+  image: media/interface.webp
   
   info:
     - pos: top-right
