@@ -41,8 +41,8 @@ $(window).on('load', () => {
 
 $(window).on('load', async () => {
 
-	// await $.get("https://vedant080102.github.io/auto-dl.github.io/content/home.yml", (text, status) => {
-	await $.get("../content/home.yml", (text, status) => {
+	await $.get("https://vedant080102.github.io/auto-dl.github.io/content/home.yml", (text, status) => {
+	// await $.get("../content/home.yml", (text, status) => {
 		console.log("Data Status: " + status);
 
 		// Get document, or throw exception on error
@@ -213,7 +213,7 @@ function homePage(doc) {
 		`
 		// console.log("hi", item)
 	})
-	
+
 	$("#carousel-inner").append(stringToHTML(carousel));
 	$("#carousel-buttons").append(stringToHTML(buttons));
 }
