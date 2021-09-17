@@ -53,7 +53,7 @@
     box-shadow: 0 1rem 3rem rgba(0,0,0,.175)!important;
 }
 
-.dark-bg .card {
+.dark-bg.card {
     border-top: 4px solid cyan;
     background-color: #252934;
     /* background-color: #0000002f; */
@@ -61,7 +61,7 @@
     /* box-shadow: #000000d4 0px 0.5rem 1rem !important; */
 }
 
-.dark-bg .card:hover {
+.dark-bg.card:hover {
     /* box-shadow: #000000d4 0px 0.5rem 1rem 2px !important; */
     box-shadow: #00000063 0px 0.5rem 1rem 0px !important;
 }
@@ -71,16 +71,16 @@
     background-color: #e8edf1;
 } */
 
-.light-bg .card,
-.tinted-bg .card {
+.light-bg.card,
+.tinted-bg.card {
     border-top: 4px solid #f72585;
     color: #252934;
 }
 
 .card-title {
-    /* margin-bottom: 1.5em !important; */
+    /* margin-top: 1.5em !important; */
     font-weight: bold;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     /* display: flex; */
     /* justify-content: center; */
     /* align-items: center; */
