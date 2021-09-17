@@ -98,8 +98,8 @@ $(window).on('load', async () => {
 
     console.log("b4 call");
 
-    // await $.get("https://vedant080102.github.io/auto-dl.github.io/content/pricing.yml", (text, status) => {
-    await $.get("../content/pricing.yml", (text, status) => {
+    await $.get("https://vedant080102.github.io/auto-dl.github.io/content/pricing.yml", (text, status) => {
+    // await $.get("../content/pricing.yml", (text, status) => {
         console.log("Data Status: " + status);
 
         // Get document, or throw exception on error
