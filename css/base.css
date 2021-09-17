@@ -309,6 +309,26 @@ main .head-bg {
 	background-color: silver;
 } */
 
+/* pre loader */
+.pre-loader {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	border: 2px solid transparent;
+	border-top: 2px solid #5e60ce;
+	border-bottom: 2px solid #5e60ce;
+	animation: anim4 1s linear infinite;
+}
+
+.pre-content {
+	visibility: hidden;
+}
+
+@keyframes anim4 {
+	to {
+		transform: rotate(360deg);
+	}
+}
 
 footer h4 {
 	color: #fff;

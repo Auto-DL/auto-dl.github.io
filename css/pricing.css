@@ -35,6 +35,13 @@ main .card {
     color: var(--free);
 }
 
+.check-bullet li::before {
+    content: "\f00c";  /* this is your text. You can also use UTF-8 character codes as I do here */
+    font-family: FontAwesome;
+    margin-right: 0.5em;
+    color: var(--free);
+}
+
 .head-img {
     -webkit-user-drag: none;
     -khtml-user-drag: none;
@@ -116,6 +123,9 @@ main .card {
     border-top: 5px solid var(--enterprise) !important;
 }
 
+.enterprise-card .plan-price {
+    visibility: hidden;
+}
 .Enterprise-table .plan-btn,
 .enterprise-card .plan-btn {
     background-color: var(--enterprise) !important;

@@ -4,7 +4,7 @@ $(window).on('load', async () => {
 	// await $.get("../content/features.yml", (text, status) => {
 	await $.get("https://vedant080102.github.io/auto-dl.github.io/content/features.yml", (text, status) => {
 		console.log("Data Status: " + status);
-		
+
 		// Get document, or throw exception on error
 		try {
 			const data = jsyaml.load(text);
@@ -36,17 +36,14 @@ function displayFeatures(doc) {
 								<div class="col-12 col-md-6">
 									<h2 class='feature-title'>${item.title}</h2>
 									<div class="inner-content">
-									${
-									item.info.map((x, i) => 
+									${item.info.map((x, i) => 
 										`<div class="lists">
 											<div>
 												<span class="point-title">${x.title}</span>
 												<p>${x.details}</p>
 											</div>
 										</div>
-										`
-									).join("")
-									}
+										`).join("")}
 									</div>
 								</div>
 							</div>

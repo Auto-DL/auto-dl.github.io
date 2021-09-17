@@ -1,30 +1,60 @@
 --- 
 # pricing table
 
-# table headings
-headings:
+# pricing plans
+plans:
   - title: 'Free'
     price: '0'
     link: "javascript:void(0)"
+    icon: "./media/sparkle.svg"
+    users: 10
+    testResults: 100
     linktxt: 'Sign Up Free'
+    perks:
+      - Parallelization
+      - Load Balancing
+      - Integrations
+      - Community Support
 
   - title: 'Premium'
     price: '101'
     link: "javascript:void(0)"
+    icon: "./media/bestseller.svg"
+    users: 10
+    testResults: 100
     linktxt: 'Get Started'
+    perks:
+      - Parallelization
+      - Load Balancing
+      - Analytics
+      - Integrations
+      - Community Support
   
   - title: 'Enterprise'
     price: 'Custom'
     link: "javascript:void(0)"
+    icon: "./media/business.svg"
+    users: 10
+    testResults: 100
     linktxt: 'Contact Us'
+    perks:
+      - Parallelization
+      - Load Balancing
+      - Debugging
+      - Analytics
+      - Integrations
+      - Community Support
+
 
 
 # table details and availability
+# [availability list shows which item will be provided in the which all plan(s)]
+# [free, premium, enterprise]
 tableContent:
   - title: "&nbsp;"
     details: 
       - name: "Test Results included"
-        available: [false, true, true]
+        available: [true, true, true]
 
       - name: "Additional Test Results"
         available: [false, true, true]
@@ -43,13 +73,13 @@ tableContent:
         available: [false, true, true]
     
       - name: "Load Balancing"
-        available: [false, true, true]
+        available: [true, true, true]
     
       - name: "Run failed specs first"
-        available: [false, true, true]
+        available: [true, true, true]
     
       - name: "Cancel run on failure"
-        available: [false, true, true]
+        available: [true, true, true]
 
   - title: "Debugging"
     details:
@@ -60,7 +90,7 @@ tableContent:
         available: [false, true, true]
     
       - name: "Screenshots"
-        available: [false, true, true]
+        available: [true, true, true]
     
       - name: "Video Playback"
         available: [false, true, true]
@@ -77,7 +107,7 @@ tableContent:
         available: [false, true, true]
     
       - name: "Top Failures"
-        available: [false, true, true]
+        available: [true, true, true]
     
       - name: "Common Errors"
         available: [false, true, true]
@@ -88,13 +118,13 @@ tableContent:
   - title: "Integrations"
     details:
       - name: "GitHub"
-        available: [false, true, true]
+        available: [true, true, true]
     
       - name: "Slack"
         available: [false, true, true]
     
       - name: "GitLab"
-        available: [false, true, true]
+        available: [true, true, true]
     
       - name: "Bitbucket"
         available: [false, true, true]
@@ -108,7 +138,7 @@ tableContent:
   - title: "Flake Management"
     details:
       - name: "Test Flake Detection"
-        available: [false, true, true]
+        available: [true, true, true]
     
       - name: "Test Flake Analytics"
         available: [false, true, true]

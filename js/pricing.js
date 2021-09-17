@@ -1,27 +1,3 @@
-// import YAML from 'https://cdn.jsdelivr.net/npm/yaml@1.10.2/index.js'
-// import YAML from 'js-yaml';
-// let fs;// = require('fs')
-
-// require(['fs'], function (f) {
-//     //fs is now loaded.
-//     fs = f
-// });
-// import { tableContent } from '../content/pricing.yml';
-// import tableContent from '../content/pricing.json';
-// console.log("file", tableContent)
-
-// import fs from 'fs'
-// const fs = require ('fs');
-
-// import { YAML } from './yamlparser';
-
-// var YAML;
-// require(['https://cdn.jsdelivr.net/npm/yaml@1.10.2/browser/dist/index.js'], (yaml) => YAML = yaml);
-
-
-// var features = []
-// var headings = []
-
 function priceTable(headings, features) {
     let ele = document.getElementById('price-table');
     let data = `
@@ -69,25 +45,70 @@ function priceTable(headings, features) {
     ele.innerHTML = data;
 }
 
+function planCards(doc) {
+    data = `<div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 justify-content-center gy-5 mx-2 mx-md-5 px-1 px-md-5 mb-5">`
+
+    doc.forEach(item => {
+        data += `
+        <div class="card-container col">
+			<div class="card ${item.title.toLowerCase()}-card">
+				<div class="card-header">
+					<img class="head-img" src=${item.icon} height="30" alt="Free-Plan">
+				</div>
+				<div class="card-body">
+					<div class="card-title">${item.title.toUpperCase()}</div>
+					<div class="card-text">
+						<p class="invisible">Starting At</p>
+						<div class='plan-price'>
+							<span class='symbol'>&#8377;</span>
+							<span class='value'>${item.price}</span>
+							<span class='period'>/month</span>
+						</div>
+						<ul class="list-group list-group-flush">
+							<li class="list-group-item d-flex justify-content-between">
+								<span>Users</span>
+								<strong>${item.users}</strong>
+							</li>
+							<li class="list-group-item d-flex justify-content-between">
+								<span>Test Results</span>
+								<strong>${item.testResults}</strong>
+							</li>
+						</ul>
+						<a class="btn plan-btn my-4 rounded-pill" href=${item.link}>${item.linktxt}</a>
+						<ul class="check-bullet list-unstyled text-start">
+							<h6>Everything you get with Free:</h6>
+                            ${item.perks.map(x => `
+                                <li class="list-group-item border-0">${x}</li>
+                            `).join("")}
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+        `        
+    })
+
+    data += `</div>`
+
+    document.getElementById("pricing-cards").innerHTML = data;
+}
+
+
 $(window).on('load', async () => {
 
     console.log("b4 call");
 
-    await $.get("https://vedant080102.github.io/auto-dl.github.io/content/pricing.yml", (text, status) => {
-    // $.get("../content/pricing.yml", (text, status) => {
+    // await $.get("https://vedant080102.github.io/auto-dl.github.io/content/pricing.yml", (text, status) => {
+    await $.get("../content/pricing.yml", (text, status) => {
         console.log("Data Status: " + status);
 
         // Get document, or throw exception on error
         try {
             const data = jsyaml.load(text);
             console.log(data);
-            // headings = data.headings;
-            // features = data.tableContent;
 
-            // console.log(headings, features);
-
-            // priceTable();
-            priceTable(data.headings, data.tableContent);
+            planCards(data.plans)
+            priceTable(data.plans, data.tableContent);
         } catch (e) {
             console.log(e);
         }

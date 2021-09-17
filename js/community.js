@@ -30,7 +30,7 @@ function displayComData(doc) {
 				<!-- <div class="card-header"></div> -->
 				<!-- <a style='text-decoration: none; color: inherit' href=${item.link}> -->
 				<div class="card-body">
-					<img class="card-img" src=${item.icon} height="25" alt=${item.title}>
+					<img class="card-img" src=${item.icon} height="50" alt=${item.title}>
 					<div class="card-title">${item.title}</div>
 					<!-- <div class="card-text">Meet other Auto-DL users and share your experiences by attending events and meetups.</div> -->
 					<a class="btn ${item.theme === 'light' ? 'dark': 'light'}-btn rounded-pill" 

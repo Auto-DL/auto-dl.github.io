@@ -27,7 +27,7 @@
 }
 
 .card-container {
-    padding: 0.5em !important;
+    padding: 0.75em 0 !important;
     margin-top: 0em !important;
 
     display: flex;
@@ -78,7 +78,7 @@
 }
 
 .card-title {
-    /* margin-top: 1.5em !important; */
+    margin: 0.5em 0 !important;
     font-weight: bold;
     font-size: 1.5rem;
     /* display: flex; */
@@ -109,7 +109,7 @@
     /* margin: 0.75rem 0 !important; */
     /* height: 25px;
     width: 25px !important; */
-    height: 50px;
+    height: 60px;
     /* margin-right: 0.2em; */
 }
 
