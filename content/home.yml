@@ -49,37 +49,37 @@ interface:
 features:
   - title: Scalable
     desc: Highly scalable as it can be deployed on a single compute system or a cluster
-    icon: <i class="fas fa-exclamation-circle"></i>
+    icon: <i class="fas fa-balance-scale"></i>
 
   - title: Secure
     desc: Your data and models' security is our highest priority
-    icon: <i class="fas fa-exclamation-circle"></i>
+    icon: <i class="fas fa-shield-alt"></i>
 
   - title: Intuitive
     desc: Strong preference for easy to use, intuitive UX/UI
-    icon: <i class="fas fa-exclamation-circle"></i>
+    icon: <i class="far fa-lightbulb"></i>
 
   - title: Flexible
     desc: Develop DL models in any framework and any programming language
-    icon: <i class="fas fa-exclamation-circle"></i>
+    icon: <i class="fas fa-laptop"></i>
 
   - title: Explainable
     desc: No more black boxes, understand what the AI model is learning
-    icon: <i class="fas fa-exclamation-circle"></i>
+    icon: <i class="fas fa-atom"></i>
 
 
 # github repo details/ contributors/ stars...
 githubSection:
   - title: something
-    icon: '<i class="mb-5 fas fa-exclamation-circle" style="font-size: 4em;"></i>'
+    icon: '<i class="fab fa-github" style="font-size: 4em;"></i>'
     content: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium, animi quo. Magni aliquam fugit ea quam eius, iure quod cum tempore! Consectetur expedita molestias tempore!
 
   - title: something
-    icon: '<i class="mb-5 fas fa-exclamation-circle" style="font-size: 4em;"></i>'
+    icon: '<i class="fab fa-git-alt" style="font-size: 4em;"></i>'
     content: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium, animi quo. Magni aliquam fugit ea quam eius, iure quod cum tempore! Consectetur expedita molestias tempore!
 
   - title: something
-    icon: '<i class="mb-5 fas fa-exclamation-circle" style="font-size: 4em;"></i>'
+    icon: '<i class="fab fa-github-alt" style="font-size: 4em;"></i>'
     content: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium, animi quo. Magni aliquam fugit ea quam eius, iure quod cum tempore! Consectetur expedita molestias tempore!
 
 
