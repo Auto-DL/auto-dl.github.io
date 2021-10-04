@@ -1,0 +1,166 @@
+:root {
+	--blueImg: invert(72%) sepia(74%) saturate(367%) hue-rotate(144deg) brightness(92%) contrast(91%);
+	--pinkImg: invert(27%) sepia(70%) saturate(4052%) hue-rotate(317deg) brightness(98%) contrast(97%);
+	--blue: #56cfe1;
+	--pink: #f72585;
+}
+
+.heading {
+	font-size: 1.2em;
+	margin: 4em 0;
+}
+
+.heading h1 {
+	font-weight: 700;
+}
+
+.main-section {
+	position: relative;
+	padding: 3em 1em;
+}
+
+.main-section:nth-child(2) {
+	padding-bottom: 0 !important;
+}
+
+.main-section:nth-child(3) {
+	padding-top: 0 !important;
+}
+
+.light-bg {
+	/* background-color: #fff; */
+	color: #252934;
+	/* background: linear-gradient(143deg, #ffffff 55%, #a400ff3d 90%); */
+}
+
+.tinted-bg {
+	background-color: #e8edf1;
+	color: #252934;
+}
+
+.dark-bg {
+	background-color: #252934;
+	color: white;
+	/* background-image: linear-gradient(320deg, #271f7d -36%, #252934 36%); */
+}
+
+
+.feature-details .card {
+	min-height: 30vh;
+	border-radius: 1rem;
+	padding: 3em;
+	font-size: 1.3em;
+	/* box-shadow: -1px 3px 16px 0px #888888; */
+	border-width: 0px;
+	text-align: left;
+	background-color: inherit;
+}
+
+.feature-title {
+	font-size: calc(1.1rem + 2vw);
+	font-weight: 800;
+	line-height: 1.2;
+}
+
+.feature-img {
+	display: flex;
+	align-items: center;
+}
+
+.feature-img img {
+	border-radius: .25rem;
+}
+
+.feature-details .main-row {
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	margin: 0 !important;
+}
+
+.main-section:nth-child(odd) .main-row {
+	flex-direction: row-reverse;
+}
+
+.inner-content .lists {
+	display: flex;
+	font-weight: lighter;
+}
+
+.inner-content .lists::before {
+	content: url('https://vedant080102.github.io/auto-dl.github.io/media/bullet.svg');
+	margin-right: 1em;
+	margin-top: 0.7em;
+	height: 25px;
+}
+
+.point-title {
+	/* font-size: 1.25em; */
+	font-size: calc(1rem + 1.25vw);
+	font-weight: bold;
+}
+
+/* .inner-content .lists .bullet {
+	margin-right: 1em;
+	margin-top: 0.7em;
+	height: 25px;
+	//filter: invert(21%) sepia(88%) saturate(6289%) hue-rotate(260deg) brightness(99%) contrast(117%);
+	user-drag: none;  
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-drag: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+} */
+
+/* .light-bg .feature-title {
+	color: var(--pink);
+}
+.dark-bg .feature-title {
+	color: var(--blue);
+} */
+
+.light-bg .lists .bullet,
+.light-bg .lists::before {
+	filter: var(--pinkImg);
+}
+
+.dark-bg .lists .bullet,
+.dark-bg .lists::before {
+	filter: var(--blueImg);
+}
+
+.tail {
+	padding: 6em 0;
+}
+
+/* responsive */
+@media (max-width: 767px) {
+	.feature-details .card {
+		padding: 3em 0;
+	}
+
+	.feature-details .inner-content {
+		z-index: 3;
+		position: relative;
+	}
+
+	.feature-details .light-bg .inner-content {
+		background-color: #fff;
+		z-index: 2;
+	}
+
+	.feature-details .dark-bg .inner-content {
+		background-color: #252934f1;
+	}
+}
+
+@media (max-width: 992px) {
+	.main-section {
+		padding: 1px;
+	}
+
+	.feature-details .card {
+		width: 100%;
+	}
+}

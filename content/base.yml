@@ -1,0 +1,47 @@
+# base content
+---
+
+footerData:
+  - title: 'Get Started'
+    info:
+      - name: 'Why Auto-DL'
+        link: "#"
+
+      - name: 'Install'
+        link: "#"
+
+      - name: 'Pricing'
+        link: "#"
+
+  - title: 'Support'
+    info:
+      - name: 'Docs'
+        link: "#"
+
+      - name: 'FAQ'
+        link: "#"
+
+      - name: 'Feedback'
+        link: "#"
+
+  - title: 'Company'
+    info:
+      - name: 'About'
+        link: "#"
+
+      - name: 'Jobs'
+        link: "#"
+
+      - name: 'Contact'
+        link: "#"
+
+  - title: 'Development'
+    info:
+      - name: 'Contribute'
+        link: "#"
+
+      - name: 'Status'
+        link: "#"
+
+      - name: 'Work with Us'
+        link: "#"

@@ -1,0 +1,166 @@
+:root {
+    --free: #02b77d;
+    --premium: #4361ee;
+    --enterprise: #003049;
+}
+
+/* price card */
+main .card {
+    box-shadow: rgb(0 0 0 / 15%) 0px 0.5rem 1rem;
+    border: none;
+    border-radius: 9px;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+}
+
+.card-header {
+    border: none !important;
+    background-color: white !important;
+    padding-top: 2em !important;
+}
+
+.card-title {
+    margin-bottom: 0.8em !important;
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+.fa-check {
+    color: var(--free);
+}
+
+.check-bullet li::before {
+    content: "\f00c";  /* this is your text. You can also use UTF-8 character codes as I do here */
+    font-family: FontAwesome;
+    margin-right: 0.5em;
+    color: var(--free);
+}
+
+.head-img {
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    user-select: none;
+}
+
+.price-btn:hover {
+    filter: brightness(0.9);
+}
+
+.plan-price .symbol {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 16px;
+    vertical-align: top;
+}
+
+.plan-price .value {
+    font-size: 45px;
+    font-weight: bold;
+    line-height: 34px;
+    letter-spacing: -1.73077px;
+}
+
+.plan-price .period {
+    font-size: 16px;
+    line-height: 16px;
+    vertical-align: bottom;
+}
+
+.plan-price {
+    margin-bottom: 1.5em;
+}
+
+/* free card */
+.free-card {
+    border-top: 5px solid var(--free) !important;
+}
+
+.Free-table .plan-btn,
+.free-card .plan-btn {
+    background-color: var(--free) !important;
+    color: white !important;
+}
+
+.free-card .card-title,
+.free-card .plan-price .value {
+    color: var(--free);
+}
+
+.free-card .head-img {
+    filter: invert(66%) sepia(91%) saturate(5924%) hue-rotate(139deg) brightness(107%) contrast(98%);
+}
+
+/* premium card */
+.premium-card {
+    border-top: 5px solid var(--premium) !important;
+}
+
+.Premium-table .plan-btn,
+.premium-card .plan-btn {
+    background-color: var(--premium) !important;
+    color: white !important;
+}
+
+.premium-card .card-title,
+.premium-card .plan-price .value {
+    color: var(--premium);
+}
+
+.premium-card .head-img {
+    filter: invert(33%) sepia(39%) saturate(6664%) hue-rotate(225deg) brightness(99%) contrast(89%);
+}
+
+/* enterprise card */
+.enterprise-card {
+    border-top: 5px solid var(--enterprise) !important;
+}
+
+.enterprise-card .plan-price {
+    visibility: hidden;
+}
+.Enterprise-table .plan-btn,
+.enterprise-card .plan-btn {
+    background-color: var(--enterprise) !important;
+    color: white !important;
+}
+
+.enterprise-card .card-title,
+.enterprise-card .plan-price .value {
+    color: var(--enterprise);
+}
+
+.enterprise-card .head-img {
+    filter: invert(12%) sepia(83%) saturate(1495%) hue-rotate(174deg) brightness(95%) contrast(101%);
+}
+
+/* plan table */
+table td:not(:last-child),
+table th:not(:last-child) {
+    border-right: 1px solid rgb(225, 231, 236);
+}
+
+.Free-table .table-head {
+    color: var(--free);
+}
+
+.Premium-table .table-head {
+    color: var(--premium);
+}
+
+.Enterprise-table .table-head {
+    color: var(--enterprise);
+}
+
+@media (min-width: 1200px) {
+    .card-container .card {
+        width: 85%;
+    }
+}

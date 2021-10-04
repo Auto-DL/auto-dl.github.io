@@ -1,0 +1,66 @@
+# feature page content
+---
+features:
+  - title: Scalable
+    theme: light
+    media: https://www.cortex.dev/lib_QtFjUvVkCmvcsdgK/jihwdwysw31h9n8t.png?w=1200&h=900&fit=max
+    info:
+      - title: lorem
+        details: Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+      - title: lorem
+        details: Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+      - title: lorem
+        details: Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+    icon: <i class="far fa-plus-square"></i>
+
+
+  - title: Secure
+    theme: dark
+    media: https://www.cortex.dev/lib_QtFjUvVkCmvcsdgK/jihwdwysw31h9n8t.png?w=1200&h=900&fit=max
+    info:
+      - title: lorem
+        details: Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+      - title: lorem
+        details: Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+      - title: lorem
+        details: Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+    icon: <i class="far fa-plus-square"></i>
+
+
+  - title: Intuitive
+    theme: dark
+    media: https://www.cortex.dev/lib_QtFjUvVkCmvcsdgK/jihwdwysw31h9n8t.png?w=1200&h=900&fit=max
+    info:
+      - title: lorem
+        details: Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+      - title: lorem
+        details: Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+      - title: lorem
+        details: Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+    icon: <i class="far fa-plus-square"></i>
+
+
+  - title: Flexible
+    theme: light
+    media: https://www.cortex.dev/lib_QtFjUvVkCmvcsdgK/jihwdwysw31h9n8t.png?w=1200&h=900&fit=max
+    info:
+      - title: lorem
+        details: Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+      - title: lorem
+        details: Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+      - title: lorem
+        details: Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+    icon: <i class="far fa-plus-square"></i>
+
+
+  - title: Explainable
+    theme: dark
+    media: https://www.cortex.dev/lib_QtFjUvVkCmvcsdgK/jihwdwysw31h9n8t.png?w=1200&h=900&fit=max
+    info:
+      - title: lorem
+        details: Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+      - title: lorem
+        details: Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+      - title: lorem
+        details: Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+    icon: <i class="far fa-plus-square"></i>

@@ -1,0 +1,69 @@
+/* #change-log {
+    padding: 4em 2em;
+} */
+
+#change-log h3 {
+    font-family: 'Rubik', sans-serif;
+    margin-top: 2em;
+    /* font-size: larger; */
+}
+
+#change-log h3:first-of-type {
+    margin-top: 0;
+    -webkit-text-fill-color: transparent;
+    background: linear-gradient(89deg, #aa00ff 42.2%, #f92393 60.14%);
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+#change-log h3:first-of-type::selection{
+    -webkit-text-fill-color: white;
+}
+
+#change-log h3:first-of-type::before {
+    content: url('../media/new.svg');
+}
+
+#change-log h3:not(:first-of-type)::before {
+    content: "";
+    display: block;
+    width: 75vw;
+    height: 0.5px;
+    background: #2529347e;
+    left: 0;
+    top: 50%;
+    margin-bottom: 2em;
+    font-weight: 100;
+}
+
+/* #change-log h4 {
+    position: relative;
+    margin-top: 1em;
+} */
+
+#change-log h4::before {
+    position: relative;
+    content: "";
+    display: block;
+    width: 25%;
+    height: 0.5px;
+    background: #2529347e;
+    left: 37.5%;
+    top: 50%;
+    margin: 1em 0;
+    font-weight: 100;
+}
+
+
+
+#change-log h2:not(:first-of-type),
+#change-log h3:not(:first-of-type),
+#change-log h4:not(:first-of-type),
+#change-log h5:not(:first-of-type) {
+    color: #252934ab;
+}
+
+
+#change-log ul {
+    list-style: none;
+}

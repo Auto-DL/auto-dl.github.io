@@ -1,0 +1,57 @@
+# community page content
+---
+
+content:
+  - title: MEET
+    details: Meet other Auto-DL users and share your experiences by attending events and meetups.
+    theme: light
+    link: "#"
+    icon: "./media/meet.svg"
+
+  - title: CODE
+    details: Do you enjoy writing code? You can contribute to numerous plugins and components.
+    theme: light
+    link: https://github.com/Auto-DL/
+    icon: "./media/code.svg"
+
+  - title: REVIEW
+    details: Help review changes to our code or documentation or tutorials.
+    theme: light
+    link: "#"
+    icon: "./media/review.svg"
+
+  - title: TEST
+    details: You can help prevent regressions by contributing automated tests.
+    theme: dark
+    link: "#"
+    icon: "./media/test.svg"
+
+  - title: DOCUMENT
+    details: Improve the documentation to make it easier for others to get started.
+    theme: dark
+    link: "https://auto-dl.readthedocs.io/en/latest/"
+    icon: "./media/documentation.svg"
+
+  - title: DONATE
+    details: If you have no time but want to help, we accept money to facilitate project goals.
+    theme: dark
+    link: "#"
+    icon: "./media/donate.svg"
+
+  - title: HELP
+    details: As an experienced user, you can help others get the most out of Auto-DL.
+    theme: light
+    link: "#"
+    icon: "./media/help.svg"
+
+  - title: TRANSLATE
+    details: Fluent in languages other than English? Consider improving support for those languages.
+    theme: light
+    link: "#"
+    icon: "./media/translate.svg"
+
+  - title: DESIGN
+    details: As it is intended for daily use by finicky web developers, design is essential.
+    theme: light
+    link: "#"
+    icon: "./media/design.svg"

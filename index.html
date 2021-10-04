@@ -1,236 +1,191 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>Auto-DL</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no" />
-    <meta name="Description" content="Auto-DL: Build Deep Learning models without writing a single line of code.
-                                      Simplify the tedious tasks in Deep Learning by using our platform ">
-    <meta name="google-site-verification" content="p3viVcODf5JRawEQyv8vij_vtCmqGnIVAcgdJlMHdZ8" />
-    <meta name="google-site-verification" content="xee37Efxw7z9-O5cjvQ02ERSoAA3jwKI9Bu5v5yClbw" />
-    
-    <!--   SEO   -->
-    <link rel="canonical" href="https://auto-dl.tech/" />
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- HOSTED -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,600italic,300italic,400italic,300,700italic,800italic,800" rel="stylesheet" type="text/css" />
-    <link href="fonts/mdi/css/materialdesignicons.min.css" media="all" rel="stylesheet" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+		integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <!-- LOCAL -->
-    <link rel="stylesheet" href="style/style.css" />
-    <link rel='shortcut icon' href='favicon.ico' type='image/x-icon' />
+	<script type="text/javascript" src="js/base.js"></script>
 
-    <!-- HOSTED -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/2.1.11/jquery.mixitup.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/Home.css">
 
-    <!-- LOCAL -->
-    <script src="scripts/pt.min.js"></script>
-    <script src="scripts/index.js"></script>
-    <script src="scripts/modal.js"></script>
+	<title>Auto-DL</title>
+
 </head>
 
 <body>
-    <div class="overflow-wrap">
+	<!-- overhead alert -->
+	<!-- <div class="" style="height: 58px;"> -->
+	<div class="alert alert-dismissible fade show m-0 top-0" role="alert" style="z-index: 1; background-color: linen;">
+		<i class="far fa-bell"></i>&emsp;<strong>Auto-DL</strong> is growing. Lorem ipsum dolor sit amet consectetur
+		adipisicing elit!
+		<a href="#" class="link-secondary">Join In</a>
+		<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+	</div>
+	<!-- </div> -->
 
-        <section id="home" class="flex height-fix">
-            <div id="pt" class="canvas"></div>
-            <div class="flex">
-                <div class="text">
-                    <img src="static/icon.png" alt="Auto-DL" style="margin-bottom: -25%;"/>
-                    <h3 style="color: #D5D8E9;">Auto-DL</h3>
-                </div>
-                <div class="text">
-                    The <span class="highlight">futuristic</span> way of building deep learning models
-                </div>
-                <br />
-                <div class="button page-link" dest="about">
-                    What we do? <i class="mdi mdi-arrow-right"></i>
-                </div>
+	<header id="header" class="App-header home-head">
+	</header>
 
-                <nav class="flex">
-                    <div class="link-wrap">
-                        <div class="active page-link" dest="home">home</div>
-                        <div class="page-link" dest="about">about</div>
-                        <div class="page-link" dest="demo">demo</div>
-                        <div class="page-link" dest="contact">contact</div>
-                    </div>
-                    <i class="mdi mdi-menu"></i>
-                </nav>
-            </div>
-        </section>
+	<main>
+		<svg xmlns="http://www.w3.org/2000/svg" fill="none" preserveAspectRatio="none" viewBox="0 0 1680 40"
+			class="position-relative width-full z-1" style="display: block;">
+			<path d="M0 40h1680V30S1340 0 840 0 0 30 0 30z" fill="#fff"></path>
+		</svg>
 
-        <!-- ABOUT -->
-        <section id="about">
-            <div class="container flex">
-                <div class="header waypoint" data-animation="slide-in-left">
-                    ABOUT
-                </div>
-                <div class="header-bar waypoint" data-animation="slide-in-left" data-delay=".3s"></div>
+		<!-- Intro line -->
+		<section class='flex home-content light-bg' style="min-height: 400px; width: 100%;">
+			<div class='container'>
+				<h2>Build Deep learning models <span style="color: #f72585;">more than 10X faster</span> with <span
+						class="autoDL">Auto-DL</span>.</h2>
+				<p>Building Deep Learning models takes a lot of time. We automate your "meta-work" so that you can focus
+					of building your models without worrying about writing code.</p>
+			</div>
+		</section>
 
-                <div class="text big-text">
-                    Build Deep learning models more than 10X faster with Auto-DL.
-                </div>
-                <h3>
-                    Building Deep Learning models takes a lot of time. We automate your "meta-work" so that you can focus of building your models without worrying about writing code.
-                </h3>
-   
-                <div class="flex row label-wrap">
-                    <div class="flex row-gt-sm">
-                        <div class="flex bullet-wrap ">
-                            <div class="hex-wrap waypoint" data-animation="flip-in-x">
-                                <div class="hexagon">
-                                    <i class="mdi mdi-scale"></i>
-                                </div>
-                            </div>
-                            <div class="waypoint" data-animation="fade-in">
-                                <div class="label bold">Scalable</div>
-                                <div>
-                                    Highly scalable as it can be deployed on a single compute system or a cluster.
-                                </div>
-                            </div>
-                        </div>
+	
 
-                        <div class="flex bullet-wrap ">
-                            <div class="hex-wrap waypoint" data-animation="flip-in-x" data-delay=".2s">
-                                <div class="hexagon">
-                                    <i class="mdi mdi-security"></i>
-                                </div>
-                            </div>
-                            <div class="waypoint" data-animation="fade-in" data-delay=".2s">
-                                <div class="label bold">Secure</div>
-                                <div>Your data and models' security is our highest priority.</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flex row-gt-sm">
-                        <div class="flex bullet-wrap ">
-                            <div class="hex-wrap waypoint" data-animation="flip-in-x" data-delay=".4s">
-                                <div class="hexagon">
-                                    <i class="mdi mdi-lightbulb-outline"></i>
-                                </div>
-                            </div>
-                            <div class="waypoint" data-animation="fade-in" data-delay=".4s">
-                                <div class="label bold">Intuitive</div>
-                                <div>Strong preference for easy to use, intuitive UX/UI.</div>
-                            </div>
-                        </div>
-                        <div class="flex bullet-wrap ">
-                            <div class="hex-wrap waypoint" data-animation="flip-in-x" data-delay=".6s">
-                                <div class="hexagon">
-                                    <i class="mdi mdi-responsive"></i>
-                                </div>
-                            </div>
-                            <div class="waypoint" data-animation="fade-in" data-delay=".6s">
-                                <div class="label bold">Flexible</div>
-                                <div>
-                                    Develop DL models in any framework and any programming language.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="flex bullet-wrap ">
-                            <div class="hex-wrap waypoint" data-animation="flip-in-x" data-delay=".8s">
-                                <div class="hexagon">
-                                    <i class="mdi mdi-function"></i>
-                                </div>
-                            </div>
-                            <div class="waypoint" data-animation="fade-in" data-delay=".8s">
-                                <div class="label bold">Explainable</div>
-                                <div>
-                                    No more black boxes, understand what the AI model is learning.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+		<!-- version details -->
+		<section class="flex home-content tinted-bg">
+			<div class="container" id="latest-version-details"></div>
+		</section>
 
-        <!-- DEMO -->
-        <section id="demo">
-            <div class="container flex">
-                <div class="header waypoint" data-animation="slide-in-right">
-                    DEMO
-                </div>
-                <div class="header-bar waypoint" data-animation="slide-in-right" data-delay=".3s"></div>
-                <iframe  width="560" height="315" src="https://www.youtube.com/embed/6uEt88vQxQU" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-                </iframe>
-            </div>
-        </section>
+		<!-- demo video -->
+		<section class="home-content dark-bg-content">
+			<div class="container">
+				<h3 class="mb-5">Watch Demo</h3>
+				<div id="demo-video">
+					<span class="flex demo-vid" data-bs-toggle="modal" data-bs-target="#youtubeModal">
+						<img class="img-fluid" src="media/layoutSS.png" alt="DEMO VIDEO">
+						<a class="pe-auto btn rounded-circle flex" id="yt-btn"><i class="fas fa-play"></i></a>
+					</span>
+				</div>
+			</div>
+		</section>
 
-        <section id="try-us">
-            <div class="container flex">
-                <div class="header waypoint" data-animation="slide-in-right">
-                    Try Us
-                </div>
-                <div class="header-bar waypoint" data-animation="slide-in-right" data-delay=".3s"></div>
-                <div class="text">
-                    <h1 class="big-text">
-                        COMING SOON...
-                    </h1>
-                </div>
-            </div>
-        </section>
+		<!-- The Interface -->
+		<section class='home-content tinted-bg'>
+			<div class="container">
+				<h3 class='mb-5'>Our Interface</h3>
+				<div class="flex position-relative" id="interface"
+					style="width: fit-content; margin: 0 auto; color: white;"></div>
+			</div>
+		</section>
 
-        <!-- CONTACT -->
-        <section id="contact">
-            <svg preserveAspectRatio="none " viewBox="0 0 100 102 " height="75 " width="100% " version="1.1 " xmlns="http://www.w3.org/2000/svg " class="svgcolor-light ">
-          <path d="M0 0 L50 100 L100 0 Z " fill="white " stroke="white "></path>
-        </svg>
-            <div class="container flex ">
-                <div class="header waypoint " data-animation="slide-in-left ">
-                    CONTACT
-                </div>
-                <div class="header-bar waypoint " data-animation="slide-in-right " data-delay=".25s "></div>
-                <div class="highlight waypoint " data-animation="slide-in-right " data-delay=".5s ">
-                    Have a question or want to work together?
-                </div>
-                <div class="waypoint " data-animation="pop-in " data-delay=".5s " id="contact-data ">
-                    Feel free to join our community slack. You can also write to us via e-mail or ping on any social media.
-                </div>
-            </div>
-        </section>
+		<!-- features -->
+		<section class='home-content light-bg'>
+			<div class="container">
+				<h3 class='mb-5'>What sets <span class="autoDL">Auto-DL</span> apart</h3>
+				<div id="home-features"></div>
+			</div>
+		</section>
 
-        <footer>
-            <i class="mdi mdi-chevron-double-up page-link " dest="home "></i>
-            <div class="icon-wrap flex row ">
-                <a href="mailto:info.autold@gmail.com?subject=Auto-DL%20Contact%20from%20Website ">
-                    <div class="flex icon " id="icon-1 ">
-                        <i class="mdi mdi-email "></i>
-                    </div>
-                </a>
-                <a href="https://www.linkedin.com/company/autodl/ ">
-                    <div class="flex icon " id="icon-2 ">
-                        <i class="mdi mdi-linkedin "></i>
-                    </div>
-                </a>
-                <a href="https://twitter.com/auto_dl/ ">
-                    <div class="flex icon " id="icon-4 ">
-                        <i class="mdi mdi-twitter "></i>
-                    </div>
-                </a>
-                <a href="https://github.com/Auto-DL/ ">
-                    <div class="flex icon " id="icon-5 ">
-                        <i class="mdi mdi-github-circle "></i>
-                    </div>
-                </a>
-                <a href="https://autodl.slack.com/join/shared_invite/zt-qagxiwub-ywRM_oBvvF~F7YNtlBqy_Q#/shared-invite/email">
-                    <div class="flex icon " id="icon-6 ">
-                        <i class="mdi mdi-slack "></i>
-                    </div>
-                </a>
-            </div>
-            <div class="info-box ">
-                <div class="footnote ">
-                    Auto-DL <span class="highlight ">&copy;2021</span>
-                </div>
-            </div>
-        </footer>
-    </div>
+		<!-- github section -->
+		<section class='home-content dark-bg-content'>
+			<div class="container">
+				<h3 class='mb-5'>*github related*</h3>
+				<div id="github-section"></div>
+			</div>
+		</section>
+
+		<section class='home-content light-bg'>
+			<div class="container" id="extra-section"></div>
+		</section>
+
+		<!-- Testinomy Carousel -->
+		<section class='home-content dark-bg-content' style="background-color: transparent !important;">
+			<span></span>
+			<h3 class='mb-5'>What Our Users say</h3>
+			<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" style="height: 400px">
+				<div class="carousel-indicators" id="carousel-buttons"></div>
+				<div class="carousel-inner" id="carousel-inner"></div>
+
+				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+					data-bs-slide="prev">
+					<!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span>  -->
+					<i class="fas fa-arrow-circle-left"></i>
+					<span class="visually-hidden">Previous</span>
+				</button>
+				<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+					data-bs-slide="next">
+					<!-- <span class="carousel-control-next-icon" aria-hidden="true"></span>  -->
+					<i class="fas fa-arrow-circle-right"></i>
+					<span class="visually-hidden">Next</span>
+				</button>
+			</div>
+		</section>
+
+		<!-- newsletter modal -->
+		<div class="modal" id="newsletter-modal" tabindex="-1">
+			<div class="modal-dialog modal-dialog-centered modal-lg">
+				<div class="modal-content position-relative">
+					<div class="position-absolute top-0 start-100 border-0 translate-middle" style="z-index: 1;">
+						<button type="button" class="btn btn-dark rounded-circle" data-bs-dismiss="modal"
+							aria-label="Close">
+							<i class="fas fa-times"></i></button>
+					</div>
+					<div class="row">
+						<div class="col-12 col-sm-6" style="min-height: 35vh;">
+							<div id="news-image"></div>
+						</div>
+						<div class="col-12 col-sm-6">
+							<div class="modal-body">
+								<h5 class="modal-title mb-3">** Newsletter **</h5>
+								<p class="mb-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius ea,
+									sapiente
+									minus officia porro assumenda quia laboriosam asperiores molestias nihil.</p>
+							</div>
+							<div class="modal-footer border-0">
+								<div class="input-group align-self-center row">
+									<input type="text" class="col-12 col-lg-8 form-control"
+										placeholder="Enter Your Email" aria-label="Enter Your Email"
+										aria-describedby="button-addon2" required>
+									<a class="col-12 col-lg-4 btn btn-outline-secondary" type="button"
+										id="button-addon2">Subscribe</a>
+								</div>
+								<!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+								<button type="button" class="btn btn-primary">Save changes</button> -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- youtube demo modal -->
+		<div class="modal fade" id="youtubeModal" tabindex="-1" aria-labelledby="youtubeModalLabel" aria-hidden="true">
+			<div class="flex modal-dialog modal-dialog-centered modal-xl" style="height: 100%;">
+				<div class="modal-content">
+					<div class="position-absolute top-0 start-100 border-0 translate-middle" style="z-index: 1;">
+						<button type="button" class="btn btn-danger rounded-circle" data-bs-dismiss="modal"
+							aria-label="Close">
+							<i class="fas fa-times"></i></button>
+					</div>
+					<div class="modal-body p-0">
+						<div class="ratio ratio-16x9">
+							<iframe class="ratio ratio-16x9" id="youtubeDemo" height="315" src="" title="Auto-DL Demo"
+								frameborder="0"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+								allowfullscreen></iframe>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<footer></footer>
+
+	<script type="text/javascript" src="js/home.js"></script>
+	<script type="text/javascript" src="js/pt.min.js"></script>
+	<script type="text/javascript" src="js/canvas.js"></script>
+
+
 </body>
 
 </html>
-
-<script src="scripts/canvas.js "></script>

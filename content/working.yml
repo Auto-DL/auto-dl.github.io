@@ -1,0 +1,73 @@
+# how-it-works steps content
+
+---
+stepDetails:
+  - title: Create
+    theme: dark
+    video: media/demo1.mp4
+    details: >-
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam cumque
+      corrupti blanditiis non aut sapiente nam placeat debitis modi doloremque.
+      </p>
+      <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</li>
+      <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</li>
+      <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</li>
+    icon: <i class="far fa-plus-square"></i>
+
+
+  - title: Build
+    theme: light
+    video: media/demo1.mp4
+    details: >-
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam cumque
+      corrupti blanditiis non aut sapiente nam placeat debitis modi doloremque.
+      </p>
+      <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</li>
+      <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</li>
+      <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</li>
+    icon: <i class="fas fa-tools"></i>
+
+
+  - title: Download
+    theme: dark
+    video: media/demo1.mp4
+    details: >-
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam cumque
+      corrupti blanditiis non aut sapiente nam placeat debitis modi doloremque.
+      </p>
+      <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</li>
+      <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</li>
+      <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</li>
+    icon: <i class="fas fa-download"></i>
+
+
+  - title: Share
+    theme: light
+    video: media/demo1.mp4
+    details: >-
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam cumque
+      corrupti blanditiis non aut sapiente nam placeat debitis modi doloremque.
+      </p>
+      <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</li>
+      <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</li>
+      <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</li>
+    icon: <i class="fas fa-share-alt"></i>
+
+
+  - title: Deploy
+    theme: dark
+    video: media/demo1.mp4
+    details: >-
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam cumque
+      corrupti blanditiis non aut sapiente nam placeat debitis modi doloremque.
+      </p>
+      <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</li>
+      <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</li>
+      <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</li>
+    icon: <i class="fas fa-laptop-code"></i>
+
+
+
+
+
+
