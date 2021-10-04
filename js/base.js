@@ -85,12 +85,17 @@ function baseScripts() {
 	$('head').append(`
 		<link rel="icon" href="media/favicon.ico" />
         
-		<!-- <meta name="google-site-verification" content="p3viVcODf5JRawEQyv8vij_vtCmqGnIVAcgdJlMHdZ8" />
-		<meta name="google-site-verification" content="xee37Efxw7z9-O5cjvQ02ERSoAA3jwKI9Bu5v5yClbw" /> -->
-
 		<meta name="description" content="Auto-DL: Build Deep Learning models without writing a single line of code.
 		Simplify the tedious tasks in Deep Learning by using our platform ">
 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no" />
+		<meta name="Description" content="Auto-DL: Build Deep Learning models without writing a single line of code.
+										  Simplify the tedious tasks in Deep Learning by using our platform ">
+		<meta name="google-site-verification" content="p3viVcODf5JRawEQyv8vij_vtCmqGnIVAcgdJlMHdZ8" />
+		<meta name="google-site-verification" content="xee37Efxw7z9-O5cjvQ02ERSoAA3jwKI9Bu5v5yClbw" />
+		
+		<!--   SEO   -->
+		<link rel="canonical" href="https://auto-dl.tech/" />
 		
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
 		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
