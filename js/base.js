@@ -1,13 +1,13 @@
 $(function () {
 	baseScripts();
 
-	$('header').load('pages/html/src/header.html #reuse-head');
+	$('header').load('html/header.html #reuse-head');
 
 	// var fo = document.createElement('DIV')
 	// // fo.appendChild(data); 
 	// document.querySelector('footer').appendChild(fo);
 
-	$('footer').load('pages/html/src/header.html #footer');
+	$('footer').load('html/header.html #footer');
 });
 
 var support = (()=> {
