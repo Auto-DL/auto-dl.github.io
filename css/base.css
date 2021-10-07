@@ -32,7 +32,7 @@ header ::selection,
 }
 
 ::-webkit-scrollbar-thumb {
-	background: #0a09034b;
+	background: #f72585;
 	border-radius: 2em;
 	cursor: pointer;
 }
