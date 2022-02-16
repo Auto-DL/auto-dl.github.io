@@ -7,7 +7,7 @@ $(window).on('load', async () => {
 		// Get document, or throw exception on error
 		try {
 			const data = jsyaml.load(text);
-			console.log(data);
+			// console.log(data);
 			displayComData(data.content);
 		} catch (e) {
 			console.log(e);

@@ -22,6 +22,7 @@ var support = (()=> {
 	return true;
 })();
 
+// function for converting 
 var stringToHTML = function (str) {
 
 	// If DOMParser is supported, use it
@@ -41,18 +42,18 @@ $(window).on('load', async () => {
 
 	await $.get("https://vedant080102.github.io/auto-dl.github.io/content/base.yml", (text, status) => {
 		// $.get("../content/base.yml", (text, status) => {
-		console.log("b4 call")
+		// console.log("b4 call")
 		console.log("Data Status: " + status);
 
 		// Get document, or throw exception on error
 		try {
 			const data = jsyaml.load(text);
-			console.log(data);
+			// console.log(data);
 			Footer(data.footerData);
 		} catch (e) {
 			console.log(e);
 		}
-		console.log("after call")
+		// console.log("after call")
 	});
 
 	try {
@@ -95,7 +96,7 @@ function baseScripts() {
 		<meta name="google-site-verification" content="xee37Efxw7z9-O5cjvQ02ERSoAA3jwKI9Bu5v5yClbw" />
 		
 		<!--   SEO   -->
-		<link rel="canonical" href="https://auto-dl.tech/" />
+		<link rel="canonical" href="https://auto-dl.tech/"/>
 		
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
 		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">

@@ -96,7 +96,7 @@ function planCards(doc) {
 
 $(window).on('load', async () => {
 
-    console.log("b4 call");
+    // console.log("b4 call");
 
     await $.get("https://vedant080102.github.io/auto-dl.github.io/content/pricing.yml", (text, status) => {
     // await $.get("../content/pricing.yml", (text, status) => {
@@ -105,7 +105,7 @@ $(window).on('load', async () => {
         // Get document, or throw exception on error
         try {
             const data = jsyaml.load(text);
-            console.log(data);
+            // console.log(data);
 
             planCards(data.plans)
             priceTable(data.plans, data.tableContent);
@@ -114,35 +114,5 @@ $(window).on('load', async () => {
         }
     });
 
-    console.log("after call");
-
-
-    // var fi = new File([Text], '../content/pricing.yml', {type: "text/yaml"});
-    // var reader = new FileReader();
-    // var fileToRead = '../content/pricing.yml';
-
-    // // attach event, that will be fired, when read is end
-    // reader.onload = function (event) {
-    //     // reader.result contains the contents of blob as a typed array
-    //     // we insert content of file in DOM here
-    //     console.log("file", event.target.result)
-    // }
-
-    // // start reading a loaded file
-    // reader.readAsText(fi);
-
-    /*
-        fs.open('../content/pricing.yml', 'r', (err, fd) => {
-            if (err) {
-                if (err.code === 'ENOENT') {
-                    console.error('myfile does not exist');
-                    return;
-                }
-
-                throw err;
-            }
-
-            console.log(fd);
-        });
-    */
+    // console.log("after call");
 });
