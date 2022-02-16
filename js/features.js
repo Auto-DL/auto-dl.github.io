@@ -9,7 +9,7 @@ $(window).on('load', async () => {
 		try {
 			const data = jsyaml.load(text);
 			// console.log(data.features);
-			displayFeatures(data.features);
+      displayFeatures(data.features);
 		} catch (e) {
 			console.log(e);
 		}

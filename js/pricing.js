@@ -106,7 +106,6 @@ $(window).on('load', async () => {
         try {
             const data = jsyaml.load(text);
             // console.log(data);
-
             planCards(data.plans)
             priceTable(data.plans, data.tableContent);
         } catch (e) {
@@ -115,4 +114,34 @@ $(window).on('load', async () => {
     });
 
     // console.log("after call");
+
+
+    // var fi = new File([Text], '../content/pricing.yml', {type: "text/yaml"});
+    // var reader = new FileReader();
+    // var fileToRead = '../content/pricing.yml';
+
+    // // attach event, that will be fired, when read is end
+    // reader.onload = function (event) {
+    //     // reader.result contains the contents of blob as a typed array
+    //     // we insert content of file in DOM here
+    //     console.log("file", event.target.result)
+    // }
+
+    // // start reading a loaded file
+    // reader.readAsText(fi);
+
+    /*
+        fs.open('../content/pricing.yml', 'r', (err, fd) => {
+            if (err) {
+                if (err.code === 'ENOENT') {
+                    console.error('myfile does not exist');
+                    return;
+                }
+
+                throw err;
+            }
+
+            console.log(fd);
+        });
+    */
 });

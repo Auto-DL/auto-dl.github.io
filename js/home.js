@@ -56,7 +56,7 @@ $(window).on('load', async () => {
 			console.log(e);
 		}
 	});
-
+  
 	// bootstrap tooltips & popovers
 	try {
 		var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
@@ -113,7 +113,6 @@ $(document).ready(function () {
 
 function homePage(doc) {
 	// adding content to all sections
-
 	// LATEST VERSION
 	var data;
 
