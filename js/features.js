@@ -1,6 +1,6 @@
 $(window).on('load', async () => {
 
-	console.log("b4 call")
+	// console.log("b4 call")
 	// await $.get("../content/features.yml", (text, status) => {
 	await $.get("https://vedant080102.github.io/auto-dl.github.io/content/features.yml", (text, status) => {
 		console.log("Data Status: " + status);
@@ -8,12 +8,12 @@ $(window).on('load', async () => {
 		// Get document, or throw exception on error
 		try {
 			const data = jsyaml.load(text);
-			console.log(data.features);
-			displayFeatures(data.features);
+			// console.log(data.features);
+      displayFeatures(data.features);
 		} catch (e) {
 			console.log(e);
 		}
-		console.log("call done")
+		// console.log("call done")
 	});
 });
 

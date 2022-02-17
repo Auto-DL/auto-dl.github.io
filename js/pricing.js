@@ -96,7 +96,7 @@ function planCards(doc) {
 
 $(window).on('load', async () => {
 
-    console.log("b4 call");
+    // console.log("b4 call");
 
     await $.get("https://vedant080102.github.io/auto-dl.github.io/content/pricing.yml", (text, status) => {
     // await $.get("../content/pricing.yml", (text, status) => {
@@ -105,8 +105,7 @@ $(window).on('load', async () => {
         // Get document, or throw exception on error
         try {
             const data = jsyaml.load(text);
-            console.log(data);
-
+            // console.log(data);
             planCards(data.plans)
             priceTable(data.plans, data.tableContent);
         } catch (e) {
@@ -114,7 +113,7 @@ $(window).on('load', async () => {
         }
     });
 
-    console.log("after call");
+    // console.log("after call");
 
 
     // var fi = new File([Text], '../content/pricing.yml', {type: "text/yaml"});

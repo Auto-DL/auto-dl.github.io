@@ -4,6 +4,7 @@ var $animation_elementsR, $animation_elementsL;
 
 var animation;
 
+// sliding animation for all videos
 function check_if_in_view() {
 	$animation_elementsR = $('.right-slide');
 	check_if___($animation_elementsR, 'go-right', null);
@@ -104,6 +105,7 @@ $(window).on('load', async () => {
 
 	// console.log("after call")
 
+	// loading animation when in viewport
 	try {
 		// 	console.log("lottie animation")
 		animation = bodymovin.loadAnimation({

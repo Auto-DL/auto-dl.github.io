@@ -36,6 +36,8 @@ $(window).on('load', () => {
 	// if (head != null && head.querySelector('.navbar') != null) {
 	head.querySelector('.navbar').classList.remove('fixed-top');
 	// }
+
+	// floaty space animated background
 	floatySpace()
 })
 
@@ -48,13 +50,14 @@ $(window).on('load', async () => {
 		// Get document, or throw exception on error
 		try {
 			const data = jsyaml.load(text);
-			console.log(data);
+			// console.log(data);
 			homePage(data);
 		} catch (e) {
 			console.log(e);
 		}
 	});
-
+  
+	// bootstrap tooltips & popovers
 	try {
 		var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
 		var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
@@ -80,7 +83,7 @@ $(window).on('load', async () => {
 // $(window).on('load', () => floatySpace());
 
 
-
+// adding the youtube video in the home page
 $(document).ready(function () {
 	// Gets the video src from the data-src on each button
 	var $videoSrc = 'https://www.youtube-nocookie.com/embed/6uEt88vQxQU';
@@ -109,6 +112,7 @@ $(document).ready(function () {
 });
 
 function homePage(doc) {
+	// adding content to all sections
 	// LATEST VERSION
 	var data;
 

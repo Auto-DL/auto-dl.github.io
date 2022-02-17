@@ -22,6 +22,8 @@ var support = (()=> {
 	return true;
 })();
 
+
+// function for converting 
 var stringToHTML = function (str) {
 
 	// If DOMParser is supported, use it
@@ -41,18 +43,18 @@ $(window).on('load', async () => {
 
 	await $.get("https://vedant080102.github.io/auto-dl.github.io/content/base.yml", (text, status) => {
 		// $.get("../content/base.yml", (text, status) => {
-		console.log("b4 call")
+		// console.log("b4 call")
 		console.log("Data Status: " + status);
 
 		// Get document, or throw exception on error
 		try {
 			const data = jsyaml.load(text);
-			console.log(data);
+			// console.log(data);
 			Footer(data.footerData);
 		} catch (e) {
 			console.log(e);
 		}
-		console.log("after call")
+		// console.log("after call")
 	});
 
 	try {
