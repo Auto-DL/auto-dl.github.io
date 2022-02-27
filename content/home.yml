@@ -1,17 +1,11 @@
 # home page content
 ---
 
-# latest version details 
-latestDetails: 
-  title: yet to be decided
+# latest version details
+latestDetails:
+  title: Our Alpha version is out!
   desc: |
-    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit tenetur quod mollitia id asperiores quae porro ad, 
-    architecto officia quaerat reprehenderit in, maiores cupiditate quisquam dolorum dolor placeat quibusdam earum. 
-    Delectus, officia atque. Hic, fugit harum voluptate sed veniam adipisci maiores, ab temporibus molestiae quas 
-    eos cupiditate repellendus sunt quisquam deleniti iusto quos accusantium totam accusamus ipsa officia? 
-    Inventore excepturi in, amet dicta architecto temporibus neque ipsa qui quisquam perferendis. Similique 
-    veritatis nam tempore beatae reiciendis ut, magni nisi eligendi modi adipisci laboriosam commodi vitae eaque 
-    consectetur alias rerum nemo soluta voluptatum. Saepe aspernatur, vel veritatis ratione esse ea quisquam?
+    TODO
 
 
 # demo images/ videoes/ tutorials
@@ -22,11 +16,11 @@ demo:
 # interface screenshots with tooltips providing info
 interface:
   image: media/interface.webp
-  
+
   info:
     - pos: top-right
       title: Title
-      desc: | 
+      desc: |
         And here's some amazing content. It's very engaging. Right?
 
     - pos: bottom-right
@@ -70,49 +64,33 @@ features:
 
 # github repo details/ contributors/ stars...
 githubSection:
-  - title: something
-    icon: '<i class="fab fa-github" style="font-size: 4em;"></i>'
-    content: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium, animi quo. Magni aliquam fugit ea quam eius, iure quod cum tempore! Consectetur expedita molestias tempore!
-
-  - title: something
+  - title: Developer Friendly
     icon: '<i class="fab fa-git-alt" style="font-size: 4em;"></i>'
-    content: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium, animi quo. Magni aliquam fugit ea quam eius, iure quod cum tempore! Consectetur expedita molestias tempore!
+    content: Auto-DL is not only easy to use, it's made to increase developer productivity.
 
-  - title: something
+  - title: Open Source
+    icon: '<i class="fab fa-github" style="font-size: 4em;"></i>'
+    content: Auto-DL benefits from its amazing open-source community and we are thankful for their contributions!
+
+  - title: Community First
     icon: '<i class="fab fa-github-alt" style="font-size: 4em;"></i>'
-    content: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium, animi quo. Magni aliquam fugit ea quam eius, iure quod cum tempore! Consectetur expedita molestias tempore!
+    content: At Auto-DL we advocate Diversity and Inclusion (D&I) principles and welcome everyone in the org.
 
 
-# undecided yet!
-undecidedSection:
-  title: Something
-  content: |
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam illo nesciunt eos corporis cumque.
-      Maiores non libero corrupti minima voluptate aliquid, consectetur asperiores provident modi eligendi
-      perspiciatis, nam accusantium commodi distinctio. Repellendus necessitatibus, possimus illo neque ex
-      fugiat numquam consequuntur expedita harum dolorum incidunt beatae ratione aliquid aspernatur
-      molestiae perferendis exercitationem rem dicta eos autem, architecto delectus vel. Dolor, quidem.
-      Suscipit, inventore soluta aliquid autem iusto laborum optio! Qui, sunt cumque, blanditiis earum
-      nulla corrupti eius dignissimos vero voluptate praesentium aut dolor minima modi voluptates.
-      Voluptate, qui! Sequi quidem explicabo facilis iste quod! Officia obcaecati impedit explicabo
-      exercitationem, dolorum doloremque?
+sponsorSection:
+  - title: Civo Cloud
+    icon: '<i style="font-size: 4em;"></i>'
+    content: Auto-DL thanks Civo Cloud for providing cloud credits.
 
 # user reviews/ comments
 testimonials:
   - comment: |
-      A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my
-    author: Lorem ipsum dolor
+      Auto-DL helped me develop a deep learning model within 60 minutes and saved my final year project.
+    author: Anonymous
 
   - comment: |
-      The European languages are members of the same family. Their separate existence is a myth. For science, 
-      music, sport, etc, Europe uses the same vocabulary. The languages only differ in their grammar, their 
-      pronunciation and their most common words. Everyone realizes why a new common language would be 
+      The European languages are members of the same family. Their separate existence is a myth. For science,
+      music, sport, etc, Europe uses the same vocabulary. The languages only differ in their grammar, their
+      pronunciation and their most common words. Everyone realizes why a new common language would be
       desirable: one
     author: Lorem ipsum dolor
-
-  - comment: |
-      The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced 
-      by fox whelps. Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph, for quick jigs vex! Fox nymphs 
-      grab quick-jived waltz. Brick quiz whangs jumpy veldt fox. Bright vixens
-    author: Lorem ipsum dolor
-    

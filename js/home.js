@@ -43,8 +43,7 @@ $(window).on('load', () => {
 
 $(window).on('load', async () => {
 
-	await $.get("https://vedant080102.github.io/auto-dl.github.io/content/home.yml", (text, status) => {
-	// await $.get("../content/home.yml", (text, status) => {
+	await $.get("../content/home.yml", (text, status) => {
 		console.log("Data Status: " + status);
 
 		// Get document, or throw exception on error
@@ -56,7 +55,7 @@ $(window).on('load', async () => {
 			console.log(e);
 		}
 	});
-  
+
 	// bootstrap tooltips & popovers
 	try {
 		var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
@@ -121,8 +120,6 @@ function homePage(doc) {
 	<p>${doc.latestDetails.desc}</p>
 	`
 
-	// document.getElementById("latest-version-details").innerHTML = data
-
 	$("#latest-version-details").append(stringToHTML(data))
 
 
@@ -181,8 +178,8 @@ function homePage(doc) {
 			</div>
 			`).join("")
 		}
-		<div class="col-12">
-			<h4>repo stars........</h4>
+		<div class="col-12 mt-3">
+		<iframe src="https://ghbtns.com/github-btn.html?user=auto-dl&repo=auto-dl&type=star&count=true&size=large" frameborder="0" scrolling="0" width="150" height="30" title="GitHub"></iframe>
 		</div>
 	</div>`
 	$("#github-section").append(stringToHTML(git));
@@ -190,10 +187,21 @@ function homePage(doc) {
 
 	// extra section
 	var xtra = `
-	<h3 class='mb-5'>${doc.undecidedSection.title}</h3>
-	<p>${doc.undecidedSection.content}</p>
-	`
-	$("#extra-section").append(stringToHTML(xtra));
+	<div class="row">
+		${
+			doc.sponsorSection.map(item => `
+			<div class="col">
+				${item.icon}
+				<h4>${item.title}</h4>
+				<p>${item.content}</p>
+			</div>
+			`).join("")
+		}
+		<div class="col-12 mt-3">
+			<a href="mailto:info@auto-dl.tech" id="sponsor-us-link"> Sponsor Us! </a>
+		</div>
+	</div>`
+	$("#sponsor-section").append(stringToHTML(xtra));
 
 	// TESTIMONIAL
 	var carousel = ``
@@ -215,7 +223,6 @@ function homePage(doc) {
 				</div>
 			</div>
 		`
-		// console.log("hi", item)
 	})
 
 	$("#carousel-inner").append(stringToHTML(carousel));

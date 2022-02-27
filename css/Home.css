@@ -1,46 +1,45 @@
 .home-head .brand {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	color: #fff;
-	text-decoration: none;
-	font-size: 2.5em;
-	font-family: 'El Messiri', sans-serif;
-	z-index: 102;
-	position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-decoration: none;
+    font-size: 2.5em;
+    font-family: 'El Messiri', sans-serif;
+    z-index: 102;
+    position: relative;
 }
 
 .autoDL {
-	font-family: 'El Messiri', sans-serif;
+    font-family: 'El Messiri', sans-serif;
 }
 
 .home-head #future {
-	font-family: 'Nothing You Could Do', cursive;
-	font-weight: bold;
-	color: #f72585;
+    font-family: 'Nothing You Could Do', cursive;
+    font-weight: bold;
+    color: #f72585;
 }
 
 .home-head {
-	display: flex;
-	position: relative;
-
-	/* background-color: #2B82D5; */
-	/* background-color: #023e8a; */
-	/* background: url('https://images.unsplash.com/photo-1527474305487-b87b222841cc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1934&q=80'); */
-	/* background: url('https://images.unsplash.com/photo-1504639725590-34d0984388bd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80'); */
-	/* background: url('https://images.unsplash.com/photo-1531215244697-089c35892b94?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1173&q=80'); */
-
-	background-position: center center;
-	background-size: cover;
-	background-color: #252934;
-	height: 100vh;
-	font-size: calc(10px + 2vmin);
-	color: white;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+    display: flex;
+    position: relative;
+    /* background-color: #2B82D5; */
+    /* background-color: #023e8a; */
+    /* background: url('https://images.unsplash.com/photo-1527474305487-b87b222841cc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1934&q=80'); */
+    /* background: url('https://images.unsplash.com/photo-1504639725590-34d0984388bd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80'); */
+    /* background: url('https://images.unsplash.com/photo-1531215244697-089c35892b94?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1173&q=80'); */
+    background-position: center center;
+    background-size: cover;
+    background-color: #252934;
+    height: 100vh;
+    font-size: calc(10px + 2vmin);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
 
 /* .home-head .head-bg {
 	position: absolute;
@@ -55,127 +54,131 @@
 } */
 
 .App-link {
-	color: #61dafb;
+    color: #61dafb;
 }
+
 
 /* .home-head .header-content {
 	z-index: 10;
 	align-self: center;
 } */
 
+
 /* canvas */
+
 .canvas {
-	height: 100%;
-	left: 0;
-	position: fixed;
-	top: 0;
-	width: 100vw;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100vw;
 }
 
 canvas {
-	z-index: -1;
+    z-index: -1;
 }
 
 .home-content {
-	/* background-color: #e9ecef; */
-	position: relative;
-	min-height: 400px;
-	padding: 6em 5em;
+    /* background-color: #e9ecef; */
+    position: relative;
+    min-height: 400px;
+    padding: 6em 5em;
 }
 
 @media (max-width: 576px) {
-	.home-content {
-		padding: 5em 0;
-	}
-
-	.home-content p {
-		text-align: left;
-	}
+    .home-content {
+        padding: 5em 0;
+    }
+    .home-content p {
+        text-align: left;
+    }
 }
 
 .home-content.light-bg {
-	background-color: #fff;
-	color: #252934;
+    background-color: #fff;
+    color: #252934;
 }
 
 .home-content.tinted-bg {
-	background-color: #e8edf1;
-	color: #252934;
+    background-color: #e8edf1;
+    color: #252934;
 }
 
 .home-content.dark-bg-content {
-	color: white;
-	background-color: #252934;
+    color: white;
+    background-color: #252934;
 }
 
 .feat i {
-	font-size: 3.5em;
+    font-size: 3.5em;
 }
 
 #yt-btn {
-	background-color: #252934;
-	color: white;
-	font-size: 3em;
-	position: absolute;
-	width: 100px;
-	height: 100px;
-	text-decoration: none;
-	cursor: pointer;
-	box-shadow: 2px 6px 7px rgb(0 0 0 / 46%);
-	opacity: 0.8;
+    background-color: #252934;
+    color: white;
+    font-size: 3em;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: 2px 6px 7px rgb(0 0 0 / 46%);
+    opacity: 0.8;
 }
 
 .demo-vid {
-	cursor: pointer;
+    cursor: pointer;
 }
 
 .demo-vid:hover #yt-btn {
-	background-color: #f72585;
-	opacity: 1;
-	transform: scale(1.2);
-	transition: 0.4s;
+    background-color: #f72585;
+    opacity: 1;
+    transform: scale(1.2);
+    transition: 0.4s;
 }
+
 
 /* interface */
 
 .home-content .interface-tooltip {
-	position: absolute;
-	height: 2rem;
-	width: 2rem;
-	border-radius: 50%;
-	/* background: #00000096; */
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	text-decoration: none;
-	color: inherit;
+    position: absolute;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    /* background: #00000096; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: inherit;
 }
 
 .interface-tooltip#top-right {
-	top: 10px;
-	right: 10px;
+    top: 10px;
+    right: 10px;
 }
 
 .interface-tooltip#bottom-right {
-	bottom: 10px;
-	right: 10px;
+    bottom: 10px;
+    right: 10px;
 }
 
 .interface-tooltip#top-left {
-	top: 10px;
-	left: 10px;
+    top: 10px;
+    left: 10px;
 }
 
 .interface-tooltip#bottom-left {
-	bottom: 10px;
-	left: 10px;
+    bottom: 10px;
+    left: 10px;
 }
 
 .tooltip-inner {
-	background-color: white !important;
-	color: black !important;
-	padding: 1em 1.5em !important;
+    background-color: white !important;
+    color: black !important;
+    padding: 1em 1.5em !important;
 }
+
 
 /* .tooltip-arrow::before {
 	border-bottom-color: white !important;
@@ -188,52 +191,53 @@ canvas {
 } */
 
 .fa-info-circle:before {
-	background: #252934;
-	border-radius: 50%;
-	box-shadow: 4px 4px 10px rgb(0 0 0 / 16%);
+    background: #252934;
+    border-radius: 50%;
+    box-shadow: 4px 4px 10px rgb(0 0 0 / 16%);
 }
 
 #interface:hover .interface-tooltip {
-	animation: interF 1.6s ease-in-out infinite;
-	/* timing-function delay iteration-count direction fill-mode;*/
-	/* background: #0000006e; */
-	transition: 0.8s;
+    animation: interF 1.6s ease-in-out infinite;
+    /* timing-function delay iteration-count direction fill-mode;*/
+    /* background: #0000006e; */
+    transition: 0.8s;
 }
 
 @keyframes interF {
-	0%,
-	100% {
-		background-color: transparent;
-	}
-
-	50% {
-		background-color: #25293446;
-	}
+    0%,
+    100% {
+        background-color: transparent;
+    }
+    50% {
+        background-color: #25293446;
+    }
 }
 
 
 /* carosel */
+
 .carousel-inner,
 .carousel-item {
-	height: 100%;
+    height: 100%;
 }
 
 .carousel-caption {
-	top: 4rem;
-	color: black !important;
+    top: 4rem;
+    color: black !important;
 }
 
 .carousel-caption .card {
-	padding: 3em;
-	background-color: #3f4556a3;
-	color: white;
+    padding: 3em;
+    background-color: #3f4556a3;
+    color: white;
 }
 
 .carousel-control-prev,
 .carousel-control-next {
-	/* color: rgba(0, 0, 0, 0.74) !important; */
-	font-size: 2.5em;
+    /* color: rgba(0, 0, 0, 0.74) !important; */
+    font-size: 2.5em;
 }
+
 
 /* .carousel-control-next:focus,
 .carousel-control-next:hover,
@@ -247,27 +251,39 @@ canvas {
 } */
 
 .carousel-inner .testimonial:before {
-	content: "\201C";
-	position: absolute;
-	font-family: 'El Messiri';
-	font-size: 122pt;
-	top: -19px;
-	left: 10px;
-	z-index: 0;
-	opacity: .1;
+    content: "\201C";
+    position: absolute;
+    font-family: 'El Messiri';
+    font-size: 122pt;
+    top: -19px;
+    left: 10px;
+    z-index: 0;
+    opacity: .1;
 }
 
 @media (max-width: 756px) {
-	main .carousel {
-		height: 600px !important;
-	}
+    main .carousel {
+        height: 600px !important;
+    }
 }
+
 
 /* .qot {
 	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 } */
 
 footer {
-	position: absolute;
-	width: 100%;
+    position: absolute;
+    width: 100%;
+}
+
+#sponsor-us-link {
+    color: #252934;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#get-feedback-link {
+    color: #e8edf1;
+    text-decoration: none;
 }
