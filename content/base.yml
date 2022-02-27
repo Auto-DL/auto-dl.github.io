@@ -8,23 +8,23 @@ footerData:
         link: "#"
 
       - name: 'Install'
-        link: "#"
+        link: "https://docs.auto-dl.tech/en/latest/installing.html"
 
       - name: 'Pricing'
-        link: "#"
+        link: "/pricing"
 
   - title: 'Support'
     info:
       - name: 'Docs'
-        link: "#"
+        link: "docs.auto-dl.tech"
 
       - name: 'FAQ'
-        link: "#"
+        link: "https://docs.auto-dl.tech/en/latest/userguide.html"
 
       - name: 'Feedback'
-        link: "#"
+        link: "mailto:info@auto-dl.tech"
 
-  - title: 'Company'
+  - title: 'Organization'
     info:
       - name: 'About'
         link: "#"
@@ -33,15 +33,15 @@ footerData:
         link: "#"
 
       - name: 'Contact'
-        link: "#"
+        link: "mailto:info@auto-dl.tech"
 
   - title: 'Development'
     info:
       - name: 'Contribute'
-        link: "#"
+        link: "https://github.com/Auto-DL/Auto-DL/blob/main/CONTRIBUTING.md"
 
-      - name: 'Status'
-        link: "#"
+      - name: 'Roadmap'
+        link: "#todo"
 
       - name: 'Work with Us'
-        link: "#"
+        link: "https://autodl.slack.com/join/shared_invite/zt-qagxiwub-ywRM_oBvvF~F7YNtlBqy_Q#/shared-invite/email"
