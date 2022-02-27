@@ -87,7 +87,7 @@
 }
 
 .inner-content .lists::before {
-    content: url('https://auto-dl.github.io/media/bullet.svg');
+    content: url('https://auto-dl.tech/media/bullet.svg');
     margin-right: 1em;
     margin-top: 0.7em;
     height: 25px;

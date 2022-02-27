@@ -88,7 +88,7 @@ $(window).on('load', async () => {
 	// console.log("b4 call")
 
 	// await $.get("../content/working.yml", (text, status) => {
-	await $.get("https://auto-dl.github.io/content/working.yml", (text, status) => {
+	await $.get("https://auto-dl.tech/content/working.yml", (text, status) => {
 
 		console.log("Data Status: " + status);
 

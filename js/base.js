@@ -41,7 +41,7 @@ var stringToHTML = function (str) {
 
 $(window).on('load', async () => {
 
-	await $.get("https://auto-dl.github.io/content/base.yml", (text, status) => {
+	await $.get("https://auto-dl.tech/content/base.yml", (text, status) => {
 		// $.get("../content/base.yml", (text, status) => {
 		// console.log("b4 call")
 		console.log("Data Status: " + status);

@@ -1,6 +1,6 @@
 $(window).on('load', async () => {
 
-	await $.get("https://auto-dl.github.io/content/community.yml", (text, status) => {
+	await $.get("https://auto-dl.tech/content/community.yml", (text, status) => {
 	// await $.get("../content/community.yml"~, (text, status) => {
 		console.log("Data Status: " + status);
 
