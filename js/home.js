@@ -43,7 +43,9 @@ $(window).on('load', () => {
 
 $(window).on('load', async () => {
 
-	await $.get("../content/home.yml", (text, status) => {
+	// await $.get("../content/home.yml", (text, status) => {
+	await $.get("https://auto-dl.github.io/content/home.yml", (text, status) => {
+
 		console.log("Data Status: " + status);
 
 		// Get document, or throw exception on error

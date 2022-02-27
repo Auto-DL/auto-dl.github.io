@@ -1,6 +1,6 @@
 $(window).on('load', async () => {
 
-	await $.get("https://vedant080102.github.io/auto-dl.github.io/content/community.yml", (text, status) => {
+	await $.get("https://auto-dl.github.io/content/community.yml", (text, status) => {
 	// await $.get("../content/community.yml"~, (text, status) => {
 		console.log("Data Status: " + status);
 
@@ -33,7 +33,7 @@ function displayComData(doc) {
 					<img class="card-img" src=${item.icon} height="50" alt=${item.title}>
 					<div class="card-title">${item.title}</div>
 					<!-- <div class="card-text">Meet other Auto-DL users and share your experiences by attending events and meetups.</div> -->
-					<a class="btn ${item.theme === 'light' ? 'dark': 'light'}-btn rounded-pill" 
+					<a class="btn ${item.theme === 'light' ? 'dark': 'light'}-btn rounded-pill"
 						target="_blank" href=${item.link}>Learn More</a>
 				</div>
 				<!-- </a> -->

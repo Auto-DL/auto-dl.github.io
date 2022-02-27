@@ -4,7 +4,7 @@ $(function () {
 	$('header').load('header.html #reuse-head');
 
 	// var fo = document.createElement('DIV')
-	// // fo.appendChild(data); 
+	// // fo.appendChild(data);
 	// document.querySelector('footer').appendChild(fo);
 
 	$('footer').load('header.html #footer');
@@ -23,7 +23,7 @@ var support = (()=> {
 })();
 
 
-// function for converting 
+// function for converting
 var stringToHTML = function (str) {
 
 	// If DOMParser is supported, use it
@@ -41,7 +41,7 @@ var stringToHTML = function (str) {
 
 $(window).on('load', async () => {
 
-	await $.get("https://vedant080102.github.io/auto-dl.github.io/content/base.yml", (text, status) => {
+	await $.get("https://auto-dl.github.io/content/base.yml", (text, status) => {
 		// $.get("../content/base.yml", (text, status) => {
 		// console.log("b4 call")
 		console.log("Data Status: " + status);
@@ -86,7 +86,7 @@ $(window).on('load', async () => {
 function baseScripts() {
 	$('head').append(`
 		<link rel="icon" href="media/favicon.ico" />
-        
+
 		<meta name="description" content="Auto-DL: Build Deep Learning models without writing a single line of code.
 		Simplify the tedious tasks in Deep Learning by using our platform ">
 
@@ -95,20 +95,20 @@ function baseScripts() {
 										  Simplify the tedious tasks in Deep Learning by using our platform ">
 		<meta name="google-site-verification" content="p3viVcODf5JRawEQyv8vij_vtCmqGnIVAcgdJlMHdZ8" />
 		<meta name="google-site-verification" content="xee37Efxw7z9-O5cjvQ02ERSoAA3jwKI9Bu5v5yClbw" />
-		
+
 		<!--   SEO   -->
 		<link rel="canonical" href="https://auto-dl.tech/" />
-		
+
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
 		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-		
+
 		<link rel="stylesheet" type="text/css" href="css/base.css">
 
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js" integrity="sha512-CSBhVREyzHAjAFfBlIBakjoRUKp5h7VSweP0InR/pAJyptH7peuhCsqAI/snV+TwZmXZqoUklpXp6R6wMnYf5Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 		`);
 
 	$('body').append(`
-		
+
 		<script src="https://kit.fontawesome.com/553c78d64a.js" crossorigin="anonymous"></script>
 
 		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"

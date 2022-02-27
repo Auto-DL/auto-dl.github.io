@@ -33,9 +33,9 @@ function priceTable(headings, features) {
         data += item.details.map(detail => `
         <tr>
             <td>${detail.name}</td>
-            <td>${ detail.available[0] ? '<i class="fas fa-check"></i>' : '-'}</td>        
-            <td>${ detail.available[1] ? '<i class="fas fa-check"></i>' : '-'}</td>        
-            <td>${ detail.available[2] ? '<i class="fas fa-check"></i>' : '-'}</td>        
+            <td>${ detail.available[0] ? '<i class="fas fa-check"></i>' : '-'}</td>
+            <td>${ detail.available[1] ? '<i class="fas fa-check"></i>' : '-'}</td>
+            <td>${ detail.available[2] ? '<i class="fas fa-check"></i>' : '-'}</td>
         </tr>
         `).join("")
     })
@@ -85,7 +85,7 @@ function planCards(doc) {
 				</div>
 			</div>
 		</div>
-        `        
+        `
     })
 
     data += `</div>`
@@ -98,7 +98,7 @@ $(window).on('load', async () => {
 
     // console.log("b4 call");
 
-    await $.get("https://vedant080102.github.io/auto-dl.github.io/content/pricing.yml", (text, status) => {
+    await $.get("https://auto-dl.github.io/content/pricing.yml", (text, status) => {
     // await $.get("../content/pricing.yml", (text, status) => {
         console.log("Data Status: " + status);
 

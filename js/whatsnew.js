@@ -3,10 +3,10 @@ var result;
 
 // read the .md file and update the website content
 $(window).on('load', async () => {
-	await $.get("https://vedant080102.github.io/auto-dl.github.io/content/CHANGELOG.md", (text, status) => {
+	await $.get("https://auto-dl.github.io/content/CHANGELOG.md", (text, status) => {
 	// $.get("../content/CHANGELOG.md", (text, status) => {
 		console.log("Data Status: " + status);
-		
+
 		// Get document, or throw exception on error
 		try {
             result = md.render(text)
