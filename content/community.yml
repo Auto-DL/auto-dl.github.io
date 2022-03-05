@@ -1,11 +1,10 @@
 # community page content
 ---
-
 content:
   - title: MEET
     details: Meet other Auto-DL users and share your experiences by attending events and meetups.
     theme: light
-    link: "#"
+    link: "https://calendar.google.com/calendar/u/0?cid=ZW05dTRrN3U2cGdkZ2lncG4xZnE0OHNnMmtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ"
     icon: "./media/meet.svg"
 
   - title: CODE

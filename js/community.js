@@ -1,7 +1,7 @@
 $(window).on('load', async () => {
 
 	await $.get("https://auto-dl.tech/content/community.yml", (text, status) => {
-	// await $.get("../content/community.yml"~, (text, status) => {
+	// await $.get("../content/community.yml", (text, status) => {
 		console.log("Data Status: " + status);
 
 		// Get document, or throw exception on error
